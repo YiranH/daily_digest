@@ -6,6 +6,12 @@ on:
     - cron: '0 */6 * * *'
   # Allow manual triggering
   workflow_dispatch:
+    inputs:
+      force_refresh:
+        description: 'Force refresh all feeds (ignore last scrape times)'
+        required: false
+        default: false
+        type: boolean
   # Run on pushes to main branch
   push:
     branches:
@@ -45,9 +51,34 @@ jobs:
         if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
         run: poetry install --no-interaction --no-root
       
+      # Checkout gh-pages branch to get existing archive.json
+      - name: Checkout gh-pages branch for archive
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages-branch
+        continue-on-error: true
+      
+      # Copy archive.json to feeds directory if it exists
+      - name: Copy existing archive if available
+        run: |
+          mkdir -p feeds
+          if [ -f "gh-pages-branch/archive.json" ]; then
+            cp gh-pages-branch/archive.json feeds/
+            echo "Found existing archive.json, copied to feeds directory"
+          else
+            echo "No existing archive.json found, will create a new one"
+          fi
+      
       - name: Run feed scraper
         run: |
-          poetry run python -m src.main --ai-only
+          if [ "${{ github.event.inputs.force_refresh }}" == "true" ]; then
+            echo "Running with force refresh..."
+            poetry run python -m src.main --ai-only --force-refresh
+          else
+            echo "Running normal update..."
+            poetry run python -m src.main --ai-only
+          fi
       
       - name: Configure Git
         run: |
@@ -60,7 +91,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./feeds
           publish_branch: gh-pages
-          keep_files: false
+          keep_files: true
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: 'Update feeds: ${{ github.event.head_commit.message }}' 

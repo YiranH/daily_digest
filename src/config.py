@@ -12,28 +12,39 @@ class Config:
         #     'url': 'https://openai.com/blog/rss.xml',
         #     'category': 'ai_companies',
         # }, # can't get the feed
-        'Google AI': {
-            'url': 'https://blog.google/technology/ai/rss/',
-            'category': 'ai_companies',
-        },
-        'Google Research': {
-            'url': 'https://blog.google/technology/research/rss/',
-            'category': 'ai_companies',
-        },
-        'DeepMind': {
-            'url': 'https://deepmind.google/blog/rss.xml',
-            'category': 'ai_companies',
-        },
-        'LangChain': {
-            'url': 'https://blog.langchain.dev/rss/',
-            'category': 'ai_companies',
-        },
-        
-        # AI Tools & Platforms
-        'Hugging Face': {
-            'url': 'https://huggingface.co/blog/feed.xml',
-            'category': 'ai_tools',
-        },
+            'Google AI': {
+                'url': 'https://blog.google/technology/ai/rss/',
+                'category': 'ai_companies',
+            },
+            'Google Developers': {
+                'url': 'https://blog.google/technology/developers/rss/',
+                'category': 'ai_companies',
+            },
+            'Google Research': {
+                'url': 'https://blog.google/technology/research/rss/',
+                'category': 'ai_companies',
+            },
+            'Google Research': {
+                'url': 'https://research.google/blog/rss/',
+                'category': 'ai_companies',
+            },
+            'DeepMind': {
+                'url': 'https://deepmind.google/blog/rss.xml',
+                'category': 'ai_companies',
+            },
+            'LangChain': {
+                'url': 'https://blog.langchain.dev/rss/',
+                'category': 'ai_companies',
+            },
+            'Microsoft AI': {
+                'url': 'https://deepmind.com/blog/feed/basic/',
+                'category': 'ai_companies',
+            },    
+            # AI Tools & Platforms
+            'Hugging Face': {
+                'url': 'https://huggingface.co/blog/feed.xml',
+                'category': 'ai_tools',
+            },
 
         # # News & Updates
         # 'The Verge': {

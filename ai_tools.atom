@@ -1,0 +1,1064 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><id>https://your-github-pages-url/ai_tools</id><title>AI Daily Digest - Ai Tools</title><updated>2025-03-04T07:36:12.224215+00:00</updated><link href="https://your-github-pages-url/ai_tools.atom" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><subtitle>Latest AI news and updates from ai tools sources</subtitle><entry><id>https://blogs.nvidia.com/blog/ai-protects-wildlife/</id><title>Animals Crossing: AI Helps Protect Wildlife Across the Globe</title><updated>2025-03-04T07:36:12.224847+00:00</updated><author><name>Angie Lee</name></author><content type="html">&lt;div id="bsf_rt_marker"&gt;&lt;/div&gt;&lt;p&gt;From Seattle, Washington, to Cape Town, South Africa — and everywhere around and between — AI is helping conserve the wild plants and animals that make up the intricate web of life on Earth.&lt;/p&gt;
+&lt;p&gt;It’s critical work that sustains ecosystems and supports biodiversity at a time when the United Nations &lt;a href="https://wildlifeday.org/en/about" target="_blank"&gt;estimates&lt;/a&gt; over 1 million species are threatened with extinction.&lt;/p&gt;
+&lt;p&gt;World Wildlife Day, a UN initiative, is celebrated every March 3 to recognize the unique contributions wild animals and plants have on people and the planet — and vice versa.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;“Our own survival depends on wildlife,” the above video on this year’s celebration says, “just as much as their survival depends on us.”&lt;/p&gt;
+&lt;p&gt;Learn more about some of the leading nonprofits and startups using &lt;a href="https://www.nvidia.com/en-us/solutions/ai/" target="_blank"&gt;NVIDIA AI&lt;/a&gt; and &lt;a href="https://www.nvidia.com/en-us/data-center/solutions/accelerated-computing/" target="_blank"&gt;accelerated computing&lt;/a&gt; to protect wildlife and natural habitats, today and every day:&lt;/p&gt;
+&lt;h2&gt;&lt;b&gt;Ai2’s EarthRanger&lt;/b&gt;&lt;b&gt; Offers World’s Largest Elephant Database&lt;/b&gt;&lt;/h2&gt;
+&lt;p&gt;Seattle-based nonprofit AI research institute Ai2 offers EarthRanger, a software platform that helps protected-area managers, ecologists and wildlife biologists make more informed operational decisions for wildlife conservation in real time, whether preventing poaching, spotting ill or injured animals, or studying animal behavior.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Among Ai2’s efforts with EarthRanger is the planned development of a machine learning model — trained using NVIDIA Hopper GPUs in the cloud — that predicts the movement of elephants in areas close to human-wildlife boundaries where elephants could raid crops and potentially prompt humans to retaliate.&lt;/p&gt;
+&lt;p&gt;With access to the world’s largest repository of elephant movement data, made possible by EarthRanger users who’ve shared their data, the AI model could help predict elephant behaviors, then alert area managers to safely guide the elephants away from risky situations that could arise for them or for people in the vicinity. Area managers or rangers typically use helicopters, other vehicles and &lt;a href="https://www.worldwildlife.org/magazine/issues/summer-2016/articles/using-chili-bombs-to-protect-both-elephants-and-farmers" target="_blank"&gt;chili bombs&lt;/a&gt; to safely reroute elephants.&lt;/p&gt;
+&lt;figure class="wp-caption aligncenter" id="attachment_78108" style="width: 960px;"&gt;&lt;img alt="" class="size-medium wp-image-78108" height="640" src="https://blogs.nvidia.com/wp-content/uploads/2025/03/earthranger-elephant-hugo-960x640.jpg" width="960" /&gt;&lt;figcaption class="wp-caption-text" id="caption-attachment-78108"&gt;An elephant named Hugo wears a monitoring device that helps keep him safe. Image courtesy of the Mara Elephant Project.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Beyond elephants, EarthRanger collects, integrates and displays data on a slew of wildlife — aggregated from over 100 data sources, including camera traps, acoustic sensors, satellites, radios and more. Then, the platform combines the data with field reports to provide a unified view of collared wildlife, rangers, enforcement assets and infrastructure within a protected area.&lt;/p&gt;
+&lt;figure class="wp-caption aligncenter" id="attachment_78111" style="width: 512px;"&gt;&lt;img alt="" class="size-full wp-image-78111" height="300" src="https://blogs.nvidia.com/wp-content/uploads/2025/03/earthranger-interface.png" width="512" /&gt;&lt;figcaption class="wp-caption-text" id="caption-attachment-78111"&gt;EarthRanger platform interface.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;“Name a country, species or an environmental cause and we’re probably supporting a field organization’s conservation efforts there,” said Jes Lefcourt, director of EarthRanger at Ai2.&lt;/p&gt;
+&lt;p&gt;It’s deployed by governments and conservation organizations in 76 countries and 650 protected areas, including nearly every national park in Africa, about a dozen state fishing and wildlife departments in the U.S., as well as many other users across Latin America and Asia.&lt;/p&gt;
+&lt;p&gt;Four of these partners — Rouxcel Technology, OroraTech, Wildlife Protection Services and Conservation X Labs — are highlighted below.&lt;/p&gt;
+&lt;h2&gt;&lt;b&gt;Rouxcel Technology&lt;/b&gt;&lt;b&gt; Saves Rhinos With AI&lt;/b&gt;&lt;/h2&gt;
+&lt;p&gt;South African startup Rouxcel Technology’s AI-based RhinoWatches, tapping into EarthRanger, learn endangered black and white rhinos’ behaviors, then alert authorities in real time of any detected abnormalities. These abnormalities can include straying from typical habitats, territorial fighting with other animals and other potentially life-threatening situations.&lt;/p&gt;
+&lt;p&gt;It’s critical work, as there are just about &lt;a href="https://apnews.com/article/rhino-poaching-horns-preservation-52691fcd04e52f7cdf0a7c2eb369d9a8" target="_blank"&gt;28,000 rhinos left in the world&lt;/a&gt;, from 500,000 at the beginning of the 20th century.&lt;/p&gt;
+&lt;figure class="wp-caption aligncenter" id="attachment_78114" style="width: 960px;"&gt;&lt;img alt="" class="size-medium wp-image-78114" height="1200" src="https://blogs.nvidia.com/wp-content/uploads/2025/03/rouxcel-rhinowatch-960x1200.jpg" width="960" /&gt;&lt;figcaption class="wp-caption-text" id="caption-attachment-78114"&gt;A white rhino sports a Rouxcel RhinoWatch. Image courtesy of Hannah Rippon.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Rouxcel, based in Cape Town, has deployed over 1,200 RhinoWatches — trained and optimized using NVIDIA accelerated computing — across more than 40 South African reserves. The startup, which uses the Ai2 EarthRanger platform, protects more than 1.2 million acres of rhino habitats, and has recently expanded to help conservation efforts in Kenya and Namibia.&lt;/p&gt;
+&lt;p&gt;Looking forward, Rouxcel is developing AI models to help prevent poaching and human-wildlife conflict for more species, including pangolins, a critically endangered species.&lt;/p&gt;
+&lt;h2&gt;&lt;b&gt;OroraTech&lt;/b&gt;&lt;b&gt; Monitors Wildfires and Poaching With NVIDIA CUDA, Jetson&lt;/b&gt;&lt;/h2&gt;
+&lt;p&gt;OroraTech — a member of the &lt;a href="https://www.nvidia.com/startups/?nvid=nv-int-tblg-295718-vt33" target="_blank"&gt;NVIDIA Inception&lt;/a&gt; program for cutting-edge startups — uses the EarthRanger platform to protect wildlife in a different way, offering a wildfire detection and monitoring service that fuses satellite imagery and AI to safeguard the environment and prevent poaching.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://blogs.nvidia.com/blog/ororatech-wildfires-from-space/"&gt;Combining data&lt;/a&gt; from satellites, ground-based cameras, aerial observations and local weather information, OroraTech detects threats to natural habitats and alerts users in real time. The company’s technologies monitor more than 30 million hectares of land that directly impact wildlife in Africa and Australia. That’s nearly the size of the Great Barrier Reef.&lt;/p&gt;
+&lt;figure class="wp-caption aligncenter" id="attachment_78117" style="width: 960px;"&gt;&lt;img alt="" class="size-medium wp-image-78117" height="960" src="https://blogs.nvidia.com/wp-content/uploads/2025/03/ororatech-bushfire-960x960.png" width="960" /&gt;&lt;figcaption class="wp-caption-text" id="caption-attachment-78117"&gt;OroraTech detects an early bushfire near Expedition National Park in Australia.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;OroraTech flies an &lt;a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/" target="_blank"&gt;NVIDIA Jetson&lt;/a&gt; module for edge AI and data processing onboard all of its satellite payloads — the instruments, equipment and systems on a satellite designed for performing specific tasks. Through GPU-accelerated image processing, OroraTech achieves exceptional latency, delivering fire notifications to users on the ground as fast as five minutes after image acquisition.&lt;/p&gt;
+&lt;p&gt;The AI-based fire-detection pipeline uses the &lt;a href="https://developer.nvidia.com/cudnn" target="_blank"&gt;NVIDIA cuDNN&lt;/a&gt; library of deep neural network primitives and the &lt;a href="https://developer.nvidia.com/tensorrt" target="_blank"&gt;NVIDIA TensorRT&lt;/a&gt; software development kit for thermal anomaly detection and cloud masking in space, leading to high-precision fire detections.&lt;/p&gt;
+&lt;h2&gt;&lt;b&gt;Wildlife Protection Solutions &lt;/b&gt;&lt;b&gt;Help Preserve Endangered Species&lt;/b&gt;&lt;/h2&gt;
+&lt;p&gt;International nonprofit Wildlife Protection Solutions (WPS) supports more than 250 conservation projects in 50+ countries. Its remote cameras — about 3,000 deployed across the globe — using AI models provide real-time monitoring of animals and poachers, alerting rangers to intercede before wildlife is harmed.&lt;/p&gt;
+&lt;figure class="wp-caption aligncenter" id="attachment_78120" style="width: 960px;"&gt;&lt;img alt="" class="wp-image-78120 size-medium" height="691" src="https://blogs.nvidia.com/wp-content/uploads/2025/03/wps-lion-960x691.png" width="960" /&gt;&lt;figcaption class="wp-caption-text" id="caption-attachment-78120"&gt;A lion detected with WPS technologies.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;WPS — which also taps into the EarthRanger platform — harnesses NVIDIA accelerated computing to optimize training and inference of its AI models, which process and analyze 65,000 photos per day.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://www.wildlifeprotectionsolutions.org/conservation/#remote%20monitoring" target="_blank"&gt;WPS tool&lt;/a&gt; is free and available on any mobile, tablet or desktop browser, enabling remote monitoring, early alerting and proactive, automated deterrence of wildlife or humans in sensitive areas.&lt;/p&gt;
+&lt;h2&gt;&lt;b&gt;Conservation X Labs&lt;/b&gt;&lt;b&gt; Identifies Species From Crowdsourced Images&lt;/b&gt;&lt;/h2&gt;
+&lt;p&gt;Seattle-based Conservation X Labs — which is on a mission to prevent the &lt;a href="https://www.worldwildlife.org/stories/what-is-the-sixth-mass-extinction-and-what-can-we-do-about-it" target="_blank"&gt;sixth mass extinction&lt;/a&gt;, or the dying out of a high percentage of the world’s biodiversity due to natural phenomena and human activity — also uses EarthRanger, including for its &lt;a href="https://conservationxlabs.com/wild-me" target="_blank"&gt;Wild Me&lt;/a&gt; solution: open-source AI software for the conservation research community.&lt;/p&gt;
+&lt;p&gt;Wild Me supports over 2,000 researchers across the globe running AI-enabled wildlife population studies for marine and terrestrial species.&lt;/p&gt;
+&lt;p&gt;In the below video, Wild Me helps researchers classify whale sharks using computer vision:&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;The crowdsourced database — which currently comprises 14 million photos — lets anyone upload imagery of species. Then, AI &lt;a href="https://blogs.nvidia.com/blog/what-are-foundation-models/"&gt;foundation models&lt;/a&gt; trained using NVIDIA accelerated computing help identify species to ease and accelerate animal population assessments and other research that supports the fight against species extinction.&lt;/p&gt;
+&lt;p&gt;In addition, Conservation X Labs’s &lt;a href="https://conservationxlabs.com/the-sentinel" target="_blank"&gt;Sentinel&lt;/a&gt; technology transforms traditional wildlife monitoring tools — like trail cameras and acoustic recorders — with AI, processing environmental data as it’s collected and providing conservationists with real-time, data-driven insights through satellite and cellular networks.&lt;/p&gt;
+&lt;p&gt;To date, Sentinel devices have delivered about 100,000 actionable insights for 80 different species. For example, see how the technology flags a limping panther, so wildlife protectors could rapidly step in to offer aid:&lt;/p&gt;
+&lt;div class="wp-video" style="width: 1280px;"&gt;&lt;!--[if lt IE 9]&gt;&lt;script&gt;document.createElement('video');&lt;/script&gt;&lt;![endif]--&gt;
+&lt;video class="wp-video-shortcode" controls="controls" height="1000" id="video-78105-1" preload="metadata" width="1280"&gt;&lt;source src="https://blogs.nvidia.com/wp-content/uploads/2025/03/limping_panther.mp4?_=1" type="video/mp4" /&gt;&lt;a href="https://blogs.nvidia.com/wp-content/uploads/2025/03/limping_panther.mp4"&gt;https://blogs.nvidia.com/wp-content/uploads/2025/03/limping_panther.mp4&lt;/a&gt;&lt;/video&gt;&lt;/div&gt;
+&lt;p&gt;&lt;i&gt;Learn more about how NVIDIA technologies bolster conservation and environmental initiatives at &lt;/i&gt;&lt;a href="https://www.nvidia.com/gtc/" target="_blank"&gt;&lt;i&gt;NVIDIA GTC&lt;/i&gt;&lt;/a&gt;&lt;i&gt;, a global AI conference running March 17-21 in San Jose, California, including at sessions on how AI is supercharging &lt;/i&gt;&lt;a href="https://www.nvidia.com/gtc/session-catalog/?tab.catalogallsessionstab=16566177511100015Kus&amp;amp;search=flora#/session/1729736872112001L1rB" target="_blank"&gt;&lt;i&gt;Antarctic flora monitoring&lt;/i&gt;&lt;/a&gt;&lt;i&gt;, enhancing a &lt;/i&gt;&lt;a href="https://www.nvidia.com/gtc/session-catalog/?tab.catalogallsessionstab=16566177511100015Kus&amp;amp;search=great%20barrier%20reef#/session/1729740910008001cGyM" target="_blank"&gt;&lt;i&gt;digital twin of the Great Barrier Reef&lt;/i&gt;&lt;/a&gt;&lt;i&gt; and helping &lt;/i&gt;&lt;a href="https://www.nvidia.com/gtc/session-catalog/?tab.catalogallsessionstab=16566177511100015Kus&amp;amp;search=pollution#/session/1729182084937001UwLo" target="_blank"&gt;&lt;i&gt;mitigate urban climate change&lt;/i&gt;&lt;/a&gt;&lt;i&gt;.&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Featured video courtesy of Conservation X Labs&lt;/i&gt;.&lt;/p&gt; </content><link href="https://blogs.nvidia.com/blog/ai-protects-wildlife/" rel="alternate"/><summary>From Seattle, Washington, to Cape Town, South Africa — and everywhere around and between — AI is helping conserve the wild plants and animals that make up the intricate web of life on Earth. It’s critical work that sustains ecosystems and supports biodiversity at a time when the United Nations estimates over 1 million species	&lt;a class="read-more" href="https://blogs.nvidia.com/blog/ai-protects-wildlife/"&gt;
+		Read Article		&lt;span&gt;&lt;/span&gt;
+	&lt;/a&gt;</summary><published>2025-03-03T14:00:43+00:00</published></entry><entry><id>https://aws.amazon.com/blogs/machine-learning/pixtral-12b-2409-is-now-available-on-amazon-bedrock-marketplace/</id><title>Pixtral-12B-2409 is now available on Amazon Bedrock Marketplace</title><updated>2025-03-04T07:36:12.224756+00:00</updated><author><name>Deepesh Dhapola</name></author><content type="html">&lt;p&gt;Today, we are excited to announce that Pixtral 12B (pixtral-12b-2409), a state-of-the-art 12 billion parameter vision language model (VLM) from &lt;a href="https://mistral.ai/" rel="noopener" target="_blank"&gt;Mistral AI&lt;/a&gt; that excels in both text-only and multimodal tasks, is available for customers through &lt;a href="https://aws.amazon.com/bedrock/marketplace/" rel="noopener" target="_blank"&gt;Amazon Bedrock Marketplace&lt;/a&gt;. Amazon Bedrock Marketplace is a new capability in &lt;a href="https://aws.amazon.com/bedrock/" rel="noopener" target="_blank"&gt;Amazon Bedrock&lt;/a&gt; that enables developers to discover, test, and use over 100 popular, emerging, and specialized foundation models (FMs) alongside the current selection of industry-leading models in Amazon Bedrock. You can also &lt;a href="https://aws.amazon.com/blogs/machine-learning/pixtral-12b-is-now-available-on-amazon-sagemaker-jumpstart/" rel="noopener" target="_blank"&gt;use this model with Amazon SageMaker JumpStart&lt;/a&gt;, a machine learning (ML) hub that provides access to algorithms and models that can be deployed with one click for running inference.&lt;/p&gt; 
+&lt;p&gt;In this post, we walk through how to discover, deploy, and use the Pixtral 12B model for a variety of real-world vision use cases.&lt;/p&gt; 
+&lt;h2&gt;Overview of Pixtral 12B&lt;/h2&gt; 
+&lt;p&gt;Pixtral 12B, Mistral’s inaugural VLM, delivers robust performance across a range of benchmarks, surpassing other open models and rivaling larger counterparts, according to Mistral’s evaluation. Designed for both image and document comprehension, Pixtral demonstrates advanced capabilities in vision-related tasks, including chart and figure interpretation, document question answering, multimodal reasoning, and instruction following—several of which are illustrated with examples later in this post. The model processes images at their native resolution and aspect ratio, providing high-fidelity input handling. Unlike many open source alternatives, Pixtral 12B achieves strong results in text-based benchmarks—such as instruction following, coding, and mathematical reasoning—without sacrificing its proficiency in multimodal tasks.&lt;/p&gt; 
+&lt;p&gt;Mistral developed a novel architecture for Pixtral 12B, optimized for both computational efficiency and performance. The model consists of two main components: a 400-million-parameter vision encoder, responsible for tokenizing images, and a 12-billion-parameter multimodal transformer decoder, which predicts the next text token based on a sequence of text and images. The vision encoder was specifically trained to natively handle variable image sizes, enabling Pixtral to accurately interpret high-resolution diagrams, charts, and documents while maintaining fast inference speeds for smaller images such as icons, clipart, and equations. This architecture supports processing an arbitrary number of images of varying sizes within a large context window of 128k tokens.&lt;/p&gt; 
+&lt;p&gt;License agreements are a critical decision factor when using open-weights models. Similar to other Mistral models, such as Mistral 7B, Mixtral 8x7B, Mixtral 8x22B, and Mistral Nemo 12B, Pixtral 12B is released under the &lt;a href="https://huggingface.co/mistralai/Pixtral-12B-2409" rel="noopener" target="_blank"&gt;commercially permissive Apache 2.0&lt;/a&gt;, providing enterprise and startup customers with a high-performing VLM option to build complex multimodal applications.&lt;/p&gt; 
+&lt;h2&gt;Performance metrics and benchmarks&lt;/h2&gt; 
+&lt;p&gt;Pixtral 12B is trained to understand both natural images and documents, achieving 52.5% on the Massive Multitask Language Understanding (MMLU) reasoning benchmark, surpassing a number of larger models according to Mistral. The MMLU benchmark is a test that evaluates a language model’s ability to understand and use language across a variety of subjects. The MMLU consists of over 10,000 multiple-choice questions spanning a variety of academic subjects, including mathematics, philosophy, law, and medicine. The model shows strong abilities in tasks such as chart and figure understanding, document question answering, multimodal reasoning, and instruction following. Pixtral is able to ingest images at their natural resolution and aspect ratio, giving the user flexibility on the number of tokens used to process an image. Pixtral is also able to process multiple images in its long context window of 128,000 tokens. Unlike previous open source models, Pixtral doesn’t compromise on text benchmark performance to excel in multimodal tasks, according to Mistral.&lt;/p&gt; 
+&lt;p&gt;You can review the &lt;a href="https://mistral.ai/en/news/pixtral-12b" rel="noopener" target="_blank"&gt;Mistral published benchmarks&lt;/a&gt;&lt;/p&gt; 
+&lt;h2&gt;Prerequisites&lt;/h2&gt; 
+&lt;p&gt;To try out Pixtral 12B in Amazon Bedrock Marketplace, you will need the following prerequisites:&lt;/p&gt; 
+&lt;ul&gt; 
+ &lt;li&gt;An AWS account that will contain all your AWS resources.&lt;/li&gt; 
+ &lt;li&gt;An &lt;a href="https://aws.amazon.com/iam/" rel="noopener" target="_blank"&gt;AWS Identity and Access Management&lt;/a&gt; (IAM) role to access Amazon Bedrock Marketplace and &lt;a href="https://aws.amazon.com/sagemaker/" rel="noopener" target="_blank"&gt;Amazon SageMaker&lt;/a&gt; endpoints. To learn more about how IAM works with Amazon Bedrock Marketplace, refer to &lt;a href="https://docs.aws.amazon.com/bedrock/latest/userguide/setup-amazon-bedrock-marketplace.html" rel="noopener" target="_blank"&gt;Set up Amazon Bedrock Marketplace&lt;/a&gt;.&lt;/li&gt; 
+ &lt;li&gt;Access to accelerated instances (GPUs) for hosting the model, such as ml.g6.12xlarge. Refer to &lt;a href="https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html" rel="noopener" target="_blank"&gt;Requesting a quota increase&lt;/a&gt; for access to GPU instances.&lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;h2&gt;Deploy Pixtral 12B in Amazon Bedrock Marketplace&lt;/h2&gt; 
+&lt;p&gt;On the Amazon Bedrock console, you can search for models that help you with a specific use case or language. The results of the search include both serverless models and models available in Amazon Bedrock Marketplace. You can filter results by provider, modality (such as text, image, or audio), or task (such as classification or text summarization).&lt;/p&gt; 
+&lt;p&gt;To access Pixtral 12B in Amazon Bedrock Marketplace, follow these steps:&lt;/p&gt; 
+&lt;ol&gt; 
+ &lt;li&gt;On the Amazon Bedrock console, choose &lt;b&gt;Model catalog&lt;/b&gt; under &lt;b&gt;Foundation models&lt;/b&gt; in the navigation pane.&lt;/li&gt; 
+ &lt;li&gt;Filter for Hugging Face as a provider and choose the Pixtral 12B model, or search for Pixtral in the &lt;b&gt;Filter for a model&lt;/b&gt; input box.&lt;br /&gt; &lt;img alt="" class="alignnone size-full wp-image-100457" height="1048" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/02/25/ml-18347-image01.png" width="1571" /&gt;&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;p&gt;The model detail page provides essential information about the model’s capabilities, pricing structure, and implementation guidelines. You can find detailed usage instructions, including sample API calls and code snippets for integration.&lt;/p&gt; 
+&lt;p&gt;The page also includes deployment options and licensing information to help you get started with Pixtral 12B in your applications.&lt;/p&gt; 
+&lt;ol start="3"&gt; 
+ &lt;li&gt;To begin using Pixtral 12B, choose &lt;b&gt;Deploy&lt;/b&gt;.&lt;br /&gt; &lt;img alt="" class="alignnone size-full wp-image-100456" height="766" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/02/25/ml-18347-image02.png" width="1273" /&gt;&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;p&gt;You will be prompted to configure the deployment details for Pixtral 12B. The model ID will be prepopulated.&lt;/p&gt; 
+&lt;ol start="4"&gt; 
+ &lt;li&gt;Read carefully and accept the End User License Agreement (EULA).&lt;/li&gt; 
+ &lt;li&gt;The &lt;strong&gt;Endpoint Name &lt;/strong&gt;is automatically populated. Customers can choose to rename the endpoint.&lt;/li&gt; 
+ &lt;li&gt;For &lt;b&gt;Number of instances&lt;/b&gt;, enter a number of instances (between 1–100).&lt;/li&gt; 
+ &lt;li&gt;For &lt;b&gt;Instance type&lt;/b&gt;, choose your instance type. For optimal performance with Pixtral 12B, a GPU-based instance type like ml.g6.12xlarge is recommended.&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;p&gt;Optionally, you can configure advanced security and infrastructure settings, including virtual private cloud (VPC) networking, service role permissions, and encryption settings. For most use cases, the default settings will work well. However, for production deployments, you might want to review these settings to align with your organization’s security and compliance requirements.&lt;/p&gt; 
+&lt;ol start="8"&gt; 
+ &lt;li&gt;Choose &lt;b&gt;Deploy&lt;/b&gt; to begin using the model.&lt;br /&gt; &lt;img alt="" class="alignnone size-full wp-image-100455" height="1093" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/02/25/ml-18347-image03.png" width="1544" /&gt;&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;p&gt;When the deployment is complete, &lt;b&gt;Endpoint status&lt;/b&gt; should change to &lt;b&gt;In Service&lt;/b&gt;&lt;i&gt;. &lt;/i&gt;After the endpoint is in service, you can test Pixtral 12B capabilities directly in the Amazon Bedrock playground.&lt;/p&gt; 
+&lt;ol start="9"&gt; 
+ &lt;li&gt;Choose &lt;b&gt;Open in playground&lt;/b&gt; to access an interactive interface where you can experiment with different prompts and adjust model parameters like temperature and maximum length.&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;p&gt;This is an excellent way to explore the model’s reasoning and text generation abilities before integrating it into your applications. The playground provides immediate feedback, helping you understand how the model responds to various inputs and letting you fine-tune your prompts for optimal results.&lt;/p&gt; 
+&lt;p&gt;&lt;img alt="" class="alignnone size-full wp-image-100454" height="1121" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/02/25/ml-18347-image04.png" width="1109" /&gt;&lt;/p&gt; 
+&lt;p&gt;You can quickly test the model in the playground through the UI. However, to invoke the deployed model programmatically with Amazon Bedrock APIs, you need to use the endpoint ARN as &lt;code&gt;model-id&lt;/code&gt; in the Amazon Bedrock SDK.&lt;/p&gt; 
+&lt;h2&gt;Pixtral 12B use cases&lt;/h2&gt; 
+&lt;p&gt;In this section, we provide example use cases of Pixtral 12B using sample prompts. We have defined helper functions to invoke the Pixtral 12B model using Amazon Bedrock Converse APIs:&lt;/p&gt; 
+&lt;div class="hide-language"&gt; 
+ &lt;pre&gt;&lt;code class="lang-python"&gt;def get_image_format(image_path):
+    with Image.open(image_path) as img:
+        # Normalize the format to a known valid one
+        fmt = img.format.lower() if img.format else 'jpeg'
+        # Convert 'jpg' to 'jpeg'
+        if fmt == 'jpg':
+            fmt = 'jpeg'
+    return fmt
+
+def call_bedrock_model(model_id=None, prompt="", image_paths=None, system_prompt="", temperature=0.6, top_p=0.9, max_tokens=3000):
+    
+    if isinstance(image_paths, str):
+        image_paths = [image_paths]
+    if image_paths is None:
+        image_paths = []
+    
+    # Start building the content array for the user message
+    content_blocks = []
+
+    # Include a text block if prompt is provided
+    if prompt.strip():
+        content_blocks.append({"text": prompt})
+
+    # Add images as raw bytes
+    for img_path in image_paths:
+        fmt = get_image_format(img_path)
+        # Read the raw bytes of the image (no base64 encoding!)
+        with open(img_path, 'rb') as f:
+            image_raw_bytes = f.read()
+
+        content_blocks.append({
+            "image": {
+                "format": fmt,
+                "source": {
+                    "bytes": image_raw_bytes
+                }
+            }
+        })
+
+    # Construct the messages structure
+    messages = [
+        {
+            "role": "user",
+            "content": content_blocks
+        }
+    ]
+
+    # Prepare additional kwargs if system prompts are provided
+    kwargs = {}
+    
+    kwargs["system"] = [{"text": system_prompt}]
+
+    # Build the arguments for the `converse` call
+    converse_kwargs = {
+        "messages": messages,
+        "inferenceConfig": {
+            "maxTokens": 4000,
+            "temperature": temperature,
+            "topP": top_p
+        },
+        **kwargs
+    }
+
+    
+    converse_kwargs["modelId"] = model_id
+
+    # Call the converse API
+    try:
+        response = bedrock_runtime.converse(**converse_kwargs)
+    
+        # Parse the assistant response
+        assistant_message = response.get('output', {}).get('message', {})
+        assistant_content = assistant_message.get('content', [])
+        result_text = "".join(block.get('text', '') for block in assistant_content)
+    except Exception as e:
+        result_text = f"Error message: {e}"
+    return result_text&lt;/code&gt;&lt;/pre&gt; 
+&lt;/div&gt; 
+&lt;h3&gt;Visual logical reasoning&lt;/h3&gt; 
+&lt;p&gt;One of the interesting use cases of vision models is solving logical reasoning problems or visual puzzles. Pixtral 12B vision models are highly capable in solving logical reasoning questions. Let’s explore an example.&lt;/p&gt; 
+&lt;p&gt;We use the following input image.&lt;/p&gt; 
+&lt;p&gt;&lt;img alt="" class="alignnone size-full wp-image-100453" height="530" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/02/25/ml-18347-image05.png" width="1580" /&gt;&lt;/p&gt; 
+&lt;p&gt;Our prompt and input payload are as follows:&lt;/p&gt; 
+&lt;div class="hide-language"&gt; 
+ &lt;pre&gt;&lt;code class="lang-python"&gt;system_prompt='You are solving logical reasoning problems.'
+task = 'Which of these figures differ from the other four?'
+image_path = './Pixtral_data/logical_reasoning.jpg'
+
+print('Input Image:\n\n')
+Image.open(image_path).show()
+
+response = call_bedrock_model(model_id=endpoint_arn, 
+                   prompt=task, 
+                   system_prompt=system_prompt,
+                   image_paths = image_path)
+
+print(f'\nResponse from the model:\n\n{response}')&lt;/code&gt;&lt;/pre&gt; 
+&lt;/div&gt; 
+&lt;p&gt;We get following response:&lt;/p&gt; 
+&lt;div class="hide-language"&gt; 
+ &lt;pre&gt;&lt;code class="lang-code"&gt;The image shows five figures labeled A, B, C, D, and E. Each figure consists of a head, body, and legs. The task is to identify which figure differs from the others.
+
+**Reasoning:**
+- Figure A: The head is connected directly to the body, and the legs are straight.
+- Figure B: The head is connected directly to the body, and the legs are straight.
+- Figure C: The head is connected directly to the body, and the legs are straight.
+- Figure D: The head is connected directly to the body, and the legs are straight.
+- Figure E: The head is connected directly to the body, but the legs are bent at the knees.
+
+**Conclusion:** Figure E is the one that differs from the others.&lt;/code&gt;&lt;/pre&gt; 
+&lt;/div&gt; 
+&lt;h3&gt;Structured product information&lt;/h3&gt; 
+&lt;p&gt;Extracting product information is crucial for the retail industry, especially on sites that host third-party sellers, where product images are the most accessible resource. Accurately capturing relevant details from these images is vital for a product’s success in ecommerce. For instance, using advanced visual models like Pixtral 12B, retailers can efficiently extract key attributes from clothing product images, such as color, style, and patterns. This capability not only streamlines inventory management but also enhances customer experiences by providing essential information that aids in informed purchasing decisions.&lt;/p&gt; 
+&lt;p&gt;We use the following input image.&lt;/p&gt; 
+&lt;p&gt;&lt;img alt="" class="alignnone wp-image-100452 size-medium" height="284" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/02/25/ml-18347-image06-300x284.png" width="300" /&gt;&lt;/p&gt; 
+&lt;p&gt;Our prompt and input payload are as follows:&lt;/p&gt; 
+&lt;div class="hide-language"&gt; 
+ &lt;pre&gt;&lt;code class="lang-python"&gt;system_prompt='''You are a catalog manager for an ecommerce portal. You have an image of a product. 
+Think very carefully in a step-by-step manner to extract product information. 
+Always provide response in prescribed JSON format.
+'''
+image_path = './Pixtral_data/cap.png'
+task = '''
+Organize product information in JSON format to store in a database. 
+
+Output json schema:
+
+{
+"product_name": "",
+"description": "",
+"category": "",
+"sub_category": "",
+"color": "",
+"size": "",
+"brand": "",
+"material": "",
+"features": [],
+"image_alt_text": ""
+}
+'''
+
+print('Input Image:\n\n')
+Image.open(image_path).show()
+
+response = call_bedrock_model(model_id=endpoint_arn, 
+                   prompt=task, 
+                   system_prompt=system_prompt,
+                   image_paths = image_path)
+
+print(f'\nResponse from the model:\n\n{response}')&lt;/code&gt;&lt;/pre&gt; 
+&lt;/div&gt; 
+&lt;p&gt;We get the following response:&lt;/p&gt; 
+&lt;div class="hide-language"&gt; 
+ &lt;pre&gt;&lt;code class="lang-code"&gt;Certainly! Based on the image provided, here is the extracted product information in JSON format:
+
+```json
+{
+  "product_name": "Nike Blue Cap",
+  "description": "A stylish blue cap from Nike with a sleek design and adjustable fit.",
+  "category": "Apparel",
+  "sub_category": "Headwear",
+  "color": "Blue",
+  "size": "Adjustable",
+  "brand": "Nike",
+  "material": "Nylon",
+  "features": [
+    "Adjustable fit",
+    "Lightweight",
+    "Breathable material",
+    "Embroidered Nike logo"
+  ],
+  "image_alt_text": "A blue Nike cap with a white Nike swoosh logo on the front."
+}
+```&lt;/code&gt;&lt;/pre&gt; 
+&lt;/div&gt; 
+&lt;h3&gt;Vehicle damage assessment&lt;/h3&gt; 
+&lt;p&gt;In the insurance industry, image analysis plays a crucial role in claims processing. For vehicle damage assessment, vision models like Pixtral 12B can be used to compare images taken at policy issuance with those submitted during a claim. This approach can streamline the evaluation process, potentially reducing loss adjustment expenses and expediting claim resolution. By automating the identification and characterization of automobile damage, insurers can enhance efficiency, improve accuracy, and ultimately provide a better experience for policyholders.&lt;/p&gt; 
+&lt;p&gt;We use the following input images.&lt;/p&gt; 
+&lt;p&gt;&lt;img alt="" class="alignnone size-full wp-image-100451" height="450" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/02/25/ml-18347-image07.png" width="1205" /&gt;&lt;/p&gt; 
+&lt;p&gt;Our prompt and input payload are as follows:&lt;/p&gt; 
+&lt;div class="hide-language"&gt; 
+ &lt;pre&gt;&lt;code class="lang-python"&gt;image_paths = [
+    "Pixtral_data/car_image_before.png",
+    "Pixtral_data/car_image_after.png"
+]
+
+system_prompt='''
+You are a helpful ai assistant for an insurance agent. 
+Insurance agent has received a claim for a vehicle damage. 
+'''
+
+task = '''This claim includes two images. 
+One of the image was taken before the incident and another was taken after the incident.
+
+Analyse these images and answer below questions:
+1. describe if there is any damage to the vehicle
+2. should insurance agent accept or reject the claim
+
+'''
+
+print('Input Images:\n\n')
+Image.open(image_paths[0]).show()
+Image.open(image_paths[1]).show()
+
+response = call_bedrock_model(model_id=endpoint_arn, 
+                   prompt=task, 
+                   system_prompt=system_prompt,
+                   image_paths = image_paths)
+
+print(f'\nResponse from the model:\n\n{response}')&lt;/code&gt;&lt;/pre&gt; 
+&lt;/div&gt; 
+&lt;p&gt;We get the following response:&lt;/p&gt; 
+&lt;div class="hide-language"&gt; 
+ &lt;pre&gt;&lt;code class="lang-code"&gt;### Analysis of Vehicle Damage
+
+#### Image 1 (Before Incident)
+- **Vehicle Condition**: The vehicle appears to be in good condition with no visible damage.
+- **Paint and Body**: The paint is uniform, and there are no visible scratches, dents, or other forms of damage.
+- **Tires and Wheels**: The tires and wheels look intact and in good condition.
+
+#### Image 2 (After Incident)
+- **Vehicle Condition**: The vehicle shows noticeable damage.
+- **Paint and Body**: There is a visible dent or scratch on the rear side of the vehicle.
+- **Tires and Wheels**: The tires and wheels appear to be intact, but the focus is on the body damage.
+
+### Questions and Answers
+
+1. **Describe if there is any damage to the vehicle:**
+   - **Before Incident**: No visible damage.
+   - **After Incident**: There is visible damage on the rear side of the vehicle, likely a dent or scratch.
+
+2. **Should the insurance agent accept or reject the claim:**
+   - **Recommendation**: The insurance agent should accept the claim. The images clearly show that the vehicle sustained damage after the incident. The before and after images provide sufficient evidence of the damage, which was likely caused by an incident.
+
+### Conclusion
+Based on the analysis of the images, the insurance agent should accept the claim as the damage to the vehicle is evident and appears to have occurred after the incident.&lt;/code&gt;&lt;/pre&gt; 
+&lt;/div&gt; 
+&lt;h3&gt;Handwriting recognition&lt;/h3&gt; 
+&lt;p&gt;Another feature in vision language models is their ability to recognize handwriting and extract handwritten text. Pixtral 12B performs well on extracting content from complex and poorly handwritten notes.&lt;/p&gt; 
+&lt;p&gt;We use the following input image.&lt;/p&gt; 
+&lt;p&gt;&lt;img alt="" class="alignnone size-full wp-image-100450" height="105" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/02/25/ml-18347-image08.png" width="1870" /&gt;&lt;br /&gt; Our prompt and input payload are as follows:&lt;/p&gt; 
+&lt;div class="hide-language"&gt; 
+ &lt;pre&gt;&lt;code class="lang-python"&gt;system_prompt='You are a Graphologists'
+task = '''
+Analyze the image and transcribe any handwritten text present. 
+Convert the handwriting into a single, continuous string of text. 
+Maintain the original spelling, punctuation, and capitalization as written. Ignore any printed text, drawings, or other non-handwritten elements in the image.
+'''
+
+image_path = './Pixtral_data/a01-000u-04.png'
+
+
+print('Input Image:\n\n')
+Image.open(image_path).show()
+
+response = call_bedrock_model(model_id=endpoint_arn, 
+                   prompt=task, 
+                   system_prompt=system_prompt,
+                   image_paths = image_path)
+
+print(f'\nResponse from the model:\n\n{response}')&lt;/code&gt;&lt;/pre&gt; 
+&lt;/div&gt; 
+&lt;p&gt;We get the following response:&lt;/p&gt; 
+&lt;div class="hide-language"&gt; 
+ &lt;pre&gt;&lt;code class="lang-code"&gt;put down a resolution on the subject&lt;/code&gt;&lt;/pre&gt; 
+&lt;/div&gt; 
+&lt;h3&gt;Reasoning of complex figures&lt;/h3&gt; 
+&lt;p&gt;VLMs excel at interpreting and reasoning about complex figures, charts, and diagrams. In this particular use case, we use Pixtral 12B to analyze an intricate image containing GDP data. Pixtral 12B’s advanced capabilities in document understanding and complex figure analysis make it well-suited for extracting insights from visual representations of economic data. By processing both the visual elements and accompanying text, Pixtral 12B can provide detailed interpretations and reasoned analysis of the GDP figures presented in the image.&lt;/p&gt; 
+&lt;p&gt;We use the following input image.&lt;/p&gt; 
+&lt;p&gt;&lt;img alt="" class="alignnone size-full wp-image-100449" height="1330" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/02/25/ml-18347-image09.png" width="1530" /&gt;&lt;/p&gt; 
+&lt;p&gt;Our prompt and input payload are as follows:&lt;/p&gt; 
+&lt;div class="hide-language"&gt; 
+ &lt;pre&gt;&lt;code class="lang-python"&gt;system_prompt='You are a Global Economist.'
+task = 'List the top 5 countries in Europe with the highest GDP'
+image_path = './Pixtral_data/gdp.png'
+
+print('Input Image:\n\n')
+Image.open(image_path).show()
+
+response = call_bedrock_model(model_id=endpoint_arn, 
+                   prompt=task, 
+                   system_prompt=system_prompt,
+                   image_paths = image_path)
+
+print(f'\nResponse from the model:\n\n{response}')&lt;/code&gt;&lt;/pre&gt; 
+&lt;/div&gt; 
+&lt;p&gt;We get the following response:&lt;/p&gt; 
+&lt;div class="hide-language"&gt; 
+ &lt;pre&gt;&lt;code class="lang-code"&gt;The top 5 countries in Europe with the highest GDP, based on the provided diagram, are:
+
+1. **Germany**
+   - GDP: $3.99 trillion
+   - GDP Percentage: 4.65%
+
+2. **United Kingdom**
+   - GDP: $2.82 trillion
+   - GDP Percentage: 3.29%
+
+3. **France**
+   - GDP: $2.78 trillion
+   - GDP Percentage: 3.24%
+
+4. **Italy**
+   - GDP: $2.07 trillion
+   - GDP Percentage: 2.42%
+
+5. **Spain**
+   - GDP: $1.43 trillion
+   - GDP Percentage: 1.66%
+
+These countries are highlighted in green on the diagram.&lt;/code&gt;&lt;/pre&gt; 
+&lt;/div&gt; 
+&lt;h2&gt;Clean up&lt;/h2&gt; 
+&lt;p&gt;To avoid unwanted charges, clean up your resources. If you deployed the model using Amazon Bedrock Marketplace, complete the following steps:&lt;/p&gt; 
+&lt;h3&gt;Delete the Amazon Bedrock Marketplace deployment&lt;/h3&gt; 
+&lt;ol&gt; 
+ &lt;li&gt;On the Amazon Bedrock console, under &lt;b&gt;Foundation models&lt;/b&gt; in the navigation pane, choose &lt;b&gt;Marketplace deployments&lt;/b&gt;.&lt;/li&gt; 
+ &lt;li&gt;In the &lt;b&gt;Managed deployments&lt;/b&gt; section, locate the endpoint you want to delete.&lt;/li&gt; 
+ &lt;li&gt;Verify the endpoint details to make sure you’re deleting the correct deployment: 
+  &lt;ol&gt; 
+   &lt;li&gt;Endpoint name&lt;/li&gt; 
+   &lt;li&gt;Model name&lt;/li&gt; 
+   &lt;li&gt;Endpoint status&lt;/li&gt; 
+  &lt;/ol&gt; &lt;/li&gt; 
+ &lt;li&gt;Select the endpoint, and choose &lt;b&gt;Delete&lt;/b&gt;.&lt;/li&gt; 
+ &lt;li&gt;Choose &lt;b&gt;Delete&lt;/b&gt; to delete the endpoint.&lt;/li&gt; 
+ &lt;li&gt;In the deletion confirmation dialog, review the warning message, enter &lt;code&gt;confirm&lt;/code&gt;, and choose &lt;b&gt;Delete&lt;/b&gt; to permanently remove the endpoint.&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;p&gt;&lt;img alt="" class="alignnone size-full wp-image-100448" height="692" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/02/25/ml-18347-image10.png" width="1172" /&gt;&lt;/p&gt; 
+&lt;h2&gt;Conclusion&lt;/h2&gt; 
+&lt;p&gt;In this post, we showed you how to get started with the Pixtral 12B model in Amazon Bedrock and deploy the model for inference. The Pixtral 12B vision model enables you to solve multiple use cases, including document understanding, logical reasoning, handwriting recognition, image comparison, entity extraction, extraction of structured data from scanned images, and caption generation. These capabilities can drive productivity in a number of enterprise use cases, including ecommerce (retail), marketing, FSI, and much more.&lt;/p&gt; 
+&lt;p&gt;For more Mistral resources on AWS, check out the &lt;a href="https://github.com/aws-samples/mistral-on-aws" rel="noopener" target="_blank"&gt;GitHub repo&lt;/a&gt;. The complete code for the samples featured in this post is available on GitHub. Pixtral 12B is also available in &lt;a href="https://aws.amazon.com/sagemaker/jumpstart/" rel="noopener" target="_blank"&gt;Amazon SageMaker JumpStart&lt;/a&gt;; refer to &lt;a href="https://aws.amazon.com/blogs/machine-learning/pixtral-12b-is-now-available-on-amazon-sagemaker-jumpstart/" rel="noopener" target="_blank"&gt;Pixtral 12B is now available on Amazon SageMaker JumpStart&lt;/a&gt; for details.&lt;/p&gt; 
+&lt;hr style="width: 100%;" /&gt; 
+&lt;h3&gt;About the Authors&lt;/h3&gt; 
+&lt;p style="clear: both;"&gt;&lt;strong&gt;&lt;img alt="" class="size-full wp-image-100463 alignleft" height="133" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/02/25/dhapola.jpeg" width="100" /&gt;Deepesh Dhapola&lt;/strong&gt; is a Senior Solutions Architect at AWS India, where he assists financial services and fintech clients in scaling and optimizing their applications on the AWS platform. He specializes in core machine learning and generative AI. Outside of work, Deepesh enjoys spending time with his family and experimenting with various cuisines.&lt;/p&gt; 
+&lt;p style="clear: both;"&gt;&lt;strong&gt;&lt;img alt="" class="size-full wp-image-76504 alignleft" height="133" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2024/05/17/tuggle.jpeg" width="100" /&gt;Preston Tuggle&lt;/strong&gt; is a Sr. Specialist Solutions Architect working on generative AI.&lt;/p&gt; 
+&lt;p style="clear: both;"&gt;&lt;strong&gt;&lt;img alt="" class="size-full wp-image-57983 alignleft" height="132" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2023/06/16/shane-rane.png" width="100" /&gt;Shane Rai&lt;/strong&gt; is a Principal GenAI Specialist with the AWS World Wide Specialist Organization (WWSO). He works with customers across industries to solve their most pressing and innovative business needs using AWS’s breadth of cloud-based AI/ML services including model offerings from top tier foundation model providers.&lt;/p&gt; 
+&lt;p style="clear: both;"&gt;&lt;strong&gt;&lt;img alt="" class="size-full wp-image-100461 alignleft" height="110" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/02/25/john.png" width="100" /&gt;John Liu&lt;/strong&gt; has 14 years of experience as a product executive and 10 years of experience as a portfolio manager. At AWS, John is a Principal Product Manager for Amazon Bedrock. Previously, he was the Head of Product for AWS Web3 / Blockchain. Prior to AWS, John held various product leadership roles at public blockchain protocols and fintech companies, and also spent 9 years as a portfolio manager at various hedge funds.&lt;/p&gt; </content><link href="https://aws.amazon.com/blogs/machine-learning/pixtral-12b-2409-is-now-available-on-amazon-bedrock-marketplace/" rel="alternate"/><summary>In this post, we walk through how to discover, deploy, and use the Mistral AI Pixtral 12B model for a variety of real-world vision use cases.</summary><published>2025-03-03T16:43:08+00:00</published></entry><entry><id>https://aws.amazon.com/blogs/machine-learning/reduce-conversational-ai-response-time-through-inference-at-the-edge-with-aws-local-zones/</id><title>Reduce conversational AI response time through inference at the edge with AWS Local Zones</title><updated>2025-03-04T07:36:12.224664+00:00</updated><author><name>Nima Seifi</name></author><content type="html">&lt;p&gt;Recent advances in &lt;a href="https://aws.amazon.com/generative-ai/" rel="noopener" target="_blank"&gt;generative AI&lt;/a&gt; have led to the proliferation of new generation of &lt;a href="https://aws.amazon.com/what-is/conversational-ai/" rel="noopener" target="_blank"&gt;conversational AI&lt;/a&gt; assistants powered by &lt;a href="https://aws.amazon.com/what-is/foundation-models/" rel="noopener" target="_blank"&gt;foundation models&lt;/a&gt; (FMs). These latency-sensitive applications enable real-time text and voice interactions, responding naturally to human conversations. Their applications span a variety of sectors, including customer service, healthcare, education, personal and business productivity, and many others.&lt;/p&gt; 
+&lt;p&gt;Conversational AI assistants are typically deployed directly on users’ devices, such as smartphones, tablets, or desktop computers, enabling quick, local processing of voice or text input. However, the FM that powers the assistant’s natural language understanding and response generation is usually cloud-hosted, running on powerful GPUs. When a user interacts with the AI assistant, their device first processes the input locally, including speech-to-text (STT) conversion for voice agents, and compiles a prompt. This prompt is then securely transmitted to the cloud-based FM over the network. The FM analyzes the prompt and begins generating an appropriate response, streaming it back to the user’s device. The device further processes this response, including text-to-speech (TTS) conversion for voice agents, before presenting it to the user. This efficient workflow strikes a balance between the powerful capabilities of cloud-based FMs and the convenience and responsiveness of local device interaction, as illustrated in the following figure.&lt;img alt="Request flow for a conversational AI assistant " class="aligncenter wp-image-99743 size-full" height="592" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/02/14/ML17594-image001-request-flow.png" style="margin: 10px 0px 10px 0px;" width="1181" /&gt;&lt;/p&gt; 
+&lt;p&gt;A critical challenge in developing such applications is reducing response latency to enable real-time, natural interactions. Response latency refers to the time between the user finishing their speech and beginning to hear the AI assistant’s response. This delay typically comprises two primary components:&lt;/p&gt; 
+&lt;ul&gt; 
+ &lt;li&gt;&lt;strong&gt;On-device processing latency&lt;/strong&gt; – This encompasses the time required for local processing, including TTS and STT operations.&lt;/li&gt; 
+ &lt;li&gt;&lt;strong&gt;Time to first token (TTFT)&lt;/strong&gt; – This measures the interval between the device sending a prompt to the cloud and receiving the first token of the response. TTFT consists of two components. First is the network latency, which is the round-trip time for data transmission between the device and the cloud. Second is the first token generation time, which is the period between the FM receiving a complete prompt and generating the first output token. TTFT is crucial for user experience in conversational AI interfaces that use response streaming with FMs. With response streaming, users start receiving the response while it’s still being generated, significantly improving perceived latency.&lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;p&gt;The ideal response latency for humanlike conversation flow is generally considered to be in the 200–500 milliseconds (ms) range, closely mimicking natural pauses in human conversation. Given the additional on-device processing latency, achieving this target requires a TTFT well below 200 ms.&lt;/p&gt; 
+&lt;p&gt;Although many customers focus on optimizing the technology stack behind the FM inference endpoint through techniques such as &lt;a href="https://docs.aws.amazon.com/sagemaker/latest/dg/model-optimize.html" rel="noopener" target="_blank"&gt;model optimization&lt;/a&gt;, hardware acceleration, and &lt;a href="https://aws.amazon.com/blogs/database/improve-speed-and-reduce-cost-for-generative-ai-workloads-with-a-persistent-semantic-cache-in-amazon-memorydb/" rel="noopener" target="_blank"&gt;semantic caching&lt;/a&gt; to reduce the TTFT, they often overlook the significant impact of &lt;a href="https://aws.amazon.com/what-is/latency/" rel="noopener" target="_blank"&gt;network latency&lt;/a&gt;. This latency can vary considerably due to geographic distance between users and cloud services, as well as the diverse quality of internet connectivity.&lt;/p&gt; 
+&lt;h2&gt;Hybrid architecture with AWS Local Zones&lt;/h2&gt; 
+&lt;p&gt;To minimize the impact of network latency on TTFT for users regardless of their locations, a hybrid architecture can be implemented by extending AWS services from commercial &lt;a href="https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html#region" rel="noopener" target="_blank"&gt;Regions&lt;/a&gt; to edge locations closer to end users. This approach involves deploying additional inference endpoints on &lt;a href="https://aws.amazon.com/edge/services/" rel="noopener" target="_blank"&gt;AWS edge services&lt;/a&gt; and using &lt;a href="https://aws.amazon.com/route53/" rel="noopener" target="_blank"&gt;Amazon Route 53&lt;/a&gt; to implement dynamic &lt;a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html" rel="noopener" target="_blank"&gt;routing policies&lt;/a&gt;, such as &lt;a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geo.html" rel="noopener" target="_blank"&gt;geolocation routing&lt;/a&gt;, &lt;a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geoproximity.html" rel="noopener" target="_blank"&gt;geoproximity routing&lt;/a&gt;, or &lt;a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-latency.html" rel="noopener" target="_blank"&gt;latency-based routing&lt;/a&gt;. These strategies dynamically distribute traffic between edge locations and commercial Regions, providing fast response times based on real-time network conditions and user locations.&lt;/p&gt; 
+&lt;p&gt;&lt;a href="https://aws.amazon.com/about-aws/global-infrastructure/localzones/" rel="noopener" target="_blank"&gt;AWS Local Zones&lt;/a&gt; are a type of edge infrastructure deployment that places &lt;a href="https://aws.amazon.com/about-aws/global-infrastructure/localzones/features" rel="noopener" target="_blank"&gt;select AWS services&lt;/a&gt; close to large population and industry centers. They enable applications requiring very low latency or local data processing using familiar APIs and tool sets. Each Local Zone is a logical extension of a corresponding parent AWS Region, which means customers can &lt;a href="https://docs.aws.amazon.com/vpc/latest/userguide/Extend_VPCs.html" rel="noopener" target="_blank"&gt;extend&lt;/a&gt; their &lt;a href="https://aws.amazon.com/vpc/" rel="noopener" target="_blank"&gt;Amazon Virtual Private Cloud (Amazon VPC)&lt;/a&gt; connections by creating a new subnet with a Local Zone assignment.&lt;/p&gt; 
+&lt;p&gt;This guide demonstrates how to deploy an open source FM from &lt;a href="https://huggingface.co/" rel="noopener" target="_blank"&gt;Hugging Face&lt;/a&gt; on &lt;a href="https://aws.amazon.com/ec2/" rel="noopener" target="_blank"&gt;Amazon Elastic Compute Cloud (Amazon EC2)&lt;/a&gt; instances across three locations: a commercial AWS Region and two AWS Local Zones. Through comparative benchmarking tests, we illustrate how deploying FMs in Local Zones closer to end users can significantly reduce latency—a critical factor for real-time applications such as conversational AI assistants.&lt;/p&gt; 
+&lt;h2&gt;Prerequisites&lt;/h2&gt; 
+&lt;p&gt;To run this demo, complete the following prerequisites:&lt;/p&gt; 
+&lt;ul&gt; 
+ &lt;li&gt;Create an &lt;a href="http://console.aws.amazon.com/" rel="noopener" target="_blank"&gt;AWS account&lt;/a&gt;, if you don’t already have one.&lt;/li&gt; 
+ &lt;li&gt;Enable the Local Zones in Los Angeles and Honolulu in the parent Region US West (Oregon). For a full list of available Local Zones, refer to the &lt;a href="https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/" rel="noopener" target="_blank"&gt;Local Zones locations page&lt;/a&gt;. Next, create a subnet inside each Local Zone. Detailed instructions for enabling Local Zones and creating subnets within them can be found at &lt;a href="https://docs.aws.amazon.com/local-zones/latest/ug/getting-started.html" rel="noopener" target="_blank"&gt;Getting started with AWS Local Zones&lt;/a&gt;.&lt;/li&gt; 
+ &lt;li&gt;Submit an &lt;a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html" rel="noopener" target="_blank"&gt;Amazon EC2 service quota increase&lt;/a&gt; for access to Amazon EC2 &lt;a href="https://aws.amazon.com/ec2/instance-types/g4/" rel="noopener" target="_blank"&gt;G4dn&lt;/a&gt; instances. Select the &lt;strong&gt;Running On-Demand G and VT instances&lt;/strong&gt; as the &lt;a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-on-demand-instances.html#ec2-on-demand-instances-limits" rel="noopener" target="_blank"&gt;quota type&lt;/a&gt; and at least 24 vCPUs for the quota size.&lt;/li&gt; 
+ &lt;li&gt;Create a Hugging Face read token from &lt;a href="https://huggingface.co/settings/tokens" rel="noopener" target="_blank"&gt;huggingface.co/settings/tokens&lt;/a&gt;.&lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;h2&gt;Solution walkthrough&lt;/h2&gt; 
+&lt;p&gt;This section walks you through the steps to launch an Amazon EC2 G4dn instance and deploy an FM for inference in the Los Angeles Local Zone. The instructions are also applicable for deployments in the parent Region, US West (Oregon), and the Honolulu Local Zone.&lt;/p&gt; 
+&lt;p&gt;We use Meta’s open source &lt;a href="https://huggingface.co/meta-llama/Llama-3.2-3B" rel="noopener" target="_blank"&gt;Llama 3.2-3B&lt;/a&gt; as the FM for this demonstration. This is a lightweight FM from the Llama 3.2 family, classified as a small language model (SLM) due to its small number of parameters. Compared to &lt;a href="https://aws.amazon.com/what-is/large-language-model/" rel="noopener" target="_blank"&gt;large language models&lt;/a&gt; (LLMs), SLMs are more efficient and cost-effective to train and deploy, excel when fine-tuned for specific tasks, offer faster inference times, and have lower resource requirements. These characteristics make SLMs particularly well-suited for deployment on edge services such as AWS Local Zones.&lt;/p&gt; 
+&lt;p&gt;To launch an EC2 instance in the Los Angeles Local Zone subnet, follow these steps:&lt;/p&gt; 
+&lt;ol&gt; 
+ &lt;li&gt;On the Amazon EC2 console dashboard, in the &lt;strong&gt;Launch instance&lt;/strong&gt; box, choose &lt;strong&gt;Launch instance&lt;/strong&gt;.&lt;/li&gt; 
+ &lt;li&gt;Under &lt;strong&gt;Name and tags&lt;/strong&gt;, enter a descriptive name for the instance (for example, &lt;em&gt;la-local-zone-instance&lt;/em&gt;).&lt;/li&gt; 
+ &lt;li&gt;Under &lt;strong&gt;Application and OS Images (Amazon Machine Image)&lt;/strong&gt;, select an &lt;a href="https://docs.aws.amazon.com/dlami/latest/devguide/what-is-dlami.html" rel="noopener" target="_blank"&gt;AWS Deep Learning AMI&lt;/a&gt; that comes preconfigured with NVIDIA OSS driver and PyTorch. For our deployment, we used &lt;strong&gt;Deep Learning OSS Nvidia Driver AMI GPU PyTorch 2.3.1 (Amazon Linux 2)&lt;/strong&gt;.&lt;/li&gt; 
+ &lt;li&gt;Under &lt;strong&gt;Instance type&lt;/strong&gt;, from the &lt;strong&gt;Instance type&lt;/strong&gt; list, select the hardware configuration for your instance that’s supported in a Local Zone. We selected &lt;code&gt;G4dn.2xlarge&lt;/code&gt; for this solution. This instance is equipped with one NVIDIA T4 Tensor Core GPU and 16 GB of GPU memory, which makes it ideal for high performance and cost-effective inference of SLMs on the edge. Available instance types for each Local Zone can be found at &lt;a href="https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/" rel="noopener" target="_blank"&gt;AWS Local Zones features&lt;/a&gt;. Review the hardware requirements for your FM to select the appropriate instance.&lt;/li&gt; 
+ &lt;li&gt;Under &lt;strong&gt;Key pair (login)&lt;/strong&gt;, choose an existing key pair or create a new one.&lt;/li&gt; 
+ &lt;li&gt;Next to &lt;strong&gt;Network settings&lt;/strong&gt;, choose &lt;strong&gt;Edit&lt;/strong&gt;, and then: 
+  &lt;ol type="a"&gt; 
+   &lt;li&gt;Select your VPC.&lt;/li&gt; 
+   &lt;li&gt;Select your Local Zone subnet.&lt;/li&gt; 
+   &lt;li&gt;Create a security group or select an existing one. &lt;a href="https://docs.aws.amazon.com/vpc/latest/userguide/working-with-security-group-rules.html" rel="noopener" target="_blank"&gt;Configure&lt;/a&gt; the security group’s inbound rules to allow traffic only from your client’s IP address on port 8080.&lt;/li&gt; 
+  &lt;/ol&gt; &lt;/li&gt; 
+ &lt;li&gt;You can keep the default selections for the other configuration settings for your instance. To determine the storage types that are supported, refer to the &lt;strong&gt;Compute and storage&lt;/strong&gt; section in &lt;a href="https://aws.amazon.com/about-aws/global-infrastructure/localzones/features" rel="noopener" target="_blank"&gt;AWS Local Zones features&lt;/a&gt;.&lt;/li&gt; 
+ &lt;li&gt;Review the summary of your instance configuration in the &lt;strong&gt;Summary&lt;/strong&gt; panel and, when you’re ready, choose &lt;strong&gt;Launch instance&lt;/strong&gt;.&lt;/li&gt; 
+ &lt;li&gt;A confirmation page lets you know that your instance is launching. Choose &lt;strong&gt;View all instances&lt;/strong&gt; to close the confirmation page and return to the console.&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;p&gt;Next, complete the following steps to deploy &lt;a href="https://huggingface.co/meta-llama/Llama-3.2-3B" rel="noopener" target="_blank"&gt;Llama 3.2-3B&lt;/a&gt; using the Hugging Face &lt;a href="https://huggingface.co/docs/text-generation-inference/en/index" rel="noopener" target="_blank"&gt;Text Generation Inference (TGI)&lt;/a&gt; as the model server:&lt;/p&gt; 
+&lt;ol&gt; 
+ &lt;li&gt;Connect by using Secure Shell (SSH) into the instance&lt;/li&gt; 
+ &lt;li&gt;Start the docker service using the following command. This comes preinstalled with the AMI we selected.&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;div class="hide-language"&gt; 
+ &lt;pre&gt;&lt;code class="lang-bash"&gt;sudo service docker start&lt;/code&gt;&lt;/pre&gt; 
+&lt;/div&gt; 
+&lt;ol start="3"&gt; 
+ &lt;li&gt;Run the following command to download and run the Docker image for TGI server as well as Llama 3.2-3B model. In our deployment, we used Docker image version 2.4.0, but results might vary based on your selected version. The full list of supported models by TGI can be found at &lt;a href="https://huggingface.co/docs/text-generation-inference/supported_models" rel="noopener" target="_blank"&gt;Hugging Face Supported Models&lt;/a&gt;. For more details about the deployment and optimization of TGI, refer to this &lt;a href="https://github.com/huggingface/text-generation-inference" rel="noopener" target="_blank"&gt;text-generation-inference&lt;/a&gt; GitHub page.&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;div class="hide-language"&gt; 
+ &lt;pre&gt;&lt;code class="lang-bash"&gt;model=meta-llama/Llama-3.2-3B
+volume=$PWD/data
+token=&amp;lt;ENTER YOUR HUGGING FACE TOKEN&amp;gt;
+
+sudo docker run -d --gpus all \
+    --shm-size 1g \
+    -e HF_TOKEN=$token \
+    -p 8080:80 \
+    -v $volume:/data ghcr.io/huggingface/text-generation-inference:2.4.0 \
+    --model-id $model&lt;/code&gt;&lt;/pre&gt; 
+&lt;/div&gt; 
+&lt;ol start="4"&gt; 
+ &lt;li&gt;After the TGI container is running, you can test your endpoint by running the following command from your local environment:&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;div class="hide-language"&gt; 
+ &lt;pre&gt;&lt;code class="lang-bash"&gt;curl &amp;lt;REPLACE WITH YOUR EC2 PUBLIC IP &amp;gt;:8080/generate -X POST \
+    -d '{"inputs":"What is deep learning?","parameters":{"max_new_tokens":200, "temperature":0.2, "top_p":0.9}}' \
+    -H 'Content-Type: application/json'&lt;/code&gt;&lt;/pre&gt; 
+ &lt;h2&gt;Performance evaluation&lt;/h2&gt; 
+ &lt;p&gt;To demonstrate TTFT improvements with FM inference on Local Zones, we followed the steps in the previous section to deploy &lt;a href="https://huggingface.co/meta-llama/Llama-3.2-3B" rel="noopener" target="_blank"&gt;Llama 3.2 3B&lt;/a&gt; in three locations: in the &lt;code&gt;us-west-2-c&lt;/code&gt; Availability Zone in the parent Region, US West (Oregon); in the &lt;code&gt;us-west-2-lax-1a&lt;/code&gt; Local Zone in Los Angeles; and in the &lt;code&gt;us-west-2-hnl-1a&lt;/code&gt; Local Zone in Honolulu. This is illustrated in the following figure. Notice that the architecture provided in this post is meant to be used for performance evaluation in a development environment. Before migrating any of the provided architecture to production, we recommend following the &lt;a href="https://aws.amazon.com/architecture/well-architected/" rel="noopener" target="_blank"&gt;AWS Well-Architected Framework&lt;/a&gt;.&lt;/p&gt; 
+ &lt;p&gt;We conducted two separate test scenarios to evaluate TTFT as explained in the following:&lt;/p&gt; 
+ &lt;p&gt;Los Angeles test scenario:&lt;/p&gt; 
+ &lt;ul&gt; 
+  &lt;li&gt;&lt;strong&gt;Test user’s location&lt;/strong&gt; – Los Angeles metropolitan area&lt;/li&gt; 
+  &lt;li&gt;&lt;strong&gt;Test A&lt;/strong&gt; – 150 requests sent to FM deployed in Los Angeles Local Zone&lt;/li&gt; 
+  &lt;li&gt;&lt;strong&gt;Test B&lt;/strong&gt; – 150 requests sent to FM deployed in US West (Oregon)&lt;/li&gt; 
+ &lt;/ul&gt; 
+ &lt;p&gt;Honolulu test scenario:&lt;/p&gt; 
+ &lt;ul&gt; 
+  &lt;li&gt;&lt;strong&gt;Test user’s location&lt;/strong&gt; – Honolulu metropolitan area&lt;/li&gt; 
+  &lt;li&gt;&lt;strong&gt;Test C&lt;/strong&gt; – 150 requests sent to FM deployed in Honolulu Local Zone&lt;/li&gt; 
+  &lt;li&gt;&lt;strong&gt;Test D&lt;/strong&gt; – 150 requests sent to FM deployed in US West (Oregon)&lt;/li&gt; 
+ &lt;/ul&gt; 
+ &lt;p&gt;&lt;img alt="Architecture diagram for the deployment of FM inference endpoints" class="aligncenter wp-image-99718 size-full" height="858" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/02/13/ML17594-002.png" style="margin: 10px 0px 10px 0px;" width="1286" /&gt;&lt;/p&gt; 
+ &lt;h3&gt;Evaluation setup&lt;/h3&gt; 
+ &lt;p&gt;To conduct TTFT measurements, we use the load testing capabilities of the open source project &lt;a href="https://github.com/ray-project/llmperf" rel="noopener" target="_blank"&gt;LLMPerf&lt;/a&gt;. This tool launches multiple requests from the test user’s client to the FM endpoint and measures various performance metrics, including TTFT. Each request contains a &lt;a href="https://github.com/ray-project/llmperf?tab=readme-ov-file#load-test" rel="noopener" target="_blank"&gt;random prompt&lt;/a&gt; with a mean token count of 250 tokens. Although a single prompt for short-form conversations typically consists of 50 tokens, we set the mean input token size to 250 tokens to account for multi-turn conversation history, system prompts, and contextual information that better represents real-world usage patterns.&lt;/p&gt; 
+ &lt;p&gt;Detailed instructions for installing LLMPerf and executing the load testing are available in the &lt;a href="https://github.com/ray-project/llmperf" rel="noopener" target="_blank"&gt;project’s documentation&lt;/a&gt;. Additionally, because we are using the Hugging Face TGI as the inference server, we follow the corresponding &lt;a href="https://github.com/ray-project/llmperf?tab=readme-ov-file#hugging-face" rel="noopener" target="_blank"&gt;instructions&lt;/a&gt; from LLMPerf to perform the load testing. The following is the example command to initiate the load testing from the command line:&lt;/p&gt; 
+ &lt;div class="hide-language"&gt; 
+  &lt;pre&gt;&lt;code class="lang-bash"&gt;export HUGGINGFACE_API_BASE="http://&amp;lt;REPLACE WITH YOUR EC2 PUBLIC IP&amp;gt;:8080" 
+export HUGGINGFACE_API_KEY="" 
+
+python token_benchmark_ray.py \
+&amp;nbsp; &amp;nbsp;&amp;nbsp;--model "huggingface/meta-llama/Llama-3.2-3B" \
+&amp;nbsp; &amp;nbsp;&amp;nbsp;--mean-input-tokens 250 \
+&amp;nbsp; &amp;nbsp;&amp;nbsp;--stddev-input-tokens 50 \
+&amp;nbsp; &amp;nbsp;&amp;nbsp;--mean-output-tokens 100 \
+&amp;nbsp; &amp;nbsp;&amp;nbsp;--stddev-output-tokens 20 \
+&amp;nbsp; &amp;nbsp;&amp;nbsp;--max-num-completed-requests 150\
+&amp;nbsp; &amp;nbsp;&amp;nbsp;--timeout 600 \
+&amp;nbsp; &amp;nbsp;&amp;nbsp;--num-concurrent-requests 1 \
+&amp;nbsp; &amp;nbsp;&amp;nbsp;--results-dir "result_outputs" \
+&amp;nbsp; &amp;nbsp;&amp;nbsp;--llm-api "litellm" \
+&amp;nbsp; &amp;nbsp;&amp;nbsp;--additional-sampling-params '{}'
+&lt;/code&gt;&lt;/pre&gt; 
+ &lt;/div&gt; 
+ &lt;p&gt;Each test scenario compares the TTFT latency between Local Zone and the parent Region endpoints to assess the impact of geographical distance. Latency results might vary based on several factors, including:&lt;/p&gt; 
+ &lt;ul&gt; 
+  &lt;li&gt;Test parameters and configuration&lt;/li&gt; 
+  &lt;li&gt;Time of day and network traffic&lt;/li&gt; 
+  &lt;li&gt;Internet service provider&lt;/li&gt; 
+  &lt;li&gt;Specific client location within the test Region&lt;/li&gt; 
+  &lt;li&gt;Current server load&lt;/li&gt; 
+ &lt;/ul&gt; 
+ &lt;h3&gt;Results&lt;/h3&gt; 
+ &lt;p&gt;The following tables below present TTFT measurements in milliseconds (ms) for two distinct test scenarios. The results demonstrate significant TTFT reductions when using a Local Zone compared to the parent Region for both the Los Angeles and the Honolulu test scenarios. The observed differences in TTFT are solely attributed to network latency because identical FM inference configurations were employed in both the Local Zone and the parent Region.&lt;/p&gt; 
+ &lt;table border="1px" cellpadding="10px" class="aligncenter"&gt; 
+  &lt;tbody&gt; 
+   &lt;tr&gt; 
+    &lt;td colspan="9" style="background-color: #000000; text-align: center; vertical-align: middle;"&gt;&lt;span style="color: #ffffff;"&gt;User location: Los Angeles Metropolitan Area&lt;/span&gt;&lt;/td&gt; 
+   &lt;/tr&gt; 
+   &lt;tr&gt; 
+    &lt;td width="179"&gt;LLM inference endpoint&lt;/td&gt; 
+    &lt;td width="73"&gt;Mean (ms)&lt;/td&gt; 
+    &lt;td&gt;Min (ms)&lt;/td&gt; 
+    &lt;td&gt;P25 (ms)&lt;/td&gt; 
+    &lt;td&gt;P50 (ms)&lt;/td&gt; 
+    &lt;td&gt;P75 (ms)&lt;/td&gt; 
+    &lt;td&gt;P95 (ms)&lt;/td&gt; 
+    &lt;td&gt;P99 (ms)&lt;/td&gt; 
+    &lt;td&gt;Max (ms)&lt;/td&gt; 
+   &lt;/tr&gt; 
+   &lt;tr&gt; 
+    &lt;td width="179"&gt;Parent Region: US West (Oregon)&lt;/td&gt; 
+    &lt;td width="73"&gt;135&lt;/td&gt; 
+    &lt;td&gt;118&lt;/td&gt; 
+    &lt;td&gt;125&lt;/td&gt; 
+    &lt;td&gt;130&lt;/td&gt; 
+    &lt;td&gt;139&lt;/td&gt; 
+    &lt;td&gt;165&lt;/td&gt; 
+    &lt;td&gt;197&lt;/td&gt; 
+    &lt;td&gt;288&lt;/td&gt; 
+   &lt;/tr&gt; 
+   &lt;tr&gt; 
+    &lt;td width="179"&gt;Local Zone: Los Angeles&lt;/td&gt; 
+    &lt;td width="73"&gt;80&lt;/td&gt; 
+    &lt;td&gt;50&lt;/td&gt; 
+    &lt;td&gt;72&lt;/td&gt; 
+    &lt;td&gt;75&lt;/td&gt; 
+    &lt;td&gt;86&lt;/td&gt; 
+    &lt;td&gt;116&lt;/td&gt; 
+    &lt;td&gt;141&lt;/td&gt; 
+    &lt;td&gt;232&lt;/td&gt; 
+   &lt;/tr&gt; 
+  &lt;/tbody&gt; 
+ &lt;/table&gt; 
+ &lt;p&gt;The user in Los Angeles achieved a mean TTFT of 80 ms when calling the FM endpoint in the Los Angeles Local Zone, compared to 135 ms for the endpoint in the US West (Oregon) Region. This represents a 55 ms (about 41%) reduction in latency.&lt;/p&gt; 
+ &lt;table border="1px" cellpadding="10px" class="aligncenter"&gt; 
+  &lt;tbody&gt; 
+   &lt;tr&gt; 
+    &lt;td colspan="9" style="background-color: #000000; text-align: center; vertical-align: middle;"&gt;&lt;span style="color: #ffffff;"&gt;User location: Honolulu Metropolitan Area&lt;/span&gt;&lt;/td&gt; 
+   &lt;/tr&gt; 
+   &lt;tr&gt; 
+    &lt;td width="179"&gt;LLM inference endpoint&lt;/td&gt; 
+    &lt;td width="73"&gt;Mean (ms)&lt;/td&gt; 
+    &lt;td&gt;Min (ms)&lt;/td&gt; 
+    &lt;td&gt;P25 (ms)&lt;/td&gt; 
+    &lt;td&gt;P50 (ms)&lt;/td&gt; 
+    &lt;td&gt;P75 (ms)&lt;/td&gt; 
+    &lt;td&gt;P95 (ms)&lt;/td&gt; 
+    &lt;td&gt;P99 (ms)&lt;/td&gt; 
+    &lt;td&gt;Max (ms)&lt;/td&gt; 
+   &lt;/tr&gt; 
+   &lt;tr&gt; 
+    &lt;td width="179"&gt;Parent Region: US West (Oregon)&lt;/td&gt; 
+    &lt;td width="73"&gt;197&lt;/td&gt; 
+    &lt;td&gt;172&lt;/td&gt; 
+    &lt;td&gt;180&lt;/td&gt; 
+    &lt;td&gt;183&lt;/td&gt; 
+    &lt;td&gt;187&lt;/td&gt; 
+    &lt;td&gt;243&lt;/td&gt; 
+    &lt;td&gt;472&lt;/td&gt; 
+    &lt;td&gt;683&lt;/td&gt; 
+   &lt;/tr&gt; 
+   &lt;tr&gt; 
+    &lt;td width="179"&gt;Local Zone: Honolulu&lt;/td&gt; 
+    &lt;td width="73"&gt;114&lt;/td&gt; 
+    &lt;td&gt;58&lt;/td&gt; 
+    &lt;td&gt;70&lt;/td&gt; 
+    &lt;td&gt;85&lt;/td&gt; 
+    &lt;td&gt;164&lt;/td&gt; 
+    &lt;td&gt;209&lt;/td&gt; 
+    &lt;td&gt;273&lt;/td&gt; 
+    &lt;td&gt;369&lt;/td&gt; 
+   &lt;/tr&gt; 
+  &lt;/tbody&gt; 
+ &lt;/table&gt; 
+ &lt;p&gt;The user in Honolulu achieved a mean TTFT of 114 ms when calling the FM endpoint in the Honolulu Local Zone, compared to 197 ms for the endpoint in the US West (Oregon) Region. This represents an 83 ms (about 42%) reduction in latency.&lt;/p&gt; 
+ &lt;p&gt;Moreover, the TTFT reduction achieved by Local Zone deployments is consistent across all metrics in both test scenarios, from minimum to maximum values and throughout all percentiles (P25–P99), indicating a consistent improvement across all requests.&lt;/p&gt; 
+ &lt;p&gt;Finally, remember that TTFT is just one component of overall response latency, alongside on-device processing latency. By reducing TTFT using Local Zones, you create additional margin for on-device processing latency, making it easier to achieve the target response latency range needed for humanlike conversation.&lt;/p&gt; 
+ &lt;h2&gt;Cleanup&lt;/h2&gt; 
+ &lt;p&gt;In this post, we created Local Zones, subnets, security groups, and EC2 instances. To avoid incurring additional charges, it’s crucial to properly clean up these resources when they’re no longer needed. To do so, follow these steps:&lt;/p&gt; 
+ &lt;ol&gt; 
+  &lt;li&gt;Terminate the EC2 instances and delete their associated &lt;a href="https://aws.amazon.com/ebs/" rel="noopener" target="_blank"&gt;Amazon Elastic Block Store&lt;/a&gt; (Amazon EBS) volumes.&lt;/li&gt; 
+  &lt;li&gt;Delete the security groups and subnets.&lt;/li&gt; 
+  &lt;li&gt;Disable the Local Zones.&lt;/li&gt; 
+ &lt;/ol&gt; 
+ &lt;h2&gt;Conclusion&lt;/h2&gt; 
+ &lt;p&gt;In conclusion, this post highlights how edge computing services, such as AWS Local Zones, play a crucial role in reducing FM inference latency for conversational AI applications. Our test deployments of Meta’s Llama 3.2-3B demonstrated that placing FM inference endpoints closer to end users through Local Zones dramatically reduces TTFT compared to traditional Regional deployments. This TTFT reduction plays a critical role in optimizing the overall response latency, helping achieve the target response times essential for natural, humanlike interactions regardless of user location.&lt;/p&gt; 
+ &lt;p&gt;To use these benefits for your own applications, we encourage you to explore the AWS Local Zones documentation. There, you’ll find information on available &lt;a href="https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/" rel="noopener" target="_blank"&gt;locations&lt;/a&gt; and supported &lt;a href="https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/" rel="noopener" target="_blank"&gt;AWS services&lt;/a&gt;&amp;nbsp;so you can bring the power of edge computing to your conversational AI solutions.&lt;/p&gt; 
+ &lt;hr /&gt; 
+ &lt;h3&gt;About the Authors&lt;/h3&gt; 
+ &lt;p style="clear: both;"&gt;&lt;strong&gt;&lt;img alt="Nima Seifi" class="size-full wp-image-99739 alignleft" height="128" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/02/14/nimaseifi.jpeg" width="100" /&gt;Nima Seifi&lt;/strong&gt; is a Solutions Architect at AWS, based in Southern California, where he specializes in SaaS and LLMOps. He serves as a technical advisor to startups building on AWS. Prior to AWS, he worked as a DevOps architect in the e-commerce industry for over 5 years, following a decade of R&amp;amp;D work in mobile internet technologies. Nima has authored 20+ technical publications and holds 7 U.S. patents. Outside of work, he enjoys reading, watching documentaries, and taking beach walks.&lt;/p&gt; 
+ &lt;p style="clear: both;"&gt;&lt;strong&gt;&lt;img alt="Nelson Ong" class="size-full wp-image-99740 alignleft" height="128" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/02/14/nelsonong.jpeg" width="100" /&gt;Nelson Ong&lt;/strong&gt; is a Solutions Architect at Amazon Web Services. He works with early stage startups across industries to accelerate their cloud adoption.&lt;/p&gt; 
+&lt;/div&gt; </content><link href="https://aws.amazon.com/blogs/machine-learning/reduce-conversational-ai-response-time-through-inference-at-the-edge-with-aws-local-zones/" rel="alternate"/><summary>This guide demonstrates how to deploy an open source foundation model from Hugging Face on Amazon EC2 instances across three locations: a commercial AWS Region and two AWS Local Zones. Through comparative benchmarking tests, we illustrate how deploying foundation models in Local Zones closer to end users can significantly reduce latency—a critical factor for real-time applications such as conversational AI assistants.</summary><published>2025-03-03T16:44:46+00:00</published></entry><entry><id>https://aws.amazon.com/blogs/machine-learning/customize-deepseek-r1-distilled-models-using-amazon-sagemaker-hyperpod-recipes-part-1/</id><title>Customize DeepSeek-R1 distilled models using Amazon SageMaker HyperPod recipes – Part 1</title><updated>2025-03-04T07:36:12.224562+00:00</updated><author><name>Kanwaljit Khurmi</name></author><content type="html">&lt;p&gt;Increasingly, organizations across industries are turning to &lt;a href="https://aws.amazon.com/generative-ai/" rel="noopener" target="_blank"&gt;generative AI&lt;/a&gt; &lt;a href="https://aws.amazon.com/what-is/foundation-models/" rel="noopener" target="_blank"&gt;foundation models&lt;/a&gt; (FMs) to enhance their applications. To achieve optimal performance for specific use cases, customers are adopting and adapting these FMs to their unique domain requirements. This need for customization has become even more pronounced with the emergence of new models, such as those released by &lt;a href="https://huggingface.co/deepseek-ai" rel="noopener" target="_blank"&gt;DeepSeek&lt;/a&gt;.&lt;/p&gt; 
+&lt;p&gt;However, customizing DeepSeek models effectively while managing computational resources remains a significant challenge. Tuning model architecture requires technical expertise, training and fine-tuning parameters, and managing distributed training infrastructure, among others. This often forces companies to choose between model performance and practical implementation constraints, creating a critical need for more accessible and streamlined model customization solutions.&lt;/p&gt; 
+&lt;p&gt;In this two-part series, we discuss how you can reduce the DeepSeek model customization complexity by using the pre-built fine-tuning workflows (also called “recipes”) for both DeepSeek-R1 model and its distilled variations, released as part of &lt;a href="https://aws.amazon.com/blogs/aws/accelerate-foundation-model-training-and-fine-tuning-with-new-amazon-sagemaker-hyperpod-recipes/" rel="noopener" target="_blank"&gt;Amazon SageMaker HyperPod recipes&lt;/a&gt;.&lt;/p&gt; 
+&lt;p&gt;In this first post, we will build a solution architecture for fine-tuning DeepSeek-R1 distilled models and demonstrate the approach by providing a step-by-step example on customizing the &lt;a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B" rel="noopener" target="_blank"&gt;DeepSeek-R1 Distill Qwen 7b&lt;/a&gt; model using recipes, achieving an average of 25% on all the Rouge scores, with a maximum of 49% on Rouge 2 score with both &lt;a href="https://aws.amazon.com/sagemaker/hyperpod/" rel="noopener" target="_blank"&gt;SageMaker HyperPod &lt;/a&gt;and &lt;a href="https://aws.amazon.com/sagemaker/train/" rel="noopener" target="_blank"&gt;SageMaker training jobs&lt;/a&gt;. The second part of the series will focus on fine-tuning the &lt;a href="https://huggingface.co/deepseek-ai/DeepSeek-R1" rel="noopener" target="_blank"&gt;DeepSeek-R1 671b&lt;/a&gt; model itself.&lt;/p&gt; 
+&lt;p&gt;At the time of this writing, the DeepSeek-R1 model and its distilled variations for Llama and Qwen were the latest released recipe. Check out &lt;a href="https://github.com/aws/sagemaker-hyperpod-recipes" rel="noopener" target="_blank"&gt;sagemaker-hyperpod-recipes on GitHub&lt;/a&gt; for the latest released recipes, including support for fine-tuning the DeepSeek-R1 671b parameter model.&lt;/p&gt; 
+&lt;h2&gt;Amazon SageMaker HyperPod recipes&lt;/h2&gt; 
+&lt;p&gt;At re:Invent 2024, we announced the general availability of &lt;a href="https://aws.amazon.com/blogs/aws/accelerate-foundation-model-training-and-fine-tuning-with-new-amazon-sagemaker-hyperpod-recipes/" rel="noopener" target="_blank"&gt;Amazon SageMaker HyperPod recipes&lt;/a&gt;. SageMaker HyperPod recipes help data scientists and developers of all skill sets to get started training and fine-tuning popular publicly available generative AI models in minutes with state-of-the-art training performance. These recipes include a training stack validated by &lt;a href="https://aws.amazon.com/" rel="noopener" target="_blank"&gt;Amazon Web Services (AWS)&lt;/a&gt;, which removes the tedious work of experimenting with different model configurations, minimizing the time it takes for iterative evaluation and testing. They automate several critical steps, such as loading training datasets, applying distributed training techniques, automating checkpoints for faster recovery from faults, and managing the end-to-end training loop.&lt;/p&gt; 
+&lt;p&gt;Recipes, paired with the resilient infrastructure of AWS, (&lt;a href="https://aws.amazon.com/sagemaker-ai/hyperpod/" rel="noopener" target="_blank"&gt;Amazon SageMaker HyperPod&lt;/a&gt; and &lt;a href="https://aws.amazon.com/sagemaker-ai/train/" rel="noopener" target="_blank"&gt;Amazon SageMaker Model Training&lt;/a&gt;) provide a resilient training environment for fine-tuning FMs such as DeepSeek-R1 with out-of-the-box customization.&lt;/p&gt; 
+&lt;p&gt;To help customers quickly use DeepSeek’s powerful and cost-efficient models to accelerate generative AI innovation, we released new recipes to fine-tune six DeepSeek models, including DeepSeek-R1 distilled Llama and Qwen models using &lt;a href="https://arxiv.org/abs/2412.13337" rel="noopener" target="_blank"&gt;supervised fine-tuning&lt;/a&gt; (SFT), &lt;a href="https://arxiv.org/abs/2305.14314" rel="noopener" target="_blank"&gt;Quantized Low-Rank Adaptation&lt;/a&gt; (QLoRA), &lt;a href="https://arxiv.org/abs/2106.09685" rel="noopener" target="_blank"&gt;Low-Rank Adaptation&lt;/a&gt; (LoRA) techniques. In this post, we introduce these new recipes and walk you through a solution to fine-tune a DeepSeek Qwen 7b model for an advanced medical reasoning use case.&lt;/p&gt; 
+&lt;h2&gt;Solution overview&lt;/h2&gt; 
+&lt;p&gt;At its core, as depicted in the following diagram, the recipe architecture implements a hierarchical workflow that begins with a recipe specification that covers a comprehensive configuration defining the training parameters, model architecture, and distributed training strategies. These recipes are processed through the HyperPod recipe launcher, which serves as the orchestration layer responsible for launching a job on the corresponding architecture. The launcher interfaces with underlying cluster management systems such as SageMaker HyperPod (Slurm or Kubernetes) or training jobs, which handle resource allocation and scheduling. It’s a familiar NeMo-style launcher with which you can choose a recipe and run it on your infrastructure of choice (SageMaker HyperPod or training).&lt;/p&gt; 
+&lt;p&gt;For example, after &lt;a href="https://github.com/aws/sagemaker-hyperpod-recipes?tab=readme-ov-file#fine-tuning" rel="noopener" target="_blank"&gt;choosing your recipe&lt;/a&gt;, you can pre-train or fine-tune a model by running &lt;code&gt;python3 main.py recipes=recipe-name&lt;/code&gt;. Alternatively, you can use a launcher script, which is a bash script that is preconfigured to run the chosen training or fine-tuning job on your cluster. You can check out &lt;a href="https://github.com/aws/sagemaker-hyperpod-recipes/blob/main/main.py" rel="noopener" target="_blank"&gt;main.py&lt;/a&gt; (NeMo style launcher) and &lt;a href="https://github.com/aws/sagemaker-hyperpod-recipes/tree/main/launcher_scripts/deepseek" rel="noopener" target="_blank"&gt;launcher scripts for DeepSeek&lt;/a&gt; on the &lt;a href="https://github.com/aws/sagemaker-hyperpod-recipes/tree/main" rel="noopener" target="_blank"&gt;GitHub repository hosting SageMaker HyperPod recipes&lt;/a&gt;.&lt;/p&gt; 
+&lt;p&gt;A key component of this architecture is the HyperPod training adapter for NeMo, which is built on the &lt;a href="https://docs.nvidia.com/nemo-framework/user-guide/latest/overview.html" rel="noopener" target="_blank"&gt;NVIDIA NeMo framework&lt;/a&gt; and &lt;a href="https://awsdocs-neuron.readthedocs-hosted.com/en/latest/libraries/neuronx-distributed/index.html" rel="noopener" target="_blank"&gt;Neuronx Distributed training package&lt;/a&gt;, which loads data, creates models, and facilitates efficient data parallelism, model parallelism, and hybrid parallelism strategies, which enables optimal utilization of computational resources across the distributed infrastructure. The architecture’s modular design allows for scalability and flexibility, making it particularly effective for training LLMs that require distributed computing capabilities.&lt;/p&gt; 
+&lt;p&gt;&lt;img alt="" class="aligncenter size-full wp-image-100522" height="732" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/02/26/Picture1-8.jpg" style="margin: 10px 0px 10px 0px;" width="844" /&gt;&lt;/p&gt; 
+&lt;p&gt;You can run these recipes using SageMaker HyperPod or as SageMaker training jobs. For organizations that require granular control over training infrastructure and extensive customization options, SageMaker HyperPod is the ideal choice. SageMaker training jobs, on the other hand, is tailored for organizations that want a fully managed experience for their training workflows. To learn more details about these service features, refer to &lt;a href="https://aws.amazon.com/blogs/machine-learning/generative-ai-foundation-model-training-on-amazon-sagemaker/" rel="noopener" target="_blank"&gt;Generative AI foundation model training on Amazon SageMaker&lt;/a&gt;.&lt;/p&gt; 
+&lt;p&gt;In the next sections, we go over the solution architecture for these services before presenting a step-by-step implementation example for each.&lt;/p&gt; 
+&lt;h3&gt;SageMaker HyperPod&lt;/h3&gt; 
+&lt;p&gt;To submit jobs using SageMaker HyperPod, you can use the HyperPod recipes launcher, which provides an straightforward mechanism to run recipes on both Slurm and Kubernetes. After you choose your orchestrator, you can choose your recipe’s launcher and have it run on your HyperPod cluster. The launcher will interface with your cluster with Slurm or Kubernetes native constructs. For this post, we use the HyperPod recipes launcher mechanism to run the training on a Slurm cluster. The following image shows the solution architecture for SageMaker HyperPod.&lt;/p&gt; 
+&lt;p&gt;&lt;img alt="" class="aligncenter size-full wp-image-100531" height="756" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/02/26/hp-sceptor-ezgif.com-optimize-1.gif" style="margin: 10px 0px 10px 0px;" width="1344" /&gt;&lt;/p&gt; 
+&lt;h3&gt;SageMaker training jobs&lt;/h3&gt; 
+&lt;p&gt;The workflow for SageMaker training jobs begins with an API request that interfaces with the SageMaker control plane, which manages the orchestration of training resources. The system uses the training jobs launcher to efficiently run workloads on a managed cluster.&lt;/p&gt; 
+&lt;p&gt;The architecture uses &lt;a href="https://aws.amazon.com/ecr/" rel="noopener" target="_blank"&gt;Amazon Elastic Container Registry&lt;/a&gt; (Amazon ECR) for container image management. Training jobs are executed across a distributed cluster, with seamless integration to multiple storage solutions, including &lt;a href="https://aws.amazon.com/s3/" rel="noopener" target="_blank"&gt;Amazon Simple Storage Service&lt;/a&gt; (Amazon S3), &lt;a href="https://aws.amazon.com/efs/" rel="noopener" target="_blank"&gt;Amazon Elastic File Storage&lt;/a&gt; (Amazon EFS), and &lt;a href="https://aws.amazon.com/fsx/lustre/" rel="noopener" target="_blank"&gt;Amazon FSx for Lustre&lt;/a&gt;. All of this runs under the SageMaker managed environment, providing optimal resource utilization and security.&lt;/p&gt; 
+&lt;p&gt;This design simplifies the complexity of distributed training while maintaining the flexibility needed for diverse machine learning (ML) workloads, making it an ideal solution for enterprise AI development. The following image shows the solution architecture for SageMaker training jobs.&lt;/p&gt; 
+&lt;p&gt;&lt;img alt="" class="aligncenter size-full wp-image-100533" height="756" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/02/26/tj-sceptor-ezgif.com-optimize.gif" style="margin: 10px 0px 10px 0px;" width="1344" /&gt;&lt;/p&gt; 
+&lt;h2&gt;Solution walkthrough&lt;/h2&gt; 
+&lt;p&gt;For this solution, consider a use case for a healthcare industry startup that aims to create an accurate, medically verified chat assistant application that bridges complex medical information with patient-friendly explanations. By fine-tuning DeepSeek-R1 Distill Qwen 7b using the &lt;a href="https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT" rel="noopener" target="_blank"&gt;FreedomIntelligence/medical-o1-reasoning-SFT&lt;/a&gt; dataset, you can use its medical reasoning capabilities to produce content that maintains clinical accuracy.&lt;/p&gt; 
+&lt;h2&gt;Prerequisites&lt;/h2&gt; 
+&lt;p&gt;You need to complete the following prerequisites before you can run the DeepSeek-R1 Distill Qwen 7B model fine-tuning notebook.&lt;/p&gt; 
+&lt;ol&gt; 
+ &lt;li&gt;Make the following quota increase requests for SageMaker. You need to request a minimum of one &lt;code&gt;p4d.24xlarge&lt;/code&gt; instance (with 8 x NVIDIA A100 GPUs) ranging to a maximum of two &lt;code&gt;p4d.24xlarge&lt;/code&gt; instances (depending on time-to-train and cost-to-train trade-offs for your use case).&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;p&gt;On the &lt;a href="https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html" rel="noopener" target="_blank"&gt;Service Quotas&lt;/a&gt; console, request the following SageMaker quotas:&lt;/p&gt; 
+&lt;ul&gt; 
+ &lt;li&gt; 
+  &lt;ul&gt; 
+   &lt;li&gt;P4 instances (&lt;code&gt;p4d.24xlarge&lt;/code&gt;) for training job usage: 1–2&lt;/li&gt; 
+   &lt;li&gt;P4 instances (&lt;code&gt;p4d.24xlarge&lt;/code&gt;) for HyperPod clusters (“&lt;code&gt;ml.p4d.24xlarge&lt;/code&gt; for cluster usage“): 1-2&lt;/li&gt; 
+  &lt;/ul&gt; &lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;ol start="2"&gt; 
+ &lt;li&gt;If you choose to use HyperPod clusters to run your training, set up a HyperPod Slurm cluster following the documentation at &lt;a href="https://docs.aws.amazon.com/sagemaker/latest/dg/smcluster-getting-started.html" rel="noopener" target="_blank"&gt;Tutuorial for getting started with SageMaker HyperPod&lt;/a&gt;. Alternatively, you can use the &lt;a href="https://aws.amazon.com/cloudformation/" rel="noopener" target="_blank"&gt;AWS CloudFormation&lt;/a&gt; template provided in the AWS Workshop Studio at &lt;a href="https://catalog.workshops.aws/sagemaker-hyperpod/en-US/00-setup/02-own-account" rel="noopener" target="_blank"&gt;Amazon SageMaker HyperPod Own Account&lt;/a&gt; and follow the instructions to &lt;a href="https://catalog.workshops.aws/sagemaker-hyperpod/en-US/01-cluster" rel="noopener" target="_blank"&gt;set up a cluster&lt;/a&gt; and a development environment to access and submit jobs to the cluster.&lt;/li&gt; 
+ &lt;li&gt;(Optional) If you choose to use &lt;a href="https://aws.amazon.com/sagemaker/studio/" rel="noopener" target="_blank"&gt;SageMaker training jobs&lt;/a&gt;, you can create an Amazon SageMaker Studio domain (refer to &lt;a href="https://docs.aws.amazon.com/sagemaker/latest/dg/onboard-quick-start.html" rel="noopener" target="_blank"&gt;Use quick setup for Amazon SageMaker AI&lt;/a&gt;) to access &lt;a href="https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl-user-guide.html" rel="noopener" target="_blank"&gt;Jupyter notebooks&lt;/a&gt; with the preceding role. (You can use JupyterLab in your local setup, too.)&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;ul&gt; 
+ &lt;li&gt; 
+  &lt;ul&gt; 
+   &lt;li&gt;Create an &lt;a href="https://aws.amazon.com/iam/" rel="noopener" target="_blank"&gt;AWS Identity and Access Management&lt;/a&gt; (IAM) &lt;a href="https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-roles.html#:~:text=the%20following%20procedures.-[%E2%80%A6]xecution%20role,-Use%20the%20following%20(" rel="noopener" target="_blank"&gt;role&lt;/a&gt; with managed policies &lt;code&gt;AmazonSageMakerFullAccess&lt;/code&gt; and &lt;code&gt;AmazonS3FullAccess&lt;/code&gt; to give required access to SageMaker to run the examples.&lt;/li&gt; 
+  &lt;/ul&gt; &lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;ol start="2"&gt; 
+ &lt;li&gt;Clone the GitHub repository with the assets for this deployment. This repository consists of a notebook that references training assets:&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;div class="hide-language"&gt; 
+ &lt;pre&gt;&lt;code class="lang-bash"&gt;git clone https://github.com/aws-samples/sagemaker-distributed-training-workshop.git 
+cd 18_sagemaker_training_recipes/ft_deepseek_qwen_lora&lt;/code&gt;&lt;/pre&gt; 
+&lt;/div&gt; 
+&lt;p&gt;Next, we run the &lt;a href="https://github.com/aws-samples/sagemaker-distributed-training-workshop/blob/main/18_sagemaker_training_recipes/ft_deepseek_qwen_lora/model_trainer_deepseek_r1_recipe_lora.ipynb" rel="noopener" target="_blank"&gt;model_trainer_deepseek_r1_recipe_lora.ipynb&lt;/a&gt; notebook to fine-tune the DeepSeek-R1 model using QLoRA on SageMaker.&lt;/p&gt; 
+&lt;h2&gt;Prepare the dataset&lt;/h2&gt; 
+&lt;p&gt;To prepare the dataset, you need to load the &lt;code&gt;FreedomIntelligence/medical-o1-reasoning-SFT dataset&lt;/code&gt;, tokenize and chunk the dataset, and configure the data channels for SageMaker training on Amazon S3. Complete the following steps:&lt;/p&gt; 
+&lt;ol&gt; 
+ &lt;li&gt;Format the dataset by applying the prompt format for DeepSeek-R1 Distill Qwen 7B:&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;pre&gt;&lt;code class="lang-python"&gt;def generate_prompt(data_point):
+&amp;nbsp;&amp;nbsp; &amp;nbsp;full_prompt = f"""
+&amp;nbsp;&amp;nbsp; &amp;nbsp;Below is an instruction that describes a task, paired with an input that provides further context.
+&amp;nbsp;&amp;nbsp; &amp;nbsp;Write a response that appropriately completes the request.
+&amp;nbsp;&amp;nbsp; &amp;nbsp;Before answering, think carefully about the question and create a step-by-step chain of thoughts to ensure a logical and accurate response.
+
+&amp;nbsp;&amp;nbsp; &amp;nbsp;### Instruction:
+&amp;nbsp;&amp;nbsp; &amp;nbsp;You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning.
+&amp;nbsp;&amp;nbsp; &amp;nbsp;Please answer the following medical question.
+
+&amp;nbsp;&amp;nbsp; &amp;nbsp;### Question:
+&amp;nbsp;&amp;nbsp; &amp;nbsp;{data_point["Question"]}
+
+&amp;nbsp;&amp;nbsp; &amp;nbsp;### Response:
+&amp;nbsp;&amp;nbsp; &amp;nbsp;{data_point["Complex_CoT"]}
+
+&amp;nbsp;&amp;nbsp; &amp;nbsp;"""
+&amp;nbsp;&amp;nbsp; &amp;nbsp;return {"prompt": full_prompt.strip()}&lt;/code&gt;&lt;/pre&gt; 
+&lt;ol start="2"&gt; 
+ &lt;li&gt;Load the &lt;a href="https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT" rel="noopener" target="_blank"&gt;FreedomIntelligence/medical-o1-reasoning-SFT&lt;/a&gt; dataset and split it into training and validation datasets:&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;pre&gt;&lt;code class="lang-python"&gt;# Load dataset from the hub
+train_set = load_dataset(dataset_name, 'en', split="train[5%:]")
+test_set = load_dataset(dataset_name, 'en', split="train[:5%]")
+
+...
+
+train_dataset = train_set.map(
+&amp;nbsp;&amp;nbsp; &amp;nbsp;generate_and_tokenize_prompt,
+&amp;nbsp;&amp;nbsp; &amp;nbsp;remove_columns=columns_to_remove,
+&amp;nbsp;&amp;nbsp; &amp;nbsp;batched=False
+)
+
+test_dataset = test_set.map(
+&amp;nbsp;&amp;nbsp; &amp;nbsp;generate_and_tokenize_prompt,
+&amp;nbsp;&amp;nbsp; &amp;nbsp;remove_columns=columns_to_remove,
+&amp;nbsp;&amp;nbsp; &amp;nbsp;batched=False
+)&lt;/code&gt;&lt;/pre&gt; 
+&lt;ol start="3"&gt; 
+ &lt;li&gt;Load the DeepSeek-R1 Distill Qwen 7B tokenizer from the Hugging Face Transformers library and generate tokens for the train and validation datasets:&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;pre&gt;&lt;code class="lang-python"&gt;model_id = "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+max_seq_length=1024
+
+# Initialize a tokenizer by loading a pre-trained tokenizer configuration, using the fast tokenizer implementation if available.
+tokenizer = AutoTokenizer.from_pretrained(model_id, use_fast=True)
+
+...
+
+train_dataset = train_dataset.map(tokenize, remove_columns=["prompt"])
+test_dataset = test_dataset.map(tokenize, remove_columns=["prompt"])&lt;/code&gt;&lt;/pre&gt; 
+&lt;ol start="4"&gt; 
+ &lt;li&gt;Prepare the training and validation datasets for SageMaker training by saving them as &lt;code&gt;arrow&lt;/code&gt; files, which is required by SageMaker HyperPod recipes, and constructing the S3 paths where these files will be uploaded:&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;pre&gt;&lt;code class="lang-python"&gt;train_dataset_s3_path = f"s3://{bucket_name}/{input_path}/train"
+val_dataset_s3_path = f"s3://{bucket_name}/{input_path}/test"
+
+train_dataset.save_to_disk(train_dataset_s3_path)
+val_dataset.save_to_disk(val_dataset_s3_path)&lt;/code&gt;&lt;/pre&gt; 
+&lt;p&gt;The dataset above will be used in the examples for both SageMaker training jobs and SageMaker HyerPod.&lt;/p&gt; 
+&lt;h2&gt;Option A: Fine-tune using SageMaker training jobs&lt;/h2&gt; 
+&lt;p&gt;To fine-tune the model using SageMaker training jobs with recipes, this example uses the ModelTrainer class.&lt;/p&gt; 
+&lt;p&gt;The ModelTrainer class is a newer and more intuitive approach to model training that significantly enhances user experience and supports distributed training, Build Your Own Container (BYOC), and recipes. For additional information about ModelTrainer, you can refer to &lt;a href="https://aws.amazon.com/blogs/machine-learning/accelerate-your-ml-lifecycle-using-the-new-and-improved-amazon-sagemaker-python-sdk-part-1-modeltrainer/?t" rel="noopener" target="_blank"&gt;Accelerate your ML lifecycle using the new and improved Amazon SageMaker Python SDK – Part 1: ModelTrainer&lt;/a&gt;&lt;/p&gt; 
+&lt;p&gt;To set up the fine-tuning workload, complete the following steps:&lt;/p&gt; 
+&lt;ol&gt; 
+ &lt;li&gt;Select the instance type, the container image for the training job, and define the checkpoint path where the model will be stored:&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;pre&gt;&lt;code class="lang-python"&gt;instance_type = "ml.p4d.24xlarge"
+
+image_uri = (
+&amp;nbsp;&amp;nbsp; &amp;nbsp;f"658645717510.dkr.ecr.{sagemaker_session.boto_session.region_name}.amazonaws.com/smdistributed-modelparallel:2.4.1-gpu-py311-cu121"
+)
+
+checkpoint_s3_path = f"s3://{bucket_name}/deepseek-r1-distilled-qwen-7b-recipe-lora/checkpoints"&lt;/code&gt;&lt;/pre&gt; 
+&lt;ol start="2"&gt; 
+ &lt;li&gt;Create the ModelTrainer function to encapsulate the training setup from a selected recipe:&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;pre&gt;&lt;code class="lang-python"&gt;from sagemaker.modules.configs import CheckpointConfig, Compute, InputData, SourceCode, StoppingCondition
+from sagemaker.modules.distributed import Torchrun
+from sagemaker.modules.train import ModelTrainer
+
+instance_count = 1
+
+# Working override for custom dataset
+recipe_overrides = {
+&amp;nbsp; &amp;nbsp; ...
+&amp;nbsp;&amp;nbsp; &amp;nbsp;"trainer": {
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;"num_nodes": instance_count,
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ...
+&amp;nbsp;&amp;nbsp; &amp;nbsp;},
+&amp;nbsp; &amp;nbsp; ...
+&amp;nbsp;&amp;nbsp; &amp;nbsp;"use_smp_model": False,&amp;nbsp;# Required for PEFT
+&amp;nbsp;&amp;nbsp; &amp;nbsp;"model": {
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;"hf_model_name_or_path": model_id,
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;"data": {
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;"train_dir": "/opt/ml/input/data/train",
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;"val_dir": "/opt/ml/input/data/test",
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;},
+&amp;nbsp;&amp;nbsp; &amp;nbsp;},
+}
+
+# Define the compute
+compute_configs = Compute(
+&amp;nbsp;&amp;nbsp; &amp;nbsp;instance_type=instance_type,
+&amp;nbsp;&amp;nbsp; &amp;nbsp;instance_count=instance_count,
+&amp;nbsp;&amp;nbsp; &amp;nbsp;keep_alive_period_in_seconds=0
+)
+
+model_trainer = ModelTrainer.from_recipe(
+&amp;nbsp;&amp;nbsp; &amp;nbsp;training_image=image_uri,
+&amp;nbsp;&amp;nbsp; &amp;nbsp;training_recipe="fine-tuning/deepseek/hf_deepseek_r1_distilled_qwen_7b_seq8k_gpu_lora",
+&amp;nbsp;&amp;nbsp; &amp;nbsp;recipe_overrides=recipe_overrides,
+&amp;nbsp;&amp;nbsp; &amp;nbsp;requirements="./requirements.txt",
+&amp;nbsp;&amp;nbsp; &amp;nbsp;compute=compute_configs,
+&amp;nbsp; &amp;nbsp; ...
+&amp;nbsp;&amp;nbsp; &amp;nbsp;checkpoint_config=CheckpointConfig(
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;s3_uri=f"{checkpoint_s3_path}/{job_prefix}"
+&amp;nbsp;&amp;nbsp; &amp;nbsp;),
+)&lt;/code&gt;&lt;/pre&gt; 
+&lt;p&gt;You can point to the specific recipe with the &lt;code&gt;training_recipe&lt;/code&gt; argument and override the recipe arguments by providing a dictionary as argument of &lt;code&gt;recipe_overrides&lt;/code&gt;. In the previous example:&lt;/p&gt; 
+&lt;ul&gt; 
+ &lt;li&gt;&lt;code&gt;num_nodes&lt;/code&gt;: Indicates the number of instances that will be used for the fine-tuning execution&lt;/li&gt; 
+ &lt;li&gt;&lt;code&gt;checkpoint_dir&lt;/code&gt;: Location in the container where the job will save model checkpoints&lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;p&gt;The ModelTrainer class simplifies the experience by encapsulating code and training setup directly from the selected recipe. In this example:&lt;/p&gt; 
+&lt;ul&gt; 
+ &lt;li&gt;&lt;code&gt;training_recipe&lt;/code&gt;: &lt;code&gt;hf_deepseek_r1_distilled_qwen_7b_seq8k_gpu_lora&lt;/code&gt; is defining fine-tuning setup for the LoRA technique&lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;ol start="3"&gt; 
+ &lt;li&gt;Set up the input channels for ModelTrainer by creating an &lt;a href="https://sagemaker.readthedocs.io/en/stable/api/training/model_trainer.html#sagemaker.modules.configs.InputData" rel="noopener" target="_blank"&gt;InputData&lt;/a&gt; objects from the provided S3 bucket paths for the training and test and validation datasets&lt;/li&gt; 
+ &lt;li&gt;Submit the training job:&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;pre&gt;&lt;code class="lang-python"&gt;# starting the train job with our uploaded datasets as input
+model_trainer.train(input_data_config=data, wait=True)&lt;/code&gt;&lt;/pre&gt; 
+&lt;h2&gt;Option B: Fine-tune using SageMaker HyperPod with Slurm&lt;/h2&gt; 
+&lt;p&gt;To fine-tune the model using HyperPod, make sure your cluster is up and ready by following the prerequisites. To access the login or head node of the HyperPod Slurm cluster from your development environment, follow the login instructions at &lt;a href="https://catalog.workshops.aws/sagemaker-hyperpod/en-US/01-cluster/05-ssh" rel="noopener" target="_blank"&gt;Log in to your cluster&lt;/a&gt; in the Amazon SageMaker HyperPod workshop.&lt;/p&gt; 
+&lt;p&gt;Alternatively, you can also use &lt;a href="https://aws.amazon.com/systems-manager/" rel="noopener" target="_blank"&gt;AWS Systems Manager&lt;/a&gt; and run a command like the following to start the session. You can find the cluster ID, instance group name, and instance ID on the &lt;a href="https://console.aws.amazon.com/sagemaker/" rel="noopener" target="_blank"&gt;Amazon SageMaker console&lt;/a&gt;.&lt;/p&gt; 
+&lt;pre&gt;&lt;code class="lang-bash"&gt;aws ssm start-session --target sagemaker-cluster:[cluster-id]_[instance-group-name]-[instance-id] --region region_name&lt;/code&gt;&lt;/pre&gt; 
+&lt;ol&gt; 
+ &lt;li&gt;In the cluster’s login or head node, run the following commands to set up the environment. Run &lt;code&gt;sudo su - ubuntu&lt;/code&gt; to run the remaining commands as the root user unless you have a specific user ID to access the cluster and your POSIX user is created through a lifecycle script on the cluster. Refer to the &lt;a href="https://catalog.workshops.aws/sagemaker-hyperpod/en-US/05-advanced/01-multi-user" rel="noopener" target="_blank"&gt;multi-user&lt;/a&gt; setup for more details.&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;pre&gt;&lt;code class="lang-bash"&gt;# create a virtual environment&amp;nbsp;
+python3 -m venv ${PWD}/venv
+source venv/bin/activate
+
+# clone the recipes repository and set up the environment
+git clone --recursive https://github.com/aws/sagemaker-hyperpod-recipes.git
+cd sagemaker-hyperpod-recipes
+pip3 install -r requirements.txt&lt;/code&gt;&lt;/pre&gt; 
+&lt;ol start="2"&gt; 
+ &lt;li&gt;Create a squash file using &lt;a href="https://github.com/NVIDIA/enroot" rel="noopener" target="_blank"&gt;Enroot&lt;/a&gt; to run the job on the cluster. Enroot runtime offers GPU acceleration, rootless container support, and seamless integration with high performance computing (HPC) environments, making it ideal for running our workflows securely.&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;pre&gt;&lt;code class="lang-bash"&gt;# create a squash file using Enroot
+REGION=&amp;lt;region&amp;gt;
+IMAGE="658645717510.dkr.ecr.${REGION}.amazonaws.com/smdistributed-modelparallel:2.4.1-gpu-py311-cu121"
+aws ecr get-login-password --region "${REGION}" | docker login --username AWS --password-stdin 658645717510.dkr.ecr.${REGION}.amazonaws.com
+enroot import -o $PWD/smdistributed-modelparallel.sqsh dockerd://${IMAGE}&lt;/code&gt;&lt;/pre&gt; 
+&lt;ol start="3"&gt; 
+ &lt;li&gt;After you’ve created the squash file, update the &lt;code&gt;recipes_collection/config.yaml&lt;/code&gt; file with the absolute path to the squash file (created in the preceding step), and update the &lt;code&gt;instance_type&lt;/code&gt; if needed. The final config file should have the following parameters:&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;pre&gt;&lt;code class="lang-yaml"&gt;...
+
+cluster_type:&amp;nbsp;slurm&amp;nbsp;
+...
+
+instance_type:&amp;nbsp;p4d.24xlarge
+...
+
+container:&amp;nbsp;/fsx/&amp;lt;path-to-smdistributed-modelparallel&amp;gt;.sqsh
+...&lt;/code&gt;&lt;/pre&gt; 
+&lt;ol start="4"&gt; 
+ &lt;li&gt;Download the prepared dataset that you uploaded to S3 into the &lt;a href="https://docs.aws.amazon.com/fsx/latest/LustreGuide/what-is.html" rel="noopener" target="_blank"&gt;FSx for Lustre&lt;/a&gt; volume attached to the cluster. Run the following commands to download the files from Amazon S3:&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;pre&gt;&lt;code class="lang-bash"&gt;aws s3 cp&amp;nbsp;s3://{bucket_name}/{input_path}/train /fsx/ubuntu/deepseek/data/train --recursive
+aws s3 cp s3://{bucket_name}/{input_path}/test /fsx/ubuntu/deepseek/data/test --recursive&lt;/code&gt;&lt;/pre&gt; 
+&lt;ol start="5"&gt; 
+ &lt;li&gt;Update the launcher script for fine-tuning the DeepSeek-R1 Distill Qwen 7B model. The launcher scripts serve as convenient wrappers for executing the training script &lt;code&gt;main.py&lt;/code&gt; file), which streamlines the process of fine-tuning and parameter adjustment. For fine-tuning the DeepSeek-R1 Qwen 7B model, you can find the specific script at:&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;pre&gt;&lt;code class="lang-bash"&gt;launcher_scripts/deepseek/run_hf_deepseek_r1_qwen_7b_seq16k_gpu_fine_tuning.sh&lt;/code&gt;&lt;/pre&gt; 
+&lt;ol start="6"&gt; 
+ &lt;li&gt;Before running the script, you need to modify the location of the training and validation files and update the HuggingFace model ID and optionally the access token for private models and datasets. The script should look like the following (update &lt;code&gt;recipes.trainer.num_nodes&lt;/code&gt; if you’re using a multi-node cluster):&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;pre&gt;&lt;code class="lang-bash"&gt;SAGEMAKER_TRAINING_LAUNCHER_DIR=${SAGEMAKER_TRAINING_LAUNCHER_DIR:-"$(pwd)"}
+
+HF_MODEL_NAME_OR_PATH="deepseek-ai/DeepSeek-R1-Distill-Qwen-7B" # HuggingFace pretrained model name or path
+HF_ACCESS_TOKEN="hf_xxxx" # Optional HuggingFace access token
+
+TRAIN_DIR="/fsx/ubuntu/deepseek/data/train" # Location of training dataset&amp;nbsp;
+VAL_DIR="/fsx/ubuntu/deepseek/data/test" # Location of validation dataset
+
+EXP_DIR="/fsx/ubuntu/deepseek/results" # Location to save experiment info including logging, checkpoints, etc
+
+HYDRA_FULL_ERROR=1 python3 "${SAGEMAKER_TRAINING_LAUNCHER_DIR}/main.py" \
+&amp;nbsp;&amp;nbsp; &amp;nbsp;recipes=fine-tuning/deepseek/hf_deepseek_r1_distilled_qwen_7b_seq16k_gpu_fine_tuning \
+&amp;nbsp;&amp;nbsp; &amp;nbsp;base_results_dir="${SAGEMAKER_TRAINING_LAUNCHER_DIR}/results" \
+&amp;nbsp;&amp;nbsp; &amp;nbsp;recipes.run.name="hf-deepseek-r1-distilled-qwen-7b-fine-tuning" \
+&amp;nbsp;&amp;nbsp; &amp;nbsp;recipes.exp_manager.exp_dir="$EXP_DIR" \
+&amp;nbsp;&amp;nbsp; &amp;nbsp;recipes.trainer.num_nodes=1 \
+&amp;nbsp;&amp;nbsp; &amp;nbsp;recipes.model.data.train_dir="$TRAIN_DIR" \
+&amp;nbsp;&amp;nbsp; &amp;nbsp;recipes.model.data.val_dir="$VAL_DIR" \
+&amp;nbsp;&amp;nbsp; &amp;nbsp;recipes.model.hf_model_name_or_path="$HF_MODEL_NAME_OR_PATH" \
+&amp;nbsp;&amp;nbsp; &amp;nbsp;recipes.model.hf_access_token="$HF_ACCESS_TOKEN" \&lt;/code&gt;&lt;/pre&gt; 
+&lt;p&gt;You can view the recipe for this fine-tuning task under, overriding any additional parameters as needed:&lt;/p&gt; 
+&lt;pre&gt;&lt;code class="lang-bash"&gt;recipes_collection/recipes/fine-tuning/deepseek/hf_deepseek_r1_distilled_qwen_7b_seq16k_gpu_fine_tuning.yaml&lt;/code&gt;&lt;/pre&gt; 
+&lt;ol start="7"&gt; 
+ &lt;li&gt;Submit the job by running the launcher script:&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;pre&gt;&lt;code class="lang-bash"&gt;bash launcher_scripts/deepseek/run_hf_deepseek_r1_qwen_7b_seq16k_gpu_fine_tuning.sh&lt;/code&gt;&lt;/pre&gt; 
+&lt;p&gt;You can monitor the job using Slurm commands such as &lt;code&gt;squeue&lt;/code&gt; and &lt;code&gt;scontrol&lt;/code&gt; show to view the status of the job and the corresponding logs. After the job is complete, the trained model will also be available in the results folder, as shown in the following code:&lt;/p&gt; 
+&lt;pre&gt;&lt;code class="lang-bash"&gt;cd results
+&amp;nbsp;ls -R
+.:
+checkpoints &amp;nbsp;experiment
+
+./checkpoints:
+full
+
+./checkpoints/full:
+steps_50
+
+./checkpoints/full/steps_50:
+config.json &amp;nbsp;pytorch_model.bin
+
+./experiment:
+...&lt;/code&gt;&lt;/pre&gt; 
+&lt;ol start="8"&gt; 
+ &lt;li&gt;Upload the fine-tuned model checkpoint to Amazon S3 for evaluating the model using the validation data:&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;pre&gt;&lt;code class="lang-bash"&gt;aws s3 cp /fsx/&amp;lt;path_to_checkpoint&amp;gt;&amp;nbsp;s3://{bucket_name}/{model_prefix}/qwen7b --recursive&lt;/code&gt;&lt;/pre&gt; 
+&lt;h2&gt;Evaluate the fine-tuned model&lt;/h2&gt; 
+&lt;p&gt;To objectively evaluate your fine-tuned model, you can run an evaluation job on the validation portion of the dataset.&lt;/p&gt; 
+&lt;p&gt;You can run a SageMaker training job and use ROUGE metrics (ROUGE-1, ROUGE-2, ROUGE-L, and ROUGE-L-Sum), which measure the similarity between machine-generated text and human-written reference text. The SageMaker training job will compute ROUGE metrics for both the base DeepSeek-R1 Distill Qwen 7B model and the fine-tuned one. You can access the code sample for ROUGE evaluation in the &lt;a href="https://github.com/aws-samples/sagemaker-distributed-training-workshop/blob/main/18_sagemaker_training_recipes/ft_deepseek_qwen_lora/scripts/evaluate_recipe.py" rel="noopener" target="_blank"&gt;sagemaker-distributed-training-workshop&lt;/a&gt; on GitHub. Please refer this &lt;a href="https://github.com/aws-samples/sagemaker-distributed-training-workshop/tree/main/18_sagemaker_training_recipes/ft_deepseek_qwen_lora" rel="noopener" target="_blank"&gt;notebook&lt;/a&gt; for details.&lt;/p&gt; 
+&lt;p&gt;Complete the following steps:&lt;/p&gt; 
+&lt;ol&gt; 
+ &lt;li&gt;Define the S3 path where the fine-tuned checkpoints are stored, the instance_type, and the image uri to use in the training job:&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;pre&gt;&lt;code class="lang-python"&gt;trained_model&amp;nbsp;= &amp;lt;S3_PATH&amp;gt;
+instance_type = "ml.p4d.24xlarge"
+
+image_uri = sagemaker.image_uris.retrieve(
+&amp;nbsp;&amp;nbsp; &amp;nbsp;framework="pytorch",
+&amp;nbsp;&amp;nbsp; &amp;nbsp;region=sagemaker_session.boto_session.region_name,
+&amp;nbsp;&amp;nbsp; &amp;nbsp;version="2.4",
+&amp;nbsp;&amp;nbsp; &amp;nbsp;instance_type=instance_type,
+&amp;nbsp;&amp;nbsp; &amp;nbsp;image_scope="training"
+)
+#763104351884.dkr.ecr.us-east-1.amazonaws.com/pytorch-training:2.4-gpu-py311&lt;/code&gt;&lt;/pre&gt; 
+&lt;ol start="2"&gt; 
+ &lt;li&gt;Create the ModelTrainer function to encapsulate the evaluation script and define the input data:&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;pre&gt;&lt;code class="lang-python"&gt;from sagemaker.modules.configs import Compute, InputData, OutputDataConfig, SourceCode, StoppingCondition
+from sagemaker.modules.distributed import Torchrun
+from sagemaker.modules.train import ModelTrainer
+
+# Define the script to be run
+source_code = SourceCode(
+&amp;nbsp;&amp;nbsp; &amp;nbsp;source_dir="./scripts",
+&amp;nbsp;&amp;nbsp; &amp;nbsp;requirements="requirements.txt",
+&amp;nbsp;&amp;nbsp; &amp;nbsp;entry_script="evaluate_recipe.py",
+)
+
+# Define the compute
+...
+
+# Define the ModelTrainer
+model_trainer = ModelTrainer(
+&amp;nbsp;&amp;nbsp; &amp;nbsp;training_image=image_uri,
+&amp;nbsp;&amp;nbsp; &amp;nbsp;source_code=source_code,
+&amp;nbsp;&amp;nbsp; &amp;nbsp;compute=compute_configs,
+&amp;nbsp; &amp;nbsp; ...
+&amp;nbsp;&amp;nbsp; &amp;nbsp;hyperparameters={
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;"model_id": model_id, &amp;nbsp;# Hugging Face model id
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;"dataset_name": dataset_name
+&amp;nbsp;&amp;nbsp; &amp;nbsp;}
+)
+
+# Pass the input data
+train_input = InputData(
+   channel_name="adapterdir",
+   data_source=trained_model,
+)
+
+test_input = InputData(
+   channel_name="testdata",
+   data_source=test_dataset_s3_path, # S3 path where training data is stored
+)
+
+# Check input channels configured
+data = [train_input, test_input]&lt;/code&gt;&lt;/pre&gt; 
+&lt;ol start="3"&gt; 
+ &lt;li&gt;Submit the training job:&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;pre&gt;&lt;code class="lang-python"&gt;# starting the train job with our uploaded datasets as input
+model_trainer.train(input_data_config=data, wait=True)&lt;/code&gt;&lt;/pre&gt; 
+&lt;p&gt;The following table shows the task output for the fine-tuned model and the base model.&lt;/p&gt; 
+&lt;table border="2px" cellpadding="5px"&gt; 
+ &lt;tbody&gt; 
+  &lt;tr style="background-color: #000000;"&gt; 
+   &lt;td width="88"&gt;&lt;span style="color: #ffffff;"&gt;&lt;strong&gt;Model&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt; 
+   &lt;td width="88"&gt;&lt;span style="color: #ffffff;"&gt;&lt;strong&gt;Rouge 1&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt; 
+   &lt;td width="88"&gt;&lt;span style="color: #ffffff;"&gt;&lt;strong&gt;Rouge 2&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt; 
+   &lt;td width="88"&gt;&lt;span style="color: #ffffff;"&gt;&lt;strong&gt;Rouge L&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt; 
+   &lt;td width="88"&gt;&lt;span style="color: #ffffff;"&gt;&lt;strong&gt;Rouge L Sum&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt; 
+  &lt;/tr&gt; 
+  &lt;tr&gt; 
+   &lt;td width="88"&gt;Base&lt;/td&gt; 
+   &lt;td width="88"&gt;0.36362&lt;/td&gt; 
+   &lt;td width="88"&gt;0.08739&lt;/td&gt; 
+   &lt;td width="88"&gt;0.16345&lt;/td&gt; 
+   &lt;td width="88"&gt;0.3204&lt;/td&gt; 
+  &lt;/tr&gt; 
+  &lt;tr&gt; 
+   &lt;td width="88"&gt;Fine-tuned&lt;/td&gt; 
+   &lt;td width="88"&gt;0.44232&lt;/td&gt; 
+   &lt;td width="88"&gt;0.13022&lt;/td&gt; 
+   &lt;td width="88"&gt;0.17769&lt;/td&gt; 
+   &lt;td width="88"&gt;0.38989&lt;/td&gt; 
+  &lt;/tr&gt; 
+  &lt;tr&gt; 
+   &lt;td width="88"&gt;% Difference&lt;/td&gt; 
+   &lt;td width="88"&gt;&lt;span style="color: #008000;"&gt;21.64207&lt;/span&gt;&lt;/td&gt; 
+   &lt;td width="88"&gt;&lt;span style="color: #008000;"&gt;49.01703&lt;/span&gt;&lt;/td&gt; 
+   &lt;td width="88"&gt;&lt;span style="color: #008000;"&gt;8.7121&lt;/span&gt;&lt;/td&gt; 
+   &lt;td width="88"&gt;&lt;span style="color: #008000;"&gt;21.68871&lt;/span&gt;&lt;/td&gt; 
+  &lt;/tr&gt; 
+ &lt;/tbody&gt; 
+&lt;/table&gt; 
+&lt;p&gt;Our fine-tuned model demonstrates remarkable efficiency, achieving about 22% overall improvement on the reasoning task after only one training epoch. The most significant gain appears in Rouge 2 scores—which measure bigram overlap—with about 49% increase, indicating better alignment between generated and reference summaries.&lt;/p&gt; 
+&lt;p&gt;Notably, preliminary experiments suggest these results could be further enhanced by extending the training duration. Increasing the number of epochs shows promising potential for additional performance gains while maintaining computational efficiency.&lt;/p&gt; 
+&lt;h2&gt;Clean up&lt;/h2&gt; 
+&lt;p&gt;To clean up your resources to avoid incurring any more charges, follow these steps:&lt;/p&gt; 
+&lt;ol&gt; 
+ &lt;li&gt;&lt;a href="https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl-admin-guide-clean-up.html" rel="noopener" target="_blank"&gt;Delete any unused SageMaker Studio resources&lt;/a&gt;&lt;/li&gt; 
+ &lt;li&gt;(Optional) &lt;a href="https://docs.aws.amazon.com/sagemaker/latest/dg/gs-studio-delete-domain.html" rel="noopener" target="_blank"&gt;Delete the SageMaker Studio domain&lt;/a&gt;&lt;/li&gt; 
+ &lt;li&gt;Verify that your training job isn’t running anymore. To do so, on your SageMaker console, choose &lt;strong&gt;Training&lt;/strong&gt; and check &lt;strong&gt;Training jobs&lt;/strong&gt;.&lt;/li&gt; 
+ &lt;li&gt;If you created a HyperPod cluster, &lt;a href="https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-eks-operate-cli-command-delete-cluster.html" rel="noopener" target="_blank"&gt;delete the cluster&lt;/a&gt; to stop incurring costs. If you created the networking stack from the &lt;a href="https://catalog.workshops.aws/sagemaker-hyperpod/en-US/00-setup/02-own-account" rel="noopener" target="_blank"&gt;HyperPod workshop&lt;/a&gt;, delete the stack as well to clean up the virtual private cloud (VPC) resources and the FSx for Lustre volume.&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;h2&gt;Conclusion&lt;/h2&gt; 
+&lt;p&gt;In the first post of this two-part DeepSeek-R1 series, we discussed how SageMaker HyperPod recipes provide a powerful yet accessible solution for organizations to scale their AI model training capabilities with &lt;a href="https://aws.amazon.com/what-is/large-language-model/" rel="noopener" target="_blank"&gt;large language models&lt;/a&gt; (LLMs) including DeepSeek. The architecture streamlines complex distributed training workflows through its intuitive recipe-based approach, reducing setup time from weeks to minutes.&lt;/p&gt; 
+&lt;p&gt;We recommend starting your LLM customization journey by exploring our sample recipes in the &lt;a href="https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-recipes.html" rel="noopener" target="_blank"&gt;Amazon SageMaker HyperPod&lt;/a&gt; documentation. The AWS &lt;a href="https://aws.amazon.com/training/learn-about/machine-learning/" rel="noopener" target="_blank"&gt;AI/ML community&lt;/a&gt; offers extensive resources, including workshops and technical guidance, to support your implementation journey.&lt;/p&gt; 
+&lt;p&gt;To begin using the SageMaker HyperPod recipes, visit the &lt;a href="https://github.com/aws/sagemaker-hyperpod-recipes" rel="noopener" target="_blank"&gt;sagemaker-hyperpod-recipes repo&lt;/a&gt; on GitHub for comprehensive documentation and example implementations. Our team continues to expand the recipe ecosystem based on customer feedback and emerging ML trends, making sure that you have the tools needed for successful AI model training.&lt;/p&gt; 
+&lt;p&gt;In our second post, we discuss how these &lt;a href="https://github.com/aws/sagemaker-hyperpod-recipes/blob/main/recipes_collection/recipes/fine-tuning/deepseek/hf_deepseek_r1_671b_seq8k_gpu_qlora.yaml" rel="noopener" target="_blank"&gt;recipes&lt;/a&gt; could further be used to fine-tune DeepSeek-R1 671b model. Stay tuned!&lt;/p&gt; 
+&lt;hr style="width: 100%;" /&gt; 
+&lt;h3&gt;About the Authors&lt;/h3&gt; 
+&lt;p style="clear: both;"&gt;&lt;strong&gt;&lt;img alt="" class="wp-image-30789 size-full alignleft" height="113" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2021/11/15/Kanwaljit-Khurmi-cropped.jpg" width="100" /&gt;&amp;nbsp;Kanwaljit Khurmi&lt;/strong&gt;&amp;nbsp;is a Principal Worldwide Generative AI Solutions Architect at AWS. He collaborates with AWS product teams, engineering departments, and customers to provide guidance and technical assistance, helping them enhance the value of their hybrid machine learning solutions on AWS. Kanwaljit specializes in assisting customers with containerized applications and high-performance computing solutions.&lt;/p&gt; 
+&lt;p style="clear: both;"&gt;&lt;strong&gt;&lt;img alt="" class="wp-image-26763 size-full alignleft" height="133" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2021/08/03/Bruno-Pistone.jpg" width="100" /&gt;&amp;nbsp;Bruno Pistone&lt;/strong&gt;&amp;nbsp;is a Senior World Wide Generative AI/ML Specialist Solutions Architect at AWS based in Milan, Italy. He works with AWS product teams and large customers to help them fully understand their technical needs and design AI and Machine Learning solutions that take full advantage of the AWS cloud and Amazon Machine Learning stack. His expertise includes: End-to-end Machine Learning, model customization, and generative AI. He enjoys spending time with friends, exploring new places, and traveling to new destinations.&lt;/p&gt; 
+&lt;p style="clear: both;"&gt;&lt;strong&gt;&lt;img alt="" class="wp-image-86104 size-full alignleft" height="108" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2024/09/11/Arun.jpg" width="100" /&gt;&amp;nbsp;Arun Kumar Lokanatha&lt;/strong&gt; is a Senior ML Solutions Architect with the Amazon SageMaker team. He specializes in large language model training workloads, helping customers build LLM workloads using SageMaker HyperPod, SageMaker training jobs, and SageMaker distributed training. Outside of work, he enjoys running, hiking, and cooking.&lt;/p&gt; 
+&lt;p style="clear: both;"&gt;&lt;strong&gt;&lt;img alt="" class="wp-image-29251 size-full alignleft" height="133" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2021/10/12/Durga-Sury.jpg" width="100" /&gt;&amp;nbsp;Durga Sury&lt;/strong&gt; is a Senior Solutions Architect on the Amazon SageMaker team. Over the past 5 years, she has worked with multiple enterprise customers to set up a secure, scalable AI/ML platform built on SageMaker.&lt;/p&gt; 
+&lt;p style="clear: both;"&gt;&lt;strong&gt;&lt;img alt="" class="wp-image-94824 size-full alignleft" height="101" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2024/11/28/Aman-2.jpg" width="100" /&gt;&amp;nbsp;Aman Shanbhag&lt;/strong&gt;&amp;nbsp;is an Associate Specialist Solutions Architect on the ML Frameworks team at Amazon Web Services, where he helps customers and partners with deploying ML training and inference solutions at scale. Before joining AWS, Aman graduated from Rice University with degrees in computer science, mathematics, and entrepreneurship.&lt;/p&gt; 
+&lt;p style="clear: both;"&gt;&lt;strong&gt;&lt;img alt="" class="wp-image-47720 size-full alignleft" height="118" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2022/12/06/Anirudh-Viswanathan.png" width="100" /&gt;Anirudh Viswanathan&lt;/strong&gt; is a Sr Product Manager, Technical – External Services with the SageMaker AI Training team. He holds a Masters in Robotics from Carnegie Mellon University, an MBA from the Wharton School of Business, and is named inventor on over 40 patents. He enjoys long-distance running, visiting art galleries, and Broadway shows.&lt;/p&gt; </content><link href="https://aws.amazon.com/blogs/machine-learning/customize-deepseek-r1-distilled-models-using-amazon-sagemaker-hyperpod-recipes-part-1/" rel="alternate"/><summary>In this two-part series, we discuss how you can reduce the DeepSeek model customization complexity by using the pre-built fine-tuning workflows (also called “recipes”) for both DeepSeek-R1 model and its distilled variations, released as part of Amazon SageMaker HyperPod recipes. In this first post, we will build a solution architecture for fine-tuning DeepSeek-R1 distilled models and demonstrate the approach by providing a step-by-step example on customizing the DeepSeek-R1 Distill Qwen 7b model using recipes, achieving an average of 25% on all the Rouge scores, with a maximum of 49% on Rouge 2 score with both SageMaker HyperPod and SageMaker training jobs. The second part of the series will focus on fine-tuning the DeepSeek-R1 671b model itself.</summary><published>2025-03-03T21:09:29+00:00</published></entry></feed>

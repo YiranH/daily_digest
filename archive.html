@@ -107,6 +107,7 @@
             border-radius: 0.25rem;
             overflow: hidden;
             box-shadow: var(--shadow-sm);
+            table-layout: fixed;
         }
         
         .archive-table th {
@@ -117,6 +118,9 @@
             font-weight: 500;
             cursor: pointer;
             border-bottom: 1px solid var(--border-color);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         
         .archive-table th:hover {
@@ -138,10 +142,13 @@
         .archive-table td {
             padding: 0.5rem 0.75rem;
             vertical-align: middle;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         
         .article-title-cell {
-            max-width: 40%;
+            width: 50%;
         }
         
         .article-title-cell a {
@@ -161,11 +168,25 @@
         .article-source {
             font-weight: 500;
             color: var(--primary-color);
+            white-space: nowrap;
+        }
+        
+        /* Add source column width constraint */
+        td:nth-child(2) {
+            width: 15%;
+            max-width: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .article-category {
+            width: 15%;
         }
         
         .article-date {
             white-space: nowrap;
             color: var(--text-secondary);
+            width: 10%;
         }
         
         .no-articles {
@@ -190,6 +211,16 @@
             .article-category {
                 display: none;
             }
+            
+            .article-title-cell {
+                width: 65%;
+            }
+            
+            /* Adjust source column on tablet */
+            td:nth-child(2) {
+                width: 20%;
+                max-width: 80px;
+            }
         }
         
         @media (max-width: 480px) {
@@ -198,7 +229,17 @@
             }
             
             .article-title-cell {
-                max-width: 60%;
+                width: 75%;
+            }
+            
+            /* Adjust source column on mobile */
+            td:nth-child(2) {
+                width: 25%;
+                max-width: 70px;
+            }
+            
+            body {
+                padding: 10px;
             }
         }
         
@@ -263,7 +304,7 @@
     <div class="header">
         <h1>AI News Archive</h1>
         <p class="description">A complete archive of all AI-related news scraped since the beginning.</p>
-        <div class="updated">Last updated: 2025-03-04 06:26:17 UTC</div>
+        <div class="updated">Last updated: 2025-03-04 07:36:12 UTC</div>
     </div>
     
     <div class="nav-links">
@@ -272,7 +313,7 @@
     </div>
     
     <div class="total-count">
-        Total Articles: 10
+        Total Articles: 84
     </div>
 
     <h3 class="month-header">March 2025</h3>
@@ -288,8 +329,266 @@
         <tbody>
 
             <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j35gpt/d_iclr_2025_first_timers_here_share_what_got_you/" target="_blank" title="[D] ICLR 2025 first timers here? Share what got you accepted">[D] ICLR 2025 first timers here? Share what got you accepted</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-04</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/artificial/comments/1j34euc/when_people_say_ai_will_kill_art_in_cinema_they/" target="_blank" title="When people say AI will kill art in cinema, they are overlooking it is already dead">When people say AI will kill art in cinema, they are overlooking it is already dead</a></td>
+                <td><span class="article-source">Reddit AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-04</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j33lm7/r_cautious_optimizers_improving_training_with_one/" target="_blank" title="[R] Cautious Optimizers: Improving Training with One Line of Code">[R] Cautious Optimizers: Improving Training with One Line of Code</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-04</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/artificial/comments/1j338x3/gpt_45_gets_a_commanding_lead_at_lmsys_with_style/" target="_blank" title="GPT 4.5 gets a commanding lead at LMSYS with Style Control, way above the competition!">GPT 4.5 gets a commanding lead at LMSYS with Style Control, way above the competition!</a></td>
+                <td><span class="article-source">Reddit AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-04</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j337qu/r_integrated_gradient_attribution_for_gaussian/" target="_blank" title="[R] Integrated Gradient attribution for Gaussian Processes with non-Gaussian likelihoods">[R] Integrated Gradient attribution for Gaussian Processes with non-Gaussian likelihoods</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-04</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/artificial/comments/1j32cut/oneminute_daily_ai_news_332025/" target="_blank" title="One-Minute Daily AI News 3/3/2025">One-Minute Daily AI News 3/3/2025</a></td>
+                <td><span class="article-source">Reddit AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-04</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/reinforcementlearning/comments/1j322cf/rnns_replay_buffer/" target="_blank" title="RNNs & Replay Buffer">RNNs & Replay Buffer</a></td>
+                <td><span class="article-source">Reddit RL</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-04</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j320ns/p_advice_or_guidance_on_how_to_create_an/" target="_blank" title="[P] Advice, or guidance on how to create an instruction dataset">[P] Advice, or guidance on how to create an instruction dataset</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-04</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/artificial/comments/1j30pra/what_is_gibberlink_the_new_secret_language_of_ai/" target="_blank" title="What Is Gibberlink? The New ‘Secret Language’ of AI Explained, watch the video of how they talk">What Is Gibberlink? The New ‘Secret Language’ of AI Explained, watch the video of how they talk</a></td>
+                <td><span class="article-source">Reddit AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-04</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/reinforcementlearning/comments/1j2zlrc/single_episode_rl/" target="_blank" title="Single Episode RL">Single Episode RL</a></td>
+                <td><span class="article-source">Reddit RL</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-04</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/artificial/comments/1j2zjth/i_asked_deepseeks_deepthink_version_to_roast/" target="_blank" title="I asked DeepSeek's DeepThink version to roast itself. This is what it came up with (peep the reddit reference - I did NOT ask it to do that, lol).">I asked DeepSeek's DeepThink version to roast itself. This is what it came up with (peep the reddit reference - I did NOT ask it to do that, lol).</a></td>
+                <td><span class="article-source">Reddit AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-04</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/artificial/comments/1j2z25a/i_asked_chatgpts_latest_version_to_roast_itself/" target="_blank" title="I asked ChatGpt's latest version to roast itself and this was the response">I asked ChatGpt's latest version to roast itself and this was the response</a></td>
+                <td><span class="article-source">Reddit AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-04</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/artificial/comments/1j2ytq5/using_chatgpts_new_deep_research_feature/" target="_blank" title="Using ChatGPT's new Deep Research feature">Using ChatGPT's new Deep Research feature</a></td>
+                <td><span class="article-source">Reddit AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-04</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j2xsvh/ai_ethics_and_the_future_of_ai_d/" target="_blank" title="Ai ethics and the future of ai. [D]">Ai ethics and the future of ai. [D]</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-04</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/artificial/comments/1j2wg62/getting_pretty_sick_of_how_quick_gemini_is_to/" target="_blank" title="Getting pretty sick of how quick Gemini is to tell you you’re wrong about things that weren’t questions">Getting pretty sick of how quick Gemini is to tell you you’re wrong about things that weren’t questions</a></td>
+                <td><span class="article-source">Reddit AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/reinforcementlearning/comments/1j2wb6e/why_is_my_actor_critic_model_giving_same_output/" target="_blank" title="Why is my actor critic model giving same output when I'm using mean of distribution as action in evaluation mode(trying to exploit) at every timestep?">Why is my actor critic model giving same output when I'm using mean of distribution as action in evaluation mode(trying to exploit) at every timestep?</a></td>
+                <td><span class="article-source">Reddit RL</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/artificial/comments/1j2v1vp/how_deepseeks_opensourced_fireflyer_file_3fs/" target="_blank" title="How DeepSeek's Open-Sourced Fire-Flyer File (3FS) System Sets Higher Standards for AI Development: Technical Breakdown">How DeepSeek's Open-Sourced Fire-Flyer File (3FS) System Sets Higher Standards for AI Development: Technical Breakdown</a></td>
+                <td><span class="article-source">Reddit AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://news.mit.edu/2025/markus-buehler-receives-washington-award-0303" target="_blank" title="Markus Buehler receives 2025 Washington Award">Markus Buehler receives 2025 Washington Award</a></td>
+                <td><span class="article-source">MIT AI News</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/reinforcementlearning/comments/1j2tw29/risklike_game_modeling_for_rl/" target="_blank" title="Risk-like game modeling for RL?">Risk-like game modeling for RL?</a></td>
+                <td><span class="article-source">Reddit RL</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.kaseyhou.com/#/repairable-flatpack-toaster/" target="_blank" title="Repairable Flatpack Toaster">Repairable Flatpack Toaster</a></td>
+                <td><span class="article-source">Hacker News</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/artificial/comments/1j2tqul/uk_universities_warned_to_stresstest_assessments/" target="_blank" title="UK universities warned to ‘stress-test’ assessments as 92% of students use AI">UK universities warned to ‘stress-test’ assessments as 92% of students use AI</a></td>
+                <td><span class="article-source">Reddit AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://aws.amazon.com/blogs/machine-learning/customize-deepseek-r1-distilled-models-using-amazon-sagemaker-hyperpod-recipes-part-1/" target="_blank" title="Customize DeepSeek-R1 distilled models using Amazon SageMaker HyperPod recipes – Part 1">Customize DeepSeek-R1 distilled models using Amazon SageMaker HyperPod recipes – Part 1</a></td>
+                <td><span class="article-source">AWS Machine Learning</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://fosdem.org/2025/schedule/event/fosdem-2025-5381-comparing-fuchsia-components-and-linux-containers/" target="_blank" title="Comparing Fuchsia components and Linux containers [video]">Comparing Fuchsia components and Linux containers [video]</a></td>
+                <td><span class="article-source">Hacker News</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://venturebeat.com/ai/less-is-more-how-chain-of-draft-could-cut-ai-costs-by-90-while-improving-performance/" target="_blank" title="Less is more: How ‘chain of draft’ could cut AI costs by 90% while improving performance">Less is more: How ‘chain of draft’ could cut AI costs by 90% while improving performance</a></td>
+                <td><span class="article-source">VentureBeat AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://venturebeat.com/ai/google-launches-free-gemini-powered-data-science-agent-on-its-colab-python-platform/" target="_blank" title="Google launches free Gemini-powered Data Science Agent on its Colab Python platform">Google launches free Gemini-powered Data Science Agent on its Colab Python platform</a></td>
+                <td><span class="article-source">VentureBeat AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://venturebeat.com/ai/anthropic-raises-3-5-billion-reaching-61-5-billion-valuation-as-ai-investment-frenzy-continues/" target="_blank" title="Anthropic raises $3.5 billion, reaching $61.5 billion valuation as AI investment frenzy continues">Anthropic raises $3.5 billion, reaching $61.5 billion valuation as AI investment frenzy continues</a></td>
+                <td><span class="article-source">VentureBeat AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
                 <td class="article-title-cell"><a href="https://blog.google/technology/ai/google-ai-updates-february-2025/" target="_blank" title="The latest AI news we announced in February">The latest AI news we announced in February</a></td>
                 <td><span class="article-source">Google Developers</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/reinforcementlearning/comments/1j2ra6v/is_there_any_way_to_deal_with_rl_action_overrides/" target="_blank" title="Is there any way to deal with RL action overrides?">Is there any way to deal with RL action overrides?</a></td>
+                <td><span class="article-source">Reddit RL</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/reinforcementlearning/comments/1j2q6c9/qlearning_in_gazebo_sim_not_converging_properly/" target="_blank" title="Q-Learning in Gazebo Sim Not Converging Properly – Need Help Debugging">Q-Learning in Gazebo Sim Not Converging Properly – Need Help Debugging</a></td>
+                <td><span class="article-source">Reddit RL</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/reinforcementlearning/comments/1j2q61k/gpt45_takes_first_place_in_the_elimination_game/" target="_blank" title="GPT-4.5 takes first place in the Elimination Game Benchmark, which tests social reasoning (forming alliances, deception, appearing non-threatening, and persuading the jury).">GPT-4.5 takes first place in the Elimination Game Benchmark, which tests social reasoning (forming alliances, deception, appearing non-threatening, and persuading the jury).</a></td>
+                <td><span class="article-source">Reddit RL</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j2q3q4/d_what_reinforcement_learning_method_should_i_use/" target="_blank" title="[D] What Reinforcement Learning Method Should I Use for Poker AI with LLMs?">[D] What Reinforcement Learning Method Should I Use for Poker AI with LLMs?</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://news.ycombinator.com/item?id=43245153" target="_blank" title="Launch HN: Cuckoo (YC W25) – Real-time AI translator for global teams">Launch HN: Cuckoo (YC W25) – Real-time AI translator for global teams</a></td>
+                <td><span class="article-source">Hacker News</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/reinforcementlearning/comments/1j2p4f9/for_the_observation_vector_as_input_to_the/" target="_blank" title="For the observation vector as input to the control policy in RL project, should I include important but fixed information?">For the observation vector as input to the control policy in RL project, should I include important but fixed information?</a></td>
+                <td><span class="article-source">Reddit RL</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/artificial/comments/1j2on1y/join_the_hotarc_project_lets_innovate_together/" target="_blank" title="Join the HOTARC Project – Let’s Innovate Together!">Join the HOTARC Project – Let’s Innovate Together!</a></td>
+                <td><span class="article-source">Reddit AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/artificial/comments/1j2ocm4/nvidia_ceo_jensen_huang_says_its_us_ai_chips_are/" target="_blank" title="Nvidia CEO Jensen Huang says its US AI chips are around "60 times" faster than Chinese counterparts">Nvidia CEO Jensen Huang says its US AI chips are around "60 times" faster than Chinese counterparts</a></td>
+                <td><span class="article-source">Reddit AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j2nvjk/d_incremental_learning_in_time_series_forecasting/" target="_blank" title="[D] Incremental Learning In Time Series Forecasting">[D] Incremental Learning In Time Series Forecasting</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/artificial/comments/1j2nnmj/yuval_noah_harari_says_the_ai_debate_is_the_most/" target="_blank" title="Yuval Noah Harari says the AI debate is the most important in history, and decisions about a "new species that might take over the planet" should not be left to a select few; global voices are necessary">Yuval Noah Harari says the AI debate is the most important in history, and decisions about a "new species that might take over the planet" should not be left to a select few; global voices are necessary</a></td>
+                <td><span class="article-source">Reddit AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://github.com/wild-card-ai/agents-json" target="_blank" title="Show HN: Agents.json – OpenAPI Specification for LLMs">Show HN: Agents.json – OpenAPI Specification for LLMs</a></td>
+                <td><span class="article-source">Hacker News</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/reinforcementlearning/comments/1j2n47n/looking_for_help_training_a_reinforcement/" target="_blank" title="Looking for help training a reinforcement learning AI on a 2D circuit (Pygame + Gym + StableBaselines3)">Looking for help training a reinforcement learning AI on a 2D circuit (Pygame + Gym + StableBaselines3)</a></td>
+                <td><span class="article-source">Reddit RL</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://aws.amazon.com/blogs/machine-learning/reduce-conversational-ai-response-time-through-inference-at-the-edge-with-aws-local-zones/" target="_blank" title="Reduce conversational AI response time through inference at the edge with AWS Local Zones">Reduce conversational AI response time through inference at the edge with AWS Local Zones</a></td>
+                <td><span class="article-source">AWS Machine Learning</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://aws.amazon.com/blogs/machine-learning/pixtral-12b-2409-is-now-available-on-amazon-bedrock-marketplace/" target="_blank" title="Pixtral-12B-2409 is now available on Amazon Bedrock Marketplace">Pixtral-12B-2409 is now available on Amazon Bedrock Marketplace</a></td>
+                <td><span class="article-source">AWS Machine Learning</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://github.com/takara-ai/go-attention" target="_blank" title="Go-attention: A full attention mechanism and transformer in pure Go">Go-attention: A full attention mechanism and transformer in pure Go</a></td>
+                <td><span class="article-source">Hacker News</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j2mr8t/p_a_deep_dive_into_convolutional_layers/" target="_blank" title="[P] A Deep Dive into Convolutional Layers!">[P] A Deep Dive into Convolutional Layers!</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/artificial/comments/1j2mfe3/gpt45_preview_takes_first_place_in_the/" target="_blank" title="GPT-4.5 Preview takes first place in the Elimination Game Benchmark, which tests social reasoning (forming alliances, deception, appearing non-threatening, and persuading the jury).">GPT-4.5 Preview takes first place in the Elimination Game Benchmark, which tests social reasoning (forming alliances, deception, appearing non-threatening, and persuading the jury).</a></td>
+                <td><span class="article-source">Reddit AI</span></td>
                 <td class="article-category">Uncategorized</td>
                 <td class="article-date">2025-03-03</td>
             </tr>
@@ -300,10 +599,196 @@
                 <td class="article-date">2025-03-03</td>
             </tr>
             <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j2luw5/d_any_easily_accessible_multimodal_llms_for/" target="_blank" title="[D] Any easily accessible multimodal LLMs for classification (video, text, and audio)?">[D] Any easily accessible multimodal LLMs for classification (video, text, and audio)?</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/artificial/comments/1j2kjbl/stability_ai_optimized_its_audio_generation_model/" target="_blank" title="Stability AI optimized its audio generation model to run on Arm chips | TechCrunch">Stability AI optimized its audio generation model to run on Arm chips | TechCrunch</a></td>
+                <td><span class="article-source">Reddit AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://jack-clark.net/2025/03/03/import-ai-402-why-nvidia-beats-amd-vending-machines-vs-superintelligence-harder-big-bench/" target="_blank" title="Import AI 402: Why NVIDIA beats AMD: vending machines vs superintelligence; harder BIG-Bench">Import AI 402: Why NVIDIA beats AMD: vending machines vs superintelligence; harder BIG-Bench</a></td>
+                <td><span class="article-source">Import AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/artificial/comments/1j2jfcu/how_to_read_ai_books_and_literature_especially/" target="_blank" title="How to read AI books and literature? Especially using AI">How to read AI books and literature? Especially using AI</a></td>
+                <td><span class="article-source">Reddit AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://blogs.nvidia.com/blog/ai-protects-wildlife/" target="_blank" title="Animals Crossing: AI Helps Protect Wildlife Across the Globe">Animals Crossing: AI Helps Protect Wildlife Across the Globe</a></td>
+                <td><span class="article-source">NVIDIA AI Blog</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
                 <td class="article-title-cell"><a href="https://blog.google/products/google-cloud/himss-2025/" target="_blank" title="How healthcare organizations are using generative AI search and agents">How healthcare organizations are using generative AI search and agents</a></td>
                 <td><span class="article-source">Google AI</span></td>
                 <td class="article-category">Uncategorized</td>
                 <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j2g6vv/r_cvpr_reject_with_2_accepts_and_one_weak_reject/" target="_blank" title="[R] CVPR Reject with 2 accepts and one weak reject">[R] CVPR Reject with 2 accepts and one weak reject</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j2g6og/d_feature_importance_consensus/" target="_blank" title="[D] Feature importance consensus">[D] Feature importance consensus</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j2g5yq/d_copyrighted_training_data_in_eu_commercial_use/" target="_blank" title="[D] Copyrighted Training Data in EU (Commercial Use)">[D] Copyrighted Training Data in EU (Commercial Use)</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j2epr9/r_had_a_paper_accepted_at_cvpr_should_i_put_it_in/" target="_blank" title="[R] Had a paper accepted at CVPR, should I put it in arvix first ?">[R] Had a paper accepted at CVPR, should I put it in arvix first ?</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/artificial/comments/1j2czrc/ai_solves_2000yearold_mystery_oxford_researchers/" target="_blank" title="AI Solves 2,000-Year-Old Mystery: Oxford Researchers Use AI to Decipher an Ancient Papyrus">AI Solves 2,000-Year-Old Mystery: Oxford Researchers Use AI to Decipher an Ancient Papyrus</a></td>
+                <td><span class="article-source">Reddit AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/artificial/comments/1j2cy49/a_mythology_for_ai_by_ai/" target="_blank" title="A Mythology for AI by AI">A Mythology for AI by AI</a></td>
+                <td><span class="article-source">Reddit AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j2cslw/d_how_will_the_unknown_training_distribution_of/" target="_blank" title="[D] How will the unknown training distribution of open-source models affect the fine-tuning process for enterprises?">[D] How will the unknown training distribution of open-source models affect the fine-tuning process for enterprises?</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/artificial/comments/1j2b961/oneminute_daily_ai_news_322025/" target="_blank" title="One-Minute Daily AI News 3/2/2025">One-Minute Daily AI News 3/2/2025</a></td>
+                <td><span class="article-source">Reddit AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://venturebeat.com/games/micron-launches-new-memory-chips-to-keep-up-with-ai-processing/" target="_blank" title="Micron launches new memory chips to keep up with AI processing">Micron launches new memory chips to keep up with AI processing</a></td>
+                <td><span class="article-source">VentureBeat AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/artificial/comments/1j27wqz/capstone_help/" target="_blank" title="Capstone Help">Capstone Help</a></td>
+                <td><span class="article-source">Reddit AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://venturebeat.com/ai/2025-has-already-brought-us-the-most-performant-ai-ever-what-can-we-do-with-these-supercharged-capabilities-and-whats-next/" target="_blank" title="2025 has already brought us the most performant AI ever: What can we do with these supercharged capabilities (and what’s next)?">2025 has already brought us the most performant AI ever: What can we do with these supercharged capabilities (and what’s next)?</a></td>
+                <td><span class="article-source">VentureBeat AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-03</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j21zmk/d_what_is_the_difference_between_machine_learning/" target="_blank" title="[D] What is the difference between Machine Learning Engineer roles and Applied Scientist roles where ML is at the core?">[D] What is the difference between Machine Learning Engineer roles and Applied Scientist roles where ML is at the core?</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-02</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j213rp/d_contrastive_style_losses_for_3_modalities/" target="_blank" title="[D] Contrastive style losses for 3+ modalities">[D] Contrastive style losses for 3+ modalities</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-02</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j20dae/jupyter_notebook_as_a_first_draft_d/" target="_blank" title="Jupyter Notebook as a First Draft [D]">Jupyter Notebook as a First Draft [D]</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-02</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/reinforcementlearning/comments/1j1yynu/what_can_an_europoor_do/" target="_blank" title="What can an europoor do?">What can an europoor do?</a></td>
+                <td><span class="article-source">Reddit RL</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-02</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j1xs2q/p_made_a_tool_for_ai_agents_dockerized_vs_code/" target="_blank" title="[P] Made a tool for AI agents: Dockerized VS Code + Goose code agent that can be programmatically controlled">[P] Made a tool for AI agents: Dockerized VS Code + Goose code agent that can be programmatically controlled</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-02</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j1udcu/p_i_made_weightgain_an_easy_way_to_train_an/" target="_blank" title="[P] I made weightgain – an easy way to train an adapter for any embedding model in under a minute">[P] I made weightgain – an easy way to train an adapter for any embedding model in under a minute</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-02</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j1u0j7/p_camie_tagger_70527_anime_tag_classifier_trained/" target="_blank" title="[P] Camie Tagger - 70,527 anime tag classifier trained on a single RTX 3060 with 61% F1 score">[P] Camie Tagger - 70,527 anime tag classifier trained on a single RTX 3060 with 61% F1 score</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-02</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/artificial/comments/1j1tol8/claude_via_cursor_randomly_tried_to_update_the/" target="_blank" title=""Claude (via Cursor) randomly tried to update the model of my feature from OpenAI to Claude"">"Claude (via Cursor) randomly tried to update the model of my feature from OpenAI to Claude"</a></td>
+                <td><span class="article-source">Reddit AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-02</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/reinforcementlearning/comments/1j1qekd/best_submission_of_tinker_ais_second_competition/" target="_blank" title="Best submission of Tinker AI's second competition">Best submission of Tinker AI's second competition</a></td>
+                <td><span class="article-source">Reddit RL</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-02</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/artificial/comments/1j1q3as/elon_musks_ai_grok_3_details_plan_for_a_mass/" target="_blank" title="Elon Musk’s AI Grok 3 Details Plan for a Mass Chemical Attack, the user shares the screenshot">Elon Musk’s AI Grok 3 Details Plan for a Mass Chemical Attack, the user shares the screenshot</a></td>
+                <td><span class="article-source">Reddit AI</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-02</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j1oe6n/r_diffusion_of_thoughts_chainofthought_reasoning/" target="_blank" title="[R] Diffusion of Thoughts: Chain-of-Thought Reasoning in Diffusion Language Models">[R] Diffusion of Thoughts: Chain-of-Thought Reasoning in Diffusion Language Models</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-02</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j1l0xo/r_unitok_unifying_visual_generation_and/" target="_blank" title="[R] UniTok: Unifying Visual Generation and Understanding with Multi-Codebook Vector Quantization">[R] UniTok: Unifying Visual Generation and Understanding with Multi-Codebook Vector Quantization</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-02</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/reinforcementlearning/comments/1j1ifd8/help_with_the_mountain_car_problem_using_dqn/" target="_blank" title="Help with the Mountain Car problem using DQN.">Help with the Mountain Car problem using DQN.</a></td>
+                <td><span class="article-source">Reddit RL</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-02</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/MachineLearning/comments/1j1hc0o/d_selfpromotion_thread/" target="_blank" title="[D] Self-Promotion Thread">[D] Self-Promotion Thread</a></td>
+                <td><span class="article-source">Reddit ML</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-02</td>
+            </tr>
+            <tr>
+                <td class="article-title-cell"><a href="https://www.reddit.com/r/reinforcementlearning/comments/1j1fdsa/help_with_2d_peak_search/" target="_blank" title="Help with 2D peak search">Help with 2D peak search</a></td>
+                <td><span class="article-source">Reddit RL</span></td>
+                <td class="article-category">Uncategorized</td>
+                <td class="article-date">2025-03-02</td>
             </tr>
         </tbody>
     </table>

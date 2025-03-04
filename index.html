@@ -5,242 +5,404 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI News Daily Digest</title>
     <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-hover: #1d4ed8;
+            --background: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 900px;
+            color: var(--text-primary);
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
+            background-color: var(--background);
         }
-        h1, h2 {
-            color: #2c3e50;
+        
+        h1, h2, h3 {
+            color: var(--text-primary);
+            font-weight: 600;
         }
+        
         h1 {
-            border-bottom: 2px solid #eaecef;
-            padding-bottom: 0.3em;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
         }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .description {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+        
         .updated {
-            font-size: 14px;
-            color: #6a737d;
-            margin-top: 5px;
-            margin-bottom: 30px;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
         }
-        .feed-links {
-            margin-bottom: 30px;
+        
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
         }
-        .feed-link {
+        
+        .nav-link {
             display: inline-block;
-            padding: 5px 10px;
-            background-color: #f6f8fa;
-            border: 1px solid #e1e4e8;
-            border-radius: 3px;
-            color: #0366d6;
+            padding: 0.5rem 1rem;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 0.375rem;
+            color: var(--primary-color);
             text-decoration: none;
-            font-size: 14px;
-            margin-right: 10px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.2s;
         }
-        .feed-link:hover {
-            background-color: #0366d6;
+        
+        .nav-link:hover {
+            background-color: var(--primary-color);
             color: white;
         }
-        .article {
-            border: 1px solid #e1e4e8;
-            border-radius: 6px;
-            padding: 20px;
-            margin-bottom: 20px;
-            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        
+        .total-count {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            color: var(--text-secondary);
         }
-        .article:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        
+        .category-header {
+            margin-top: 2rem;
+            padding: 0.75rem 1rem;
+            background-color: var(--card-bg);
+            border-radius: 0.375rem;
+            border-left: 4px solid var(--primary-color);
+            box-shadow: var(--shadow);
+            font-size: 1.25rem;
         }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .article-card {
+            background-color: var(--card-bg);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s, box-shadow 0.2s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        .article-content {
+            padding: 1.25rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
         .article-title {
-            font-size: 22px;
+            font-size: 1.125rem;
             font-weight: 600;
-            margin-top: 0;
-            margin-bottom: 10px;
+            margin: 0 0 0.75rem 0;
+            line-height: 1.4;
         }
+        
         .article-title a {
-            color: #0366d6;
+            color: var(--text-primary);
             text-decoration: none;
         }
+        
         .article-title a:hover {
-            text-decoration: underline;
+            color: var(--primary-color);
         }
+        
         .article-meta {
-            font-size: 14px;
-            color: #6a737d;
-            margin-bottom: 15px;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
         }
+        
         .article-source {
             font-weight: 600;
+            color: var(--primary-color);
         }
+        
         .article-summary {
-            margin-bottom: 15px;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.25rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            flex-grow: 1;
         }
+        
         .article-link {
-            display: inline-block;
-            padding: 8px 16px;
-            background-color: #0366d6;
+            align-self: flex-start;
+            padding: 0.5rem 1rem;
+            background-color: var(--primary-color);
             color: white;
-            border-radius: 3px;
+            border-radius: 0.375rem;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 0.875rem;
             font-weight: 500;
+            transition: background-color 0.2s;
+            margin-top: auto;
         }
+        
         .article-link:hover {
-            background-color: #035cc1;
+            background-color: var(--primary-hover);
         }
-        .filters {
-            margin-bottom: 20px;
-            padding: 15px;
-            background-color: #f6f8fa;
-            border-radius: 6px;
-        }
+        
         .no-articles {
-            padding: 40px;
+            padding: 3rem;
             text-align: center;
-            background-color: #f6f8fa;
-            border-radius: 6px;
-            color: #6a737d;
+            background-color: var(--card-bg);
+            border-radius: 0.5rem;
+            color: var(--text-secondary);
+            box-shadow: var(--shadow);
+        }
+        
+        @media (max-width: 768px) {
+            .articles-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
         }
     </style>
 </head>
 <body>
-    <h1>AI News Daily Digest</h1>
-    <p>A curated collection of AI-related news, updated regularly.</p>
-    
-    <div class="updated">Last updated: 2025-03-04 01:23:55 UTC</div>
-    
-    <div class="feed-links">
-        <span>Subscribe to feeds: </span>
-        <a href="all.xml" class="feed-link">RSS</a>
-        <a href="all.atom" class="feed-link">ATOM</a>
-        <a href="all.json" class="feed-link">JSON</a>
+    <div class="header">
+        <h1>AI News Daily Digest</h1>
+        <p class="description">Latest AI news and updates from across the web.</p>
+        <div class="updated">Last updated: 2025-03-04 05:59:15 UTC</div>
     </div>
     
-    <h2>Latest Articles</h2>
+    <div class="nav-links">
+        <a href="all.rss" class="nav-link">RSS Feed</a>
+        <a href="all.atom" class="nav-link">Atom Feed</a>
+        <a href="all.json" class="nav-link">JSON Feed</a>
+        <a href="archive.html" class="nav-link">View Archive</a>
+    </div>
 
-    <div class="article">
-        <h3 class="article-title"><a href="https://blog.google/technology/ai/google-ai-updates-february-2025/">The latest AI news we announced in February</a></h3>
-        <div class="article-meta">
-            <span class="article-source">Google AI</span>
-             • Keyword Team
-            • 2025-03-03 19:45 UTC
-        </div>
-        <div class="article-summary">
-            an MP4 carousel of images and illustrations, included Sundar Pichai speaking at a lectern and an illustration of two people coding
-        </div>
-        <a href="https://blog.google/technology/ai/google-ai-updates-february-2025/" class="article-link" target="_blank">Read More</a>
+    <div class="total-count">
+        Showing 13 Latest Articles
     </div>
-    <div class="article">
-        <h3 class="article-title"><a href="https://blog.google/technology/ai/google-ai-updates-february-2025/">The latest AI news we announced in February</a></h3>
-        <div class="article-meta">
-            <span class="article-source">Google Research</span>
-             • Keyword Team
-            • 2025-03-03 19:45 UTC
+
+    <h3 class="category-header">Uncategorized</h3>
+    <div class="articles-grid">
+
+        <div class="article-card">
+            <div class="article-content">
+                <h4 class="article-title"><a href="https://blog.google/technology/ai/google-ai-updates-february-2025/" target="_blank">The latest AI news we announced in February</a></h4>
+                <div class="article-meta">
+                    <span class="article-source">Google AI</span>
+                    · Keyword Team
+                    · 2025-03-03
+                </div>
+                <div class="article-summary">
+                    an MP4 carousel of images and illustrations, included Sundar Pichai speaking at a lectern and an illustration of two people coding
+                </div>
+                <a href="https://blog.google/technology/ai/google-ai-updates-february-2025/" class="article-link" target="_blank">Read Article</a>
+            </div>
         </div>
-        <div class="article-summary">
-            an MP4 carousel of images and illustrations, included Sundar Pichai speaking at a lectern and an illustration of two people coding
+        <div class="article-card">
+            <div class="article-content">
+                <h4 class="article-title"><a href="https://blog.google/outreach-initiatives/entrepreneurs/ai-nature-climate-accelerator-nonprofits-speciesnet/" target="_blank">3 new ways we’re working to protect and restore nature using AI</a></h4>
+                <div class="article-meta">
+                    <span class="article-source">Google AI</span>
+                    · Mike Werner
+                    · 2025-03-03
+                </div>
+                <div class="article-summary">
+                    Three vertical panels: a jaguar with a blue bounding box, a map of South America with green and red areas, and a man in a forest with recording equipment.
+                </div>
+                <a href="https://blog.google/outreach-initiatives/entrepreneurs/ai-nature-climate-accelerator-nonprofits-speciesnet/" class="article-link" target="_blank">Read Article</a>
+            </div>
         </div>
-        <a href="https://blog.google/technology/ai/google-ai-updates-february-2025/" class="article-link" target="_blank">Read More</a>
-    </div>
-    <div class="article">
-        <h3 class="article-title"><a href="https://blog.google/outreach-initiatives/entrepreneurs/ai-nature-climate-accelerator-nonprofits-speciesnet/">3 new ways we’re working to protect and restore nature using AI</a></h3>
-        <div class="article-meta">
-            <span class="article-source">Google AI</span>
-             • Mike Werner
-            • 2025-03-03 16:00 UTC
+        <div class="article-card">
+            <div class="article-content">
+                <h4 class="article-title"><a href="https://blog.google/products/google-cloud/himss-2025/" target="_blank">How healthcare organizations are using generative AI search and agents</a></h4>
+                <div class="article-meta">
+                    <span class="article-source">Google AI</span>
+                    · Aashima Gupta
+                    · 2025-03-03
+                </div>
+                <div class="article-summary">
+                    Doctor discussing health data with an older patient at a table. Charts and a checklist are visible on screens.
+                </div>
+                <a href="https://blog.google/products/google-cloud/himss-2025/" class="article-link" target="_blank">Read Article</a>
+            </div>
         </div>
-        <div class="article-summary">
-            Three vertical panels: a jaguar with a blue bounding box, a map of South America with green and red areas, and a man in a forest with recording equipment.
+        <div class="article-card">
+            <div class="article-content">
+                <h4 class="article-title"><a href="https://blog.google/feed/health-impact-report-2025/" target="_blank">Read our first Health Impact Report.</a></h4>
+                <div class="article-meta">
+                    <span class="article-source">Google AI</span>
+                    · Dr. Karen DeSalvo
+                    · 2025-02-25
+                </div>
+                <div class="article-summary">
+                    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GoogleHealth_SS.max-600x600.format-webp.webp" />Technology like AI is changing the ways we prevent, diagnose and treat diseases to make healthcare more accessible and human, putting people at the heart of innovation.T…
+                </div>
+                <a href="https://blog.google/feed/health-impact-report-2025/" class="article-link" target="_blank">Read Article</a>
+            </div>
         </div>
-        <a href="https://blog.google/outreach-initiatives/entrepreneurs/ai-nature-climate-accelerator-nonprofits-speciesnet/" class="article-link" target="_blank">Read More</a>
-    </div>
-    <div class="article">
-        <h3 class="article-title"><a href="https://blog.google/products/google-cloud/himss-2025/">How healthcare organizations are using generative AI search and agents</a></h3>
-        <div class="article-meta">
-            <span class="article-source">Google AI</span>
-             • Aashima Gupta
-            • 2025-03-03 14:00 UTC
+        <div class="article-card">
+            <div class="article-content">
+                <h4 class="article-title"><a href="https://blog.google/feed/kaggle-genai-intensive-course-2025/" target="_blank">Sign up for this year’s Gen AI Intensive live course from Google and Kaggle.</a></h4>
+                <div class="article-meta">
+                    <span class="article-source">Google AI</span>
+                    · Anant Nawalgaria
+                    · 2025-02-25
+                </div>
+                <div class="article-summary">
+                    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/16x9_GenAI-event-2025---Illustr.max-600x600.format-webp.webp" />In 2024, more than 140,000 people participated in Google and Kaggle’s Gen AI Intensive live course. Our course is returning this year, with updated content, new speakers…
+                </div>
+                <a href="https://blog.google/feed/kaggle-genai-intensive-course-2025/" class="article-link" target="_blank">Read Article</a>
+            </div>
         </div>
-        <div class="article-summary">
-            Doctor discussing health data with an older patient at a table. Charts and a checklist are visible on screens.
+        <div class="article-card">
+            <div class="article-content">
+                <h4 class="article-title"><a href="https://blog.google/technology/ai/google-ai-updates-february-2025/" target="_blank">The latest AI news we announced in February</a></h4>
+                <div class="article-meta">
+                    <span class="article-source">Google Developers</span>
+                    · Keyword Team
+                    · 2025-03-03
+                </div>
+                <div class="article-summary">
+                    an MP4 carousel of images and illustrations, included Sundar Pichai speaking at a lectern and an illustration of two people coding
+                </div>
+                <a href="https://blog.google/technology/ai/google-ai-updates-february-2025/" class="article-link" target="_blank">Read Article</a>
+            </div>
         </div>
-        <a href="https://blog.google/products/google-cloud/himss-2025/" class="article-link" target="_blank">Read More</a>
-    </div>
-    <div class="article">
-        <h3 class="article-title"><a href="https://blog.langchain.dev/langgraph-0-3-release-prebuilt-agents/">LangGraph 0.3 Release: Prebuilt Agents</a></h3>
-        <div class="article-meta">
-            <span class="article-source">LangChain</span>
-             • LangChain
-            • 2025-02-27 15:09 UTC
+        <div class="article-card">
+            <div class="article-content">
+                <h4 class="article-title"><a href="https://blog.google/feed/kaggle-genai-intensive-course-2025/" target="_blank">Sign up for this year’s Gen AI Intensive live course from Google and Kaggle.</a></h4>
+                <div class="article-meta">
+                    <span class="article-source">Google Developers</span>
+                    · Anant Nawalgaria
+                    · 2025-02-25
+                </div>
+                <div class="article-summary">
+                    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/16x9_GenAI-event-2025---Illustr.max-600x600.format-webp.webp" />In 2024, more than 140,000 people participated in Google and Kaggle’s Gen AI Intensive live course. Our course is returning this year, with updated content, new speakers…
+                </div>
+                <a href="https://blog.google/feed/kaggle-genai-intensive-course-2025/" class="article-link" target="_blank">Read Article</a>
+            </div>
         </div>
-        <div class="article-summary">
-            <p>By Nuno Campos and Vadym Barda</p><p>Over the past year, we&#x2019;ve invested heavily in making <a href="https://langchain-ai.github.io/langgraph/?ref=blog.langchain.dev">LangGraph</a> the go-to framework for building AI agents. With companies like <a href="https://blog.langchain.dev/customers-replit/">Replit</a>, <a href="https://blog.langchain.dev/customers-klarna/">Klarna</a>, <a href="https://www.linkedin.com/blog/engineering/ai/practical-text-to-sql-for-data-analytics?ref=blog.langchain.dev">LinkedIn</a> and <a href="https://dpe.org/sessions/ty-smith-adam-huda/this-year-in-ubers-ai-driven-developer-productivity-revolution/?ref=blog.langchain.dev">Uber</a> choosing to build on top of LangGraph, we have more conviction than ever that we are on</p>
+        <div class="article-card">
+            <div class="article-content">
+                <h4 class="article-title"><a href="https://blog.google/technology/developers/gemini-code-assist-free/" target="_blank">Get coding help from Gemini Code Assist — now for free</a></h4>
+                <div class="article-meta">
+                    <span class="article-source">Google Developers</span>
+                    · Ryan J. Salva
+                    · 2025-02-25
+                </div>
+                <div class="article-summary">
+                    Dark-themed code editor with highlighted lines. Two inset panels show illustrated people working on laptops, one with a hijab. A sparkling icon is centered below.
+                </div>
+                <a href="https://blog.google/technology/developers/gemini-code-assist-free/" class="article-link" target="_blank">Read Article</a>
+            </div>
         </div>
-        <a href="https://blog.langchain.dev/langgraph-0-3-release-prebuilt-agents/" class="article-link" target="_blank">Read More</a>
-    </div>
-    <div class="article">
-        <h3 class="article-title"><a href="https://blog.langchain.dev/customers-mufgbank/">How MUFG Bank increased sales efficiency by 10x with LangChain</a></h3>
-        <div class="article-meta">
-            <span class="article-source">LangChain</span>
-             • LangChain
-            • 2025-02-27 07:29 UTC
+        <div class="article-card">
+            <div class="article-content">
+                <h4 class="article-title"><a href="https://deepmind.google/discover/blog/start-building-with-gemini-20-flash-and-flash-lite/" target="_blank">Start building with Gemini 2.0 Flash and Flash-Lite</a></h4>
+                <div class="article-meta">
+                    <span class="article-source">DeepMind</span>
+                    
+                    · 2025-02-25
+                </div>
+                <div class="article-summary">
+                    Gemini 2.0 Flash-Lite is now generally available in the Gemini API for production use in Google AI Studio and for enterprise customers on Vertex AI
+                </div>
+                <a href="https://deepmind.google/discover/blog/start-building-with-gemini-20-flash-and-flash-lite/" class="article-link" target="_blank">Read Article</a>
+            </div>
         </div>
-        <div class="article-summary">
-            See how MUFG Bank used LangChain to streamline corporate sales research, cutting data analysis time from hours to minutes and boosting efficiency 10x.
+        <div class="article-card">
+            <div class="article-content">
+                <h4 class="article-title"><a href="https://blog.langchain.dev/langgraph-0-3-release-prebuilt-agents/" target="_blank">LangGraph 0.3 Release: Prebuilt Agents</a></h4>
+                <div class="article-meta">
+                    <span class="article-source">LangChain</span>
+                    · LangChain
+                    · 2025-02-27
+                </div>
+                <div class="article-summary">
+                    <p>By Nuno Campos and Vadym Barda</p><p>Over the past year, we&#x2019;ve invested heavily in making <a href="https://langchain-ai.github.io/langgraph/?ref=blog.langchain.dev">LangGraph</a> the go-to framework for building AI agents. With companies like <a href="https://blog.langchain.dev/customers-replit/">Replit</a>, <a href="https://blog.langchain.dev/customers-klarna/">Klarna</a>, <a href="https://www.linkedin.com/blog/engineering/ai/practical-text-to-sql-for-data-analytics?ref=blog.langchain.dev">LinkedIn</a> and <a href="https://dpe.org/sessions/ty-smith-adam-huda/this-year-in-ubers-ai-driven-developer-productivity-revolution/?ref=blog.langchain.dev">Uber</a> choosing to build on top of LangGraph, we have more conviction than ever that we are on</p>
+                </div>
+                <a href="https://blog.langchain.dev/langgraph-0-3-release-prebuilt-agents/" class="article-link" target="_blank">Read Article</a>
+            </div>
         </div>
-        <a href="https://blog.langchain.dev/customers-mufgbank/" class="article-link" target="_blank">Read More</a>
-    </div>
-    <div class="article">
-        <h3 class="article-title"><a href="https://blog.langchain.dev/evaluating-llms-with-openevals/">Quickly Start Evaluating LLMs With OpenEvals</a></h3>
-        <div class="article-meta">
-            <span class="article-source">LangChain</span>
-             • LangChain
-            • 2025-02-26 18:35 UTC
+        <div class="article-card">
+            <div class="article-content">
+                <h4 class="article-title"><a href="https://blog.langchain.dev/customers-mufgbank/" target="_blank">How MUFG Bank increased sales efficiency by 10x with LangChain</a></h4>
+                <div class="article-meta">
+                    <span class="article-source">LangChain</span>
+                    · LangChain
+                    · 2025-02-27
+                </div>
+                <div class="article-summary">
+                    See how MUFG Bank used LangChain to streamline corporate sales research, cutting data analysis time from hours to minutes and boosting efficiency 10x.
+                </div>
+                <a href="https://blog.langchain.dev/customers-mufgbank/" class="article-link" target="_blank">Read Article</a>
+            </div>
         </div>
-        <div class="article-summary">
-            <p>Evaluations (evals) are important for bringing reliable LLM powered applications or agents to production, but it can be hard to know where to start when building evaluations from scratch. Our new packages&#x2014;<a href="https://github.com/langchain-ai/openevals?ref=blog.langchain.dev">openevals</a> and <a href="https://github.com/langchain-ai/agentevals?ref=blog.langchain.dev">agentevals</a>&#x2014;provide a set of evaluators and a common framework that you can easily</p>
+        <div class="article-card">
+            <div class="article-content">
+                <h4 class="article-title"><a href="https://blog.langchain.dev/evaluating-llms-with-openevals/" target="_blank">Quickly Start Evaluating LLMs With OpenEvals</a></h4>
+                <div class="article-meta">
+                    <span class="article-source">LangChain</span>
+                    · LangChain
+                    · 2025-02-26
+                </div>
+                <div class="article-summary">
+                    <p>Evaluations (evals) are important for bringing reliable LLM powered applications or agents to production, but it can be hard to know where to start when building evaluations from scratch. Our new packages&#x2014;<a href="https://github.com/langchain-ai/openevals?ref=blog.langchain.dev">openevals</a> and <a href="https://github.com/langchain-ai/agentevals?ref=blog.langchain.dev">agentevals</a>&#x2014;provide a set of evaluators and a common framework that you can easily</p>
+                </div>
+                <a href="https://blog.langchain.dev/evaluating-llms-with-openevals/" class="article-link" target="_blank">Read Article</a>
+            </div>
         </div>
-        <a href="https://blog.langchain.dev/evaluating-llms-with-openevals/" class="article-link" target="_blank">Read More</a>
-    </div>
-    <div class="article">
-        <h3 class="article-title"><a href="https://deepmind.google/discover/blog/start-building-with-gemini-20-flash-and-flash-lite/">Start building with Gemini 2.0 Flash and Flash-Lite</a></h3>
-        <div class="article-meta">
-            <span class="article-source">DeepMind</span>
-            
-            • 2025-02-25 18:02 UTC
+        <div class="article-card">
+            <div class="article-content">
+                <h4 class="article-title"><a href="https://deepmind.google/discover/blog/start-building-with-gemini-20-flash-and-flash-lite/" target="_blank">Start building with Gemini 2.0 Flash and Flash-Lite</a></h4>
+                <div class="article-meta">
+                    <span class="article-source">Microsoft AI</span>
+                    
+                    · 2025-02-25
+                </div>
+                <div class="article-summary">
+                    Gemini 2.0 Flash-Lite is now generally available in the Gemini API for production use in Google AI Studio and for enterprise customers on Vertex AI
+                </div>
+                <a href="https://deepmind.google/discover/blog/start-building-with-gemini-20-flash-and-flash-lite/" class="article-link" target="_blank">Read Article</a>
+            </div>
         </div>
-        <div class="article-summary">
-            Gemini 2.0 Flash-Lite is now generally available in the Gemini API for production use in Google AI Studio and for enterprise customers on Vertex AI
-        </div>
-        <a href="https://deepmind.google/discover/blog/start-building-with-gemini-20-flash-and-flash-lite/" class="article-link" target="_blank">Read More</a>
-    </div>
-    <div class="article">
-        <h3 class="article-title"><a href="https://blog.google/feed/health-impact-report-2025/">Read our first Health Impact Report.</a></h3>
-        <div class="article-meta">
-            <span class="article-source">Google AI</span>
-             • Dr. Karen DeSalvo
-            • 2025-02-25 18:00 UTC
-        </div>
-        <div class="article-summary">
-            <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GoogleHealth_SS.max-600x600.format-webp.webp" />Technology like AI is changing the ways we prevent, diagnose and treat diseases to make healthcare more accessible and human, putting people at the heart of innovation.T…
-        </div>
-        <a href="https://blog.google/feed/health-impact-report-2025/" class="article-link" target="_blank">Read More</a>
-    </div>
-    <div class="article">
-        <h3 class="article-title"><a href="https://blog.google/feed/kaggle-genai-intensive-course-2025/">Sign up for this year’s Gen AI Intensive live course from Google and Kaggle.</a></h3>
-        <div class="article-meta">
-            <span class="article-source">Google AI</span>
-             • Anant Nawalgaria
-            • 2025-02-25 14:00 UTC
-        </div>
-        <div class="article-summary">
-            <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/16x9_GenAI-event-2025---Illustr.max-600x600.format-webp.webp" />In 2024, more than 140,000 people participated in Google and Kaggle’s Gen AI Intensive live course. Our course is returning this year, with updated content, new speakers…
-        </div>
-        <a href="https://blog.google/feed/kaggle-genai-intensive-course-2025/" class="article-link" target="_blank">Read More</a>
     </div>
 </body>
 </html>

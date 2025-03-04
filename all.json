@@ -92,6 +92,15 @@
       "author": null
     },
     {
+      "id": "https://deepmind.google/discover/blog/start-building-with-gemini-20-flash-and-flash-lite/",
+      "url": "https://deepmind.google/discover/blog/start-building-with-gemini-20-flash-and-flash-lite/",
+      "title": "Start building with Gemini 2.0 Flash and Flash-Lite",
+      "content_html": "Gemini 2.0 Flash-Lite is now generally available in the Gemini API for production use in Google AI Studio and for enterprise customers on Vertex AI",
+      "summary": "Gemini 2.0 Flash-Lite is now generally available in the Gemini API for production use in Google AI Studio and for enterprise customers on Vertex AI",
+      "date_published": "2025-02-25T18:02:12+00:00",
+      "author": null
+    },
+    {
       "id": "https://blog.google/feed/health-impact-report-2025/",
       "url": "https://blog.google/feed/health-impact-report-2025/",
       "title": "Read our first Health Impact Report.",
@@ -111,6 +120,28 @@
       "date_published": "2025-02-25T14:00:00+00:00",
       "author": {
         "name": "Anant Nawalgaria"
+      }
+    },
+    {
+      "id": "https://blog.google/feed/kaggle-genai-intensive-course-2025/",
+      "url": "https://blog.google/feed/kaggle-genai-intensive-course-2025/",
+      "title": "Sign up for this year’s Gen AI Intensive live course from Google and Kaggle.",
+      "content_html": " ",
+      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/16x9_GenAI-event-2025---Illustr.max-600x600.format-webp.webp\" />In 2024, more than 140,000 people participated in Google and Kaggle’s Gen AI Intensive live course. Our course is returning this year, with updated content, new speakers…",
+      "date_published": "2025-02-25T14:00:00+00:00",
+      "author": {
+        "name": "Anant Nawalgaria"
+      }
+    },
+    {
+      "id": "https://blog.google/technology/developers/gemini-code-assist-free/",
+      "url": "https://blog.google/technology/developers/gemini-code-assist-free/",
+      "title": "Get coding help from Gemini Code Assist — now for free",
+      "content_html": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini-Code-Assist_v4_1.max-600x600.format-webp.webp\">Announcing a free version of Gemini Code Assist, powered by Gemini 2.0, and Gemini Code Review in GitHub. ",
+      "summary": "Dark-themed code editor with highlighted lines. Two inset panels show illustrated people working on laptops, one with a hijab. A sparkling icon is centered below.",
+      "date_published": "2025-02-25T11:00:00+00:00",
+      "author": {
+        "name": "Ryan J. Salva"
       }
     }
   ]

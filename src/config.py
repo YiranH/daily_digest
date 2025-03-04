@@ -112,8 +112,12 @@ class Config:
             'url': 'https://www.reddit.com/r/artificial/.rss',
             'category': 'community',
         },
-        'Reddit RL': {
-            'url': 'https://www.reddit.com/r/reinforcementlearning/.rss',
+        # 'Reddit RL': {
+        #     'url': 'https://www.reddit.com/r/reinforcementlearning/.rss',
+        #     'category': 'community',
+        # },
+        'Reddit LLM': {
+            'url': 'https://www.reddit.com/r/LLMDevs/.rss',
             'category': 'community',
         },
         'Lex Fridman Podcast': {

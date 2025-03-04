@@ -268,6 +268,27 @@ class RSSFeedScraper(BaseScraper):
             
         return content
 
+    def extract_reddit_content(self, entry):
+        """Extract only the first 2-3 sentences from Reddit content"""
+        # Get full content first
+        content = self.extract_default_content(entry)
+        
+        # Remove HTML tags if present
+        if content:
+            soup = BeautifulSoup(content, 'html.parser')
+            content = soup.get_text()
+        
+        # Split into sentences (simple approach: split on ., ! or ?)
+        sentences = re.split(r'(?<=[.!?])\s+', content)
+        
+        # Take first 2-3 sentences (or fewer if there aren't that many)
+        num_sentences = min(3, len(sentences))
+        if num_sentences > 0:
+            truncated_content = ' '.join(sentences[:num_sentences])
+            return f"{truncated_content}... [See full post on Reddit]"
+        
+        return content
+
     def scrape(self):
         """Scrape RSS feeds and generate feed files"""
         all_articles = {}
@@ -314,7 +335,10 @@ class RSSFeedScraper(BaseScraper):
                         description = entry.get('description', '')
                         content = ''
 
-                        if 'huggingface.co' in feed_info['url']:
+                        # Check if it's a Reddit source
+                        if 'reddit.com' in feed_info['url']:
+                            content = self.extract_reddit_content(entry)
+                        elif 'huggingface.co' in feed_info['url']:
                             content = self.extract_huggingface_content(entry)
                         elif 'blog.google' in feed_info['url']:
                             content = self.extract_google_content(entry)

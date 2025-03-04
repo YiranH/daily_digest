@@ -132,6 +132,14 @@ To add a new source:
 },
 ```
 
+## TODO
+
+1. more sources such as Anthropic
+2. summarization
+3. bookmark
+4. unread list
+5. send email notification
+
 ## License
 
 MIT

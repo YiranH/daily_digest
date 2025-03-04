@@ -6,6 +6,28 @@
   "description": "Latest AI news and updates from all sources",
   "items": [
     {
+      "id": "https://blog.google/technology/ai/google-ai-updates-february-2025/",
+      "url": "https://blog.google/technology/ai/google-ai-updates-february-2025/",
+      "title": "The latest AI news we announced in February",
+      "content_html": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Feb-AI-Recap-_-SS.max-600x600.format-webp.webp\">Here are Google’s latest AI updates from February 2025 ",
+      "summary": "an MP4 carousel of images and illustrations, included Sundar Pichai speaking at a lectern and an illustration of two people coding",
+      "date_published": "2025-03-03T19:45:00+00:00",
+      "author": {
+        "name": "Keyword Team"
+      }
+    },
+    {
+      "id": "https://blog.google/technology/ai/google-ai-updates-february-2025/",
+      "url": "https://blog.google/technology/ai/google-ai-updates-february-2025/",
+      "title": "The latest AI news we announced in February",
+      "content_html": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Feb-AI-Recap-_-SS.max-600x600.format-webp.webp\">Here are Google’s latest AI updates from February 2025 ",
+      "summary": "an MP4 carousel of images and illustrations, included Sundar Pichai speaking at a lectern and an illustration of two people coding",
+      "date_published": "2025-03-03T19:45:00+00:00",
+      "author": {
+        "name": "Keyword Team"
+      }
+    },
+    {
       "id": "https://blog.google/outreach-initiatives/entrepreneurs/ai-nature-climate-accelerator-nonprofits-speciesnet/",
       "url": "https://blog.google/outreach-initiatives/entrepreneurs/ai-nature-climate-accelerator-nonprofits-speciesnet/",
       "title": "3 new ways we’re working to protect and restore nature using AI",

@@ -15,6 +15,18 @@ from .base_scraper import BaseScraper
 # Configure logging
 logger = logging.getLogger(__name__)
 
+# Define timezone information to resolve ambiguous timezone abbreviations
+TZINFOS = {
+    'EST': -18000,  # UTC-5:00 (Eastern Standard Time)
+    'EDT': -14400,  # UTC-4:00 (Eastern Daylight Time)
+    'CST': -21600,  # UTC-6:00 (Central Standard Time)
+    'CDT': -18000,  # UTC-5:00 (Central Daylight Time)
+    'MST': -25200,  # UTC-7:00 (Mountain Standard Time)
+    'MDT': -21600,  # UTC-6:00 (Mountain Daylight Time)
+    'PST': -28800,  # UTC-8:00 (Pacific Standard Time)
+    'PDT': -25200,  # UTC-7:00 (Pacific Daylight Time)
+}
+
 class FeedParserDict:
     """A helper class to mimic feedparser's attribute/dictionary access pattern"""
     def __init__(self, data=None):
@@ -71,14 +83,14 @@ class RSSFeedScraper(BaseScraper):
         """Get the timestamp of the most recent article for a given source"""
         if source in self.last_scrape_times:
             try:
-                return parser.parse(self.last_scrape_times[source])
+                return parser.parse(self.last_scrape_times[source], tzinfos=TZINFOS)
             except:
                 pass
                 
-        last_week = datetime.now(self.timezone).replace(
+        default_time = datetime.now(self.timezone).replace(
             hour=0, minute=0, second=0, microsecond=0
-        ) - timedelta(days=7)
-        return last_week
+        ) - timedelta(days=2)
+        return default_time
 
     def fetch_openai_feed(self, url):
         """
@@ -284,13 +296,9 @@ class RSSFeedScraper(BaseScraper):
                 for entry in feed.entries:
                     try:
                         if hasattr(entry, 'published'):
-                            published_at = parser.parse(entry.published)
-                            if published_at.tzinfo is None:
-                                published_at = self.timezone.localize(published_at)
+                            published_at = parser.parse(entry.published, tzinfos=TZINFOS)
                         elif hasattr(entry, 'updated'):
-                            published_at = parser.parse(entry.updated)
-                            if published_at.tzinfo is None:
-                                published_at = self.timezone.localize(published_at)
+                            published_at = parser.parse(entry.updated, tzinfos=TZINFOS)
                         else:
                             published_at = current_time
                         
@@ -346,14 +354,22 @@ class RSSFeedScraper(BaseScraper):
         # Save last scrape times
         self._save_last_scrape_times()
         
-        # Generate feed files for each category
+        # Generate individual feeds for each category
         for category, articles in all_articles.items():
             if not articles:
                 continue
                 
-            self._generate_rss_feed(category, articles)
-            self._generate_atom_feed(category, articles)
-            self._generate_json_feed(category, articles)
+            # Sort articles by published date, most recent first
+            sorted_articles = sorted(articles, key=lambda x: parser.parse(x['published_at'], tzinfos=TZINFOS), reverse=True)
+            
+            # Generate RSS feed
+            self._generate_rss_feed(category, sorted_articles)
+            
+            # Generate Atom feed
+            self._generate_atom_feed(category, sorted_articles)
+            
+            # Generate JSON feed
+            self._generate_json_feed(category, sorted_articles)
         
         # Generate a combined feed with all articles
         all_entries = []
@@ -375,7 +391,7 @@ class RSSFeedScraper(BaseScraper):
         fg.description(f'Latest AI news and updates from {category.replace("_", " ")} sources')
         fg.language('en')
         
-        for article in sorted(articles, key=lambda x: parser.parse(x['published_at']), reverse=True):
+        for article in sorted(articles, key=lambda x: parser.parse(x['published_at'], tzinfos=TZINFOS), reverse=True):
             fe = fg.add_entry()
             fe.title(article['title'])
             fe.link(href=article['url'])
@@ -383,7 +399,7 @@ class RSSFeedScraper(BaseScraper):
             fe.content(content=article['content'], type='html')
             if article['author']:
                 fe.author(name=article['author'])
-            fe.pubDate(parser.parse(article['published_at']))
+            fe.pubDate(parser.parse(article['published_at'], tzinfos=TZINFOS))
             fe.source(article['source'])
             
         fg.rss_file(os.path.join(self.output_dir, f'{category}.xml'))
@@ -397,7 +413,7 @@ class RSSFeedScraper(BaseScraper):
         fg.language('en')
         fg.id(f'https://your-github-pages-url/{category}')
         
-        for article in sorted(articles, key=lambda x: parser.parse(x['published_at']), reverse=True):
+        for article in sorted(articles, key=lambda x: parser.parse(x['published_at'], tzinfos=TZINFOS), reverse=True):
             fe = fg.add_entry()
             fe.title(article['title'])
             fe.link(href=article['url'])
@@ -405,7 +421,7 @@ class RSSFeedScraper(BaseScraper):
             fe.content(content=article['content'], type='html')
             if article['author']:
                 fe.author(name=article['author'])
-            fe.published(parser.parse(article['published_at']))
+            fe.published(parser.parse(article['published_at'], tzinfos=TZINFOS))
             fe.id(article['url'])
             
         fg.atom_file(os.path.join(self.output_dir, f'{category}.atom'))
@@ -421,14 +437,14 @@ class RSSFeedScraper(BaseScraper):
             "items": []
         }
         
-        for article in sorted(articles, key=lambda x: parser.parse(x['published_at']), reverse=True):
+        for article in sorted(articles, key=lambda x: parser.parse(x['published_at'], tzinfos=TZINFOS), reverse=True):
             json_feed["items"].append({
                 "id": article['url'],
                 "url": article['url'],
                 "title": article['title'],
                 "content_html": article['content'],
                 "summary": article['description'] or article['content'][:150] + '...',
-                "date_published": parser.parse(article['published_at']).isoformat(),
+                "date_published": parser.parse(article['published_at'], tzinfos=TZINFOS).isoformat(),
                 "author": {"name": article['author']} if article['author'] else None
             })
             

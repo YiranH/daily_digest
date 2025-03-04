@@ -7,9 +7,8 @@ import json
 import re
 from pathlib import Path
 from dateutil import parser
-
 from src.config import Config
-from src.scrapers.rss_scraper import RSSFeedScraper
+from src.scrapers.rss_scraper import RSSFeedScraper, TZINFOS
 
 # Configure logging
 logging.basicConfig(
@@ -179,6 +178,7 @@ def generate_archive_html(feeds_dir, archive_data):
             border-radius: 0.25rem;
             overflow: hidden;
             box-shadow: var(--shadow-sm);
+            table-layout: fixed;
         }}
         
         .archive-table th {{
@@ -189,6 +189,9 @@ def generate_archive_html(feeds_dir, archive_data):
             font-weight: 500;
             cursor: pointer;
             border-bottom: 1px solid var(--border-color);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }}
         
         .archive-table th:hover {{
@@ -210,10 +213,13 @@ def generate_archive_html(feeds_dir, archive_data):
         .archive-table td {{
             padding: 0.5rem 0.75rem;
             vertical-align: middle;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }}
         
         .article-title-cell {{
-            max-width: 40%;
+            width: 50%;
         }}
         
         .article-title-cell a {{
@@ -233,11 +239,25 @@ def generate_archive_html(feeds_dir, archive_data):
         .article-source {{
             font-weight: 500;
             color: var(--primary-color);
+            white-space: nowrap;
+        }}
+        
+        /* Add source column width constraint */
+        td:nth-child(2) {{
+            width: 15%;
+            max-width: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }}
+        
+        .article-category {{
+            width: 15%;
         }}
         
         .article-date {{
             white-space: nowrap;
             color: var(--text-secondary);
+            width: 10%;
         }}
         
         .no-articles {{
@@ -262,6 +282,16 @@ def generate_archive_html(feeds_dir, archive_data):
             .article-category {{
                 display: none;
             }}
+            
+            .article-title-cell {{
+                width: 65%;
+            }}
+            
+            /* Adjust source column on tablet */
+            td:nth-child(2) {{
+                width: 20%;
+                max-width: 80px;
+            }}
         }}
         
         @media (max-width: 480px) {{
@@ -270,7 +300,17 @@ def generate_archive_html(feeds_dir, archive_data):
             }}
             
             .article-title-cell {{
-                max-width: 60%;
+                width: 75%;
+            }}
+            
+            /* Adjust source column on mobile */
+            td:nth-child(2) {{
+                width: 25%;
+                max-width: 70px;
+            }}
+            
+            body {{
+                padding: 10px;
             }}
         }}
         
@@ -364,7 +404,7 @@ def generate_archive_html(feeds_dir, archive_data):
         # Sort articles by date (newest first)
         all_articles = sorted(
             all_articles, 
-            key=lambda x: parser.parse(x.get('date_published', '1970-01-01T00:00:00Z')), 
+            key=lambda x: parser.parse(x.get('date_published', '1970-01-01T00:00:00Z'), tzinfos=TZINFOS), 
             reverse=True
         )
         
@@ -373,7 +413,7 @@ def generate_archive_html(feeds_dir, archive_data):
         current_month = None
         
         for article in all_articles:
-            published_date = parser.parse(article.get('date_published', ''))
+            published_date = parser.parse(article.get('date_published', ''), tzinfos=TZINFOS)
             month_key = published_date.strftime('%Y-%m')
             month_name = published_date.strftime('%B %Y')
             
@@ -403,7 +443,7 @@ def generate_archive_html(feeds_dir, archive_data):
 """
             # Display each article in this month
             for article in month_data['articles']:
-                published_date = parser.parse(article.get('date_published', ''))
+                published_date = parser.parse(article.get('date_published', ''), tzinfos=TZINFOS)
                 formatted_date = published_date.strftime('%Y-%m-%d')
                 
                 category = article.get('category', 'Uncategorized')
@@ -436,7 +476,7 @@ def generate_archive_html(feeds_dir, archive_data):
     return archive_html_path
 
 def generate_index_html(feeds_dir, articles_data=None):
-    """Generate an index.html file that displays the actual articles"""
+    """Generate an index.html file that displays the actual articles in a concise list view"""
     
     # Load articles from JSON if no data is provided directly
     if articles_data is None:
@@ -448,7 +488,7 @@ def generate_index_html(feeds_dir, articles_data=None):
         else:
             articles_data = []
     
-    # Create index.html
+    # Create index.html with a concise list view
     html_content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -460,11 +500,11 @@ def generate_index_html(feeds_dir, articles_data=None):
             --primary-color: #2563eb;
             --primary-hover: #1d4ed8;
             --background: #f8fafc;
-            --card-bg: #ffffff;
+            --list-bg: #ffffff;
             --text-primary: #1e293b;
             --text-secondary: #64748b;
             --border-color: #e2e8f0;
-            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --hover-bg: #f1f5f9;
         }}
         
         body {{
@@ -489,7 +529,7 @@ def generate_index_html(feeds_dir, articles_data=None):
         
         .header {{
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }}
         
         .description {{
@@ -500,20 +540,20 @@ def generate_index_html(feeds_dir, articles_data=None):
         .updated {{
             font-size: 0.875rem;
             color: var(--text-secondary);
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }}
         
         .nav-links {{
             display: flex;
             justify-content: center;
             gap: 1rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }}
         
         .nav-link {{
             display: inline-block;
             padding: 0.5rem 1rem;
-            background-color: var(--card-bg);
+            background-color: var(--list-bg);
             border: 1px solid var(--border-color);
             border-radius: 0.375rem;
             color: var(--primary-color);
@@ -530,56 +570,57 @@ def generate_index_html(feeds_dir, articles_data=None):
         
         .total-count {{
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             font-weight: 500;
             color: var(--text-secondary);
         }}
         
         .category-header {{
-            margin-top: 2rem;
+            margin-top: 1.5rem;
             padding: 0.75rem 1rem;
-            background-color: var(--card-bg);
+            background-color: var(--list-bg);
             border-radius: 0.375rem;
             border-left: 4px solid var(--primary-color);
-            box-shadow: var(--shadow);
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
             font-size: 1.25rem;
         }}
         
-        .articles-grid {{
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }}
-        
-        .article-card {{
-            background-color: var(--card-bg);
-            border-radius: 0.5rem;
+        .articles-list {{
+            list-style: none;
+            padding: 0;
+            margin: 0.75rem 0 1.5rem 0;
+            background-color: var(--list-bg);
+            border-radius: 0.375rem;
             overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: transform 0.2s, box-shadow 0.2s;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
         }}
         
-        .article-card:hover {{
-            transform: translateY(-4px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        }}
-        
-        .article-content {{
-            padding: 1.25rem;
-            flex-grow: 1;
+        .article-item {{
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+            transition: background-color 0.2s;
             display: flex;
             flex-direction: column;
+            max-width: 100%;
+        }}
+        
+        .article-item:last-child {{
+            border-bottom: none;
+        }}
+        
+        .article-item:hover {{
+            background-color: var(--hover-bg);
         }}
         
         .article-title {{
-            font-size: 1.125rem;
             font-weight: 600;
-            margin: 0 0 0.75rem 0;
+            margin: 0 0 0.25rem 0;
             line-height: 1.4;
+            font-size: 1rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 100%;
         }}
         
         .article-title a {{
@@ -594,59 +635,45 @@ def generate_index_html(feeds_dir, articles_data=None):
         .article-meta {{
             font-size: 0.75rem;
             color: var(--text-secondary);
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.25rem;
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            flex-wrap: wrap;
         }}
         
         .article-source {{
             font-weight: 600;
             color: var(--primary-color);
+            white-space: nowrap;
         }}
         
         .article-summary {{
             font-size: 0.875rem;
             color: var(--text-secondary);
-            margin-bottom: 1.25rem;
+            margin: 0;
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
-            -webkit-line-clamp: 3;
+            -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
-            flex-grow: 1;
-        }}
-        
-        .article-link {{
-            align-self: flex-start;
-            padding: 0.5rem 1rem;
-            background-color: var(--primary-color);
-            color: white;
-            border-radius: 0.375rem;
-            text-decoration: none;
-            font-size: 0.875rem;
-            font-weight: 500;
-            transition: background-color 0.2s;
-            margin-top: auto;
-        }}
-        
-        .article-link:hover {{
-            background-color: var(--primary-hover);
         }}
         
         .no-articles {{
-            padding: 3rem;
+            padding: 2rem;
             text-align: center;
-            background-color: var(--card-bg);
-            border-radius: 0.5rem;
+            background-color: var(--list-bg);
+            border-radius: 0.375rem;
             color: var(--text-secondary);
-            box-shadow: var(--shadow);
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
         }}
         
-        @media (max-width: 768px) {{
-            .articles-grid {{
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        @media (max-width: 640px) {{
+            body {{
+                padding: 16px;
+            }}
+            
+            .article-meta {{
+                flex-wrap: wrap;
             }}
         }}
     </style>
@@ -694,19 +721,19 @@ def generate_index_html(feeds_dir, articles_data=None):
     </div>
 """
             
-        # Display articles by category
+        # Display articles by category using a list view instead of grid
         for category in sorted_categories:
             # Format category name for display
             display_category = category.replace('_', ' ').title()
             
             html_content += f"""
     <h3 class="category-header">{display_category}</h3>
-    <div class="articles-grid">
+    <ul class="articles-list">
 """
             
             # Display articles for this category
             for article in articles_by_category[category]:
-                published_date = parser.parse(article.get('date_published', ''))
+                published_date = parser.parse(article.get('date_published', ''), tzinfos=TZINFOS)
                 formatted_date = published_date.strftime('%Y-%m-%d')
                 
                 author = article.get('author', {})
@@ -716,23 +743,20 @@ def generate_index_html(feeds_dir, articles_data=None):
                 summary = article.get('summary', '')
                 
                 html_content += f"""
-        <div class="article-card">
-            <div class="article-content">
-                <h4 class="article-title"><a href="{article.get('url', '#')}" target="_blank">{article.get('title', 'Untitled')}</a></h4>
-                <div class="article-meta">
-                    <span class="article-source">{article.get('source', '')}</span>
-                    {f'· {author_name}' if author_name else ''}
-                    · {formatted_date}
-                </div>
-                <div class="article-summary">
-                    {summary}
-                </div>
-                <a href="{article.get('url', '#')}" class="article-link" target="_blank">Read Article</a>
+        <li class="article-item">
+            <h4 class="article-title"><a href="{article.get('url', '#')}" target="_blank">{article.get('title', 'Untitled')}</a></h4>
+            <div class="article-meta">
+                <span class="article-source">{article.get('source', '')}</span>
+                {f'· {author_name}' if author_name else ''}
+                · {formatted_date}
             </div>
-        </div>"""
+            <p class="article-summary">
+                {summary}
+            </p>
+        </li>"""
                 
             html_content += """
-    </div>"""
+    </ul>"""
     
     html_content += """
 </body>

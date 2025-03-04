@@ -11,54 +11,115 @@ class Config:
         # 'OpenAI': {
         #     'url': 'https://openai.com/blog/rss.xml',
         #     'category': 'ai_companies',
-        # }, # can't get the feed
-            'Google AI': {
-                'url': 'https://blog.google/technology/ai/rss/',
-                'category': 'ai_companies',
-            },
-            'Google Developers': {
-                'url': 'https://blog.google/technology/developers/rss/',
-                'category': 'ai_companies',
-            },
-            'Google Research': {
-                'url': 'https://blog.google/technology/research/rss/',
-                'category': 'ai_companies',
-            },
-            'Google Research': {
-                'url': 'https://research.google/blog/rss/',
-                'category': 'ai_companies',
-            },
-            'DeepMind': {
-                'url': 'https://deepmind.google/blog/rss.xml',
-                'category': 'ai_companies',
-            },
-            'LangChain': {
-                'url': 'https://blog.langchain.dev/rss/',
-                'category': 'ai_companies',
-            },
-            'Microsoft AI': {
-                'url': 'https://deepmind.com/blog/feed/basic/',
-                'category': 'ai_companies',
-            },    
-            # AI Tools & Platforms
-            'Hugging Face': {
-                'url': 'https://huggingface.co/blog/feed.xml',
-                'category': 'ai_tools',
-            },
-
-        # # News & Updates
-        # 'The Verge': {
-        #     'url': 'https://www.theverge.com/rss/index.xml',
+        # },
+        'Google AI': {
+            'url': 'https://blog.google/technology/ai/rss/',
+            'category': 'ai_companies',
+        },
+        'Google Research': {
+            'url': 'https://research.google/blog/rss/',
+            'category': 'ai_companies',
+        },
+        'DeepMind': {
+            'url': 'https://deepmind.google/blog/rss.xml',
+            'category': 'ai_companies',
+        },
+        'Microsoft Research': {
+            'url': 'https://www.microsoft.com/en-us/research/feed',
+            'category': 'ai_companies',
+        },
+        'Berkeley AI Research': {
+            'url': 'https://bair.berkeley.edu/blog/feed.xml',
+            'category': 'ai_companies',
+        },
+        'MIT AI News': {
+            'url': 'http://news.mit.edu/rss/topic/artificial-intelligence2',
+            'category': 'ai_companies',
+        },
+        
+        # AI Tools & Platforms
+        'Hugging Face': {
+            'url': 'https://huggingface.co/blog/feed.xml',
+            'category': 'ai_tools',
+        },
+        'LangChain': {
+            'url': 'https://blog.langchain.dev/rss/',
+            'category': 'ai_tools',
+        },
+        'NVIDIA AI Blog': {
+            'url': 'http://feeds.feedburner.com/nvidiablog',
+            'category': 'ai_tools',
+        },
+        'AWS Machine Learning': {
+            'url': 'https://aws.amazon.com/blogs/machine-learning/feed',
+            'category': 'ai_tools',
+        },
+        
+        # Research & Technical Resources
+        # 'arXiv AI': {
+        #     'url': 'http://arxiv.org/rss/cs.AI',
+        #     'category': 'research',
+        # },
+        # 'arXiv Machine Learning': {
+        #     'url': 'http://arxiv.org/rss/cs.LG',
+        #     'category': 'research',
+        # },
+        # 'arXiv NLP': {
+        #     'url': 'http://arxiv.org/rss/cs.CL',
+        #     'category': 'research',
+        # },
+        'Andrej Karpathy': {
+            'url': 'https://karpathy.ai/rss.xml',
+            'category': 'research',
+        },
+        'Sebastian Raschka': {
+            'url': 'https://sebastianraschka.com/rss_feed.xml',
+            'category': 'research',
+        },
+        'Jay Alammar': {
+            'url': 'https://jalammar.github.io/feed.xml',
+            'category': 'research',
+        },
+        'Machine Learning Mastery': {
+            'url': 'http://machinelearningmastery.com/blog/feed',
+            'category': 'research',
+        },
+        
+        # News & Updates
+        'VentureBeat AI': {
+            'url': 'https://venturebeat.com/category/ai/feed/',
+            'category': 'news',
+        },
+        'Hacker News': {
+            'url': 'https://news.ycombinator.com/rss',
+            'category': 'news',
+        },
+        'Import AI': {
+            'url': 'https://jack-clark.net/feed/',
+            'category': 'news',
+        },
+        # 'Science Daily AI': {
+        #     'url': 'https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml',
         #     'category': 'news',
         # },
-        # 'TechCrunch': {
-        #     'url': 'https://techcrunch.com/feed/',
-        #     'category': 'news',
-        # },
-        # 'VentureBeat AI': {
-        #     'url': 'https://venturebeat.com/category/ai/feed/',
-        #     'category': 'news',
-        # },
+        
+        # Communities & Forums
+        'Reddit ML': {
+            'url': 'https://www.reddit.com/r/MachineLearning/.rss',
+            'category': 'community',
+        },
+        'Reddit AI': {
+            'url': 'https://www.reddit.com/r/artificial/.rss',
+            'category': 'community',
+        },
+        'Reddit RL': {
+            'url': 'https://www.reddit.com/r/reinforcementlearning/.rss',
+            'category': 'community',
+        },
+        'Lex Fridman Podcast': {
+            'url': 'https://lexfridman.com/feed/podcast/',
+            'category': 'community',
+        },
     }
     
     # AI-related keywords for filtering articles
